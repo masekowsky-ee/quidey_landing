@@ -1,0 +1,28 @@
+---
+// Every unknown address. The app used to live on quidey.com, so its old addresses (bookmarks,
+// verification links from mails sent before the move) are sent on to app.quidey.com by
+// scripts/forward.js, with query string and hash. Anything else gets this page.
+import Base from '../layouts/Base.astro';
+import Logo from '../components/Logo.astro';
+import { COPY, APP_URL } from '../copy.js';
+
+const c = COPY.de.notFound;
+const en = COPY.en.notFound;
+---
+<Base lang="de" title={`${c.title} – Quidey`} description={c.text} noindex>
+    <main class="page notFound" data-app={APP_URL}>
+        <Logo id="not-found-logo" class="barLogo" />
+        <h1 class="notFoundTitle" data-forward-hide>{c.heading}</h1>
+        <p data-forward-hide>{c.text} <span lang="en">{en.heading} {en.text}</span></p>
+        <p data-forward-show hidden>{c.forwarding}</p>
+        <div class="notFoundLinks">
+            <a class="actionBtn" href={APP_URL + '/'}>{c.app}</a>
+            <a class="textBtn" href="/">{c.home}</a>
+        </div>
+    </main>
+</Base>
+
+<script>
+    import { forwardOldAppAddress } from '../scripts/forward.js';
+    forwardOldAppAddress();
+</script>

@@ -1,0 +1,57 @@
+---
+// The frame of every page: head (title, description, languages, social cards), the one typeface
+// (self-hosted, the CSP allows no font hosts) and the page styles.
+import '@fontsource-variable/inter';
+import '../styles/landing.css';
+import { COPY } from '../copy.js';
+
+const { lang = 'de', title, description, noindex = false } = Astro.props;
+const site = Astro.site ?? new URL('https://quidey.com');
+const canonical = new URL(Astro.url.pathname, site).href;
+const alternates = Object.values(COPY).map(c => ({ lang: c.lang, href: new URL(c.path, site).href }));
+const image = new URL('/icons/icon-512.png', site).href;
+
+// what search engines read about the product (a data block, not a script: the CSP doesn't block it)
+const structured = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'Quidey',
+    url: 'https://quidey.com/',
+    applicationCategory: 'EducationalApplication',
+    operatingSystem: 'Web',
+    inLanguage: ['de', 'en'],
+    description,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
+});
+---
+<!doctype html>
+<html lang={lang}>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        {noindex
+            ? <meta name="robots" content="noindex" />
+            : <>
+                <link rel="canonical" href={canonical} />
+                {alternates.map(a => <link rel="alternate" hreflang={a.lang} href={a.href} />)}
+                <link rel="alternate" hreflang="x-default" href={alternates[0].href} />
+                <meta property="og:type" content="website" />
+                <meta property="og:site_name" content="Quidey" />
+                <meta property="og:title" content={title} />
+                <meta property="og:description" content={description} />
+                <meta property="og:url" content={canonical} />
+                <meta property="og:image" content={image} />
+                <meta property="og:locale" content={lang === 'de' ? 'de_DE' : 'en_GB'} />
+                <meta name="twitter:card" content="summary" />
+                <script type="application/ld+json" set:html={structured} />
+            </>}
+        <link rel="icon" type="image/svg+xml" href="/quidey-logo.svg" />
+        <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+        <meta name="theme-color" content="#0e0d0c" />
+    </head>
+    <body>
+        <slot />
+    </body>
+</html>

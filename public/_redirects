@@ -1,0 +1,12 @@
+# The app used to live on quidey.com. Its legal pages now live with the app on app.quidey.com
+# (they change together with its features). Old links keep working.
+# Old app addresses (/calendar, /verify-email?token=…) are forwarded by 404.html, which keeps
+# the query string and hash.
+/impressum              https://app.quidey.com/impressum              301
+/datenschutz            https://app.quidey.com/datenschutz            301
+/nutzungsbedingungen    https://app.quidey.com/nutzungsbedingungen    301
+/kontakt                https://app.quidey.com/kontakt                301
+/signin                 https://app.quidey.com/signin                 301
+/signup                 https://app.quidey.com/signup                 301
+/login                  https://app.quidey.com/signin                 301
+/app                    https://app.quidey.com/                       301

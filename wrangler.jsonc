@@ -1,0 +1,15 @@
+{
+  // The landing page on quidey.com: static files only (Cloudflare Workers static assets).
+  // The app lives in its own repo and Worker (quidey_react-main → app.quidey.com).
+  "name": "quidey-landing",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    // unknown paths get dist/404.html; it forwards old app addresses to app.quidey.com
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  },
+  "routes": [
+    { "pattern": "quidey.com", "custom_domain": true }
+  ]
+}

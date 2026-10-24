@@ -1,0 +1,228 @@
+---
+// The whole page for one language: bar, hero, the four features, questions, the email line and
+// the footer. Everything is plain HTML; scripts/landing.js adds the live parts (bar colours,
+// reveals, the ticking pieces of the app, the colour picker, the email line).
+import Logo from './Logo.astro';
+import FocusLoop from './FocusLoop.astro';
+import { APP_URL } from '../copy.js';
+
+const { c } = Astro.props;
+const COPYRIGHT_YEAR = 2026;
+
+// the app's colour themes (dark mode values), for the colour picker in the last feature
+const ACCENTS = ['sunset', 'green', 'ocean', 'rose', 'gold'];
+// the fields of the four rows; 'deep' is the dark one step up, so two dark rows never run together
+const TONES = ['light', 'dark', 'accent', 'deep'];
+const ANCHORS = { focus: 'fokus', plan: 'planen', together: 'zusammen', style: 'stil' };
+const nav = [['fokus', c.nav.focus], ['planen', c.nav.plan], ['zusammen', c.nav.together], ['fragen', c.nav.faq]];
+
+const clock = (s) => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
+
+// focus: 18:42 left of 25:00
+const FOCUS_START = 18 * 60 + 42;
+const FOCUS_RING = 2 * Math.PI * 34;
+// together: the session has run 31 minutes before this round
+const TOGETHER_START = 28 * 60 + 52;
+
+// a calm week from the day of the build (the script moves it to today): which entry sits on
+// which day (index into chips); 1 repeats, 2 has a reminder
+const PLAN = [[2], [], [1], [], [0], [1], []];
+const today = new Date();
+const days = PLAN.map((_, i) => new Date(today.getFullYear(), today.getMonth(), today.getDate() + i));
+
+const signUp = `${APP_URL}/signup`;
+const signIn = `${APP_URL}/signin`;
+---
+<div class="page" data-page>
+    <header class="bar" data-bar>
+        <a href={c.path} class="wordmarkSmall" aria-label="Quidey">
+            <Logo id="bar-logo" class="barLogo" /> <span translate="no">Quidey</span>
+        </a>
+        <nav class="barLinks" aria-label="Quidey">
+            {nav.map(([id, label]) => <a href={`#${id}`}>{label}</a>)}
+        </nav>
+        <div class="barActions">
+            <a class="langBtn" href={c.nav.languagePath} hreflang={c.nav.languageCode} lang={c.nav.languageCode}>{c.nav.language}</a>
+            <a class="textBtn" href={signIn}>{c.nav.signIn}</a>
+            <a class="actionBtn" href={signUp}>{c.nav.cta}</a>
+        </div>
+    </header>
+
+    <main>
+        {/* hero: the sentence with the timer in it, across two fields */}
+        <section class="hero" data-tone="dark" aria-labelledby="landing-title">
+            <div class="heroLower" aria-hidden="true"></div>
+            {/* the first line stands on the dark field, the second wholly on the orange one */}
+            <h1 id="landing-title" class="headline">
+                <span class="line lineTop">
+                    {c.hero.before}{' '}
+                    <span class="slot"><FocusLoop done={c.hero.done} /></span>
+                </span>
+                <span class="line lineBottom">{c.hero.after}</span>
+            </h1>
+            <p class="heroSub">{c.hero.sub}</p>
+            <button type="button" class="pauseBtn" data-loop-toggle data-pause={c.hero.pause} data-play={c.hero.play}
+                aria-pressed="false" hidden>{c.hero.pause}</button>
+        </section>
+
+        {/* the four features: a statement and the piece of the app that shows it */}
+        {c.features.map((feature, i) => (
+            <section id={ANCHORS[feature.id]}
+                class:list={['feature', `feature_${TONES[i]}`, { featureFlip: i % 2 }]}
+                data-tone={TONES[i] === 'deep' ? 'dark' : TONES[i]} aria-labelledby={`feature-${feature.id}`}>
+                <div class="featureText">
+                    <h2 id={`feature-${feature.id}`} class="featureTitle reveal" data-order="0">{feature.heading}</h2>
+                    <p class="featureBody reveal" data-order="1">{feature.text}</p>
+                </div>
+                <div class="featureUI reveal" data-order="2">
+                    {feature.id === 'focus' && (
+                        <div class="ui focusUI" data-countdown={FOCUS_START} data-kind="focus">
+                            <div class="uiHead">
+                                <span class="uiLabel">{feature.ui.label}</span>
+                                <span class="uiIcons">
+                                    <span class="uiIconMuted">
+                                        <svg aria-hidden="true" viewBox="0 -960 960 960" fill="currentColor"><path d="M280-200v-80h284q63 0 109.5-40T720-420q0-60-46.5-100T564-560H312l104 104-56 56-200-200 200-200 56 56-104 104h252q97 0 166.5 63T800-420q0 94-69.5 157T564-200H280Z" /></svg>
+                                    </span>
+                                    <span class="accentText">
+                                        <svg aria-hidden="true" viewBox="0 -960 960 960" fill="currentColor"><path d="m382-354 339-339q12-12 28-12t28 12q12 12 12 28.5T777-636L410-268q-12 12-28 12t-28-12L182-440q-12-12-11.5-28.5T183-497q12-12 28.5-12t28.5 12l142 143Z" /></svg>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="focusMain">
+                                <svg aria-hidden="true" class="focusRing" viewBox="0 0 80 80">
+                                    <circle cx="40" cy="40" r="34" class="ringTrack" />
+                                    <circle cx="40" cy="40" r="34" class="ringFill" data-ring
+                                        stroke-dasharray={FOCUS_RING} stroke-dashoffset={FOCUS_RING * FOCUS_START / 1500} transform="rotate(-90 40 40)" />
+                                </svg>
+                                <div class="focusText">
+                                    <span class="focusTask">{feature.ui.task}</span>
+                                    <span class="uiMeta">{feature.ui.session}: <strong class="accentText" data-clock>{clock(1500 - FOCUS_START)}</strong></span>
+                                </div>
+                            </div>
+                            <div class="focusNotes">
+                                <span class="uiLabel">{feature.ui.notes}</span>
+                                <span class="noteLine">{feature.ui.note}</span>
+                            </div>
+                        </div>
+                    )}
+
+                    {feature.id === 'plan' && (
+                        <div class="ui planUI">
+                            <ol class="weekGrid" data-week={JSON.stringify(feature.ui.weekdays)}>
+                                {days.map((day, d) => (
+                                    <li class="weekDay">
+                                        <span class="weekName" data-day-name>{feature.ui.weekdays[day.getDay()]}</span>
+                                        <span class:list={['weekNum', { weekNumToday: d === 0 }]} data-day-num>{day.getDate()}</span>
+                                        {PLAN[d].map(chip => (
+                                            <span class="weekPill">
+                                                {chip === 1 && <span class="accentText" aria-hidden="true">↻</span>}
+                                                {chip === 2 && <span class="chipIcon accentText"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15L6 16zM10 20.5a2 2 0 0 0 4 0" /></svg></span>}
+                                                {feature.ui.chips[chip]}
+                                            </span>
+                                        ))}
+                                    </li>
+                                ))}
+                            </ol>
+                            <div class="planLegend">
+                                <span><span class="accentText" aria-hidden="true">↻</span> {feature.ui.repeat}</span>
+                                <span><span class="chipIcon accentText"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15L6 16zM10 20.5a2 2 0 0 0 4 0" /></svg></span> {feature.ui.reminder}</span>
+                            </div>
+                        </div>
+                    )}
+
+                    {feature.id === 'together' && (
+                        <div class="ui togetherUI" data-countdown={TOGETHER_START} data-kind="together">
+                            <div class="uiHead">
+                                <span class="uiTitle">{feature.ui.title}</span>
+                                <span class="liveTime"><b class="liveDot"></b><span data-clock>{clock(1500 - TOGETHER_START + 31 * 60)}</span></span>
+                            </div>
+                            {[['A', 0, true, 82], ['B', 1, true, 61], ['C', 2, false, 40]].map(([initial, task, live, share]) => (
+                                <div class="member">
+                                    <span class="avatar">{initial}</span>
+                                    <span class="memberText">
+                                        <span class="memberName">{feature.ui.tasks[task]}</span>
+                                        <span class={live ? 'accentText' : 'uiMeta'}>{live ? feature.ui.live : feature.ui.pause}</span>
+                                    </span>
+                                    <span class="memberBar"><span data-share={share}></span></span>
+                                </div>
+                            ))}
+                        </div>
+                    )}
+
+                    {feature.id === 'style' && (
+                        <div class="ui styleUI">
+                            <span class="uiLabel">{feature.ui.colours}</span>
+                            <div class="swatches" role="group" aria-label={feature.ui.colours}>
+                                {ACCENTS.map((key, a) => (
+                                    <button type="button" class:list={['swatch', { swatchOn: a === 0 }]} data-accent={key}
+                                        aria-pressed={a === 0 ? 'true' : 'false'}>
+                                        <span class={`swatchDot dot_${key}`}></span>
+                                        <span>{feature.ui.names[key]}</span>
+                                    </button>
+                                ))}
+                            </div>
+                            <span class="uiLabel">{feature.ui.theme}</span>
+                            <div class="segments">
+                                {feature.ui.themes.map((label, t) => <span class={t === 0 ? 'segmentOn' : undefined}>{label}</span>)}
+                            </div>
+                            <span class="uiLabel">{feature.ui.motion}</span>
+                            <div class="segments">
+                                {feature.ui.motions.map((label, m) => <span class={m === 1 ? 'segmentOn' : undefined}>{label}</span>)}
+                            </div>
+                        </div>
+                    )}
+                </div>
+            </section>
+        ))}
+
+        {/* questions */}
+        <section id="fragen" class="faq" data-tone="light" aria-labelledby="faq-title">
+            <h2 id="faq-title" class="faqTitle reveal" data-order="0">{c.faq.heading}</h2>
+            <div class="faqList">
+                {c.faq.items.map(([question, answer], i) => (
+                    <details class="question reveal" data-order={String(1 + i * 0.5)}>
+                        <summary>{question}<span class="chevron" aria-hidden="true"></span></summary>
+                        <p>{answer}</p>
+                    </details>
+                ))}
+            </div>
+        </section>
+
+        {/* the email line: on to signing up in the app, the address goes along in the #hash
+            (never to a server: no query string) */}
+        <section class="cta" data-tone="accent" aria-labelledby="cta-title">
+            <h2 id="cta-title" class="ctaTitle reveal" data-order="0">{c.cta.heading}</h2>
+            <form class="ctaSentence reveal" data-order="0" action={signUp} method="get" data-signup>
+                <span class="ctaLine">
+                    <input type="email" placeholder={c.cta.placeholder} aria-label={c.cta.emailLabel}
+                        autocomplete="email" spellcheck="false" data-email />
+                    <button type="submit">{c.cta.button}</button>
+                </span>
+            </form>
+            <p class="ctaNote reveal" data-order="1">{c.cta.note}</p>
+        </section>
+    </main>
+
+    <footer class="footer" data-tone="light">
+        <div class="footerTop">
+            <div class="reveal" data-order="0">
+                <h2 class="footerInvite">{c.footer.invitation}</h2>
+                <a class="darkBtn" href={signUp}>{c.footer.button}</a>
+            </div>
+            <ul class="footerLinks reveal" data-order="1" aria-label={c.footer.legalLabel}>
+                {c.footer.links.map(([label, href]) => <li><a href={href}>{label}</a></li>)}
+            </ul>
+        </div>
+        <div class="footerLegal">
+            <span>© {COPYRIGHT_YEAR} Quidey</span>
+        </div>
+        <div class="wordmark" aria-hidden="true" translate="no">Quidey</div>
+    </footer>
+</div>
+
+<script>
+    import { startFocusLoop } from '../scripts/focusLoop.js';
+    import { startLanding } from '../scripts/landing.js';
+    startFocusLoop();
+    startLanding();
+</script>

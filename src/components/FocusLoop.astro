@@ -1,0 +1,35 @@
+---
+// The headline's slot as one picture (300 × 110) that scales with the type around it. Drawn here
+// as the still frame (the finished logo); scripts/focusLoop.js plays it.
+import { frameState, popTransform, RING_LENGTH, CHECK_LENGTH, STILL_FRAME } from '../scripts/focusLoop.js';
+
+const { done } = Astro.props;
+const s = frameState(STILL_FRAME);
+---
+<svg class="loop" viewBox="0 0 300 110" data-focus-loop data-done={done} aria-hidden="true" focusable="false">
+    <defs>
+        <mask id="loop-cut" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+            <rect width="64" height="64" fill="#fff" />
+            <path d="M27 32l9 12" stroke="#000" stroke-width="10.5" stroke-linecap="round" />
+        </mask>
+    </defs>
+    <rect class="loopGround" width="300" height="110" rx="22" />
+    <g data-part="content" opacity={s.opacity}>
+        <g data-part="pop" transform={popTransform(s.scale)}>
+            <g transform="translate(18 13) scale(1.68) translate(-9 -5)">
+                {/* the empty ring the timer fills, so the arc reads as time left, not as a spinner */}
+                <circle data-part="track" class="loopTrack" cx="25" cy="27" r="12" fill="none" stroke-width="6" opacity={1 - s.check} />
+                {/* starts at the top and runs clockwise; the mask sits on the group so it doesn't turn with the ring */}
+                <g mask="url(#loop-cut)">
+                    <circle data-part="ring" class="logoStroke" cx="25" cy="27" r="12" fill="none" stroke-width="6"
+                        stroke-dasharray={RING_LENGTH} stroke-dashoffset={RING_LENGTH * (1 - s.ring)}
+                        transform="rotate(-90 25 27)" stroke-linecap="butt" />
+                </g>
+                <path data-part="check" class="logoStroke" d="M27 32l9 12L54 24" fill="none" stroke-width="6.5"
+                    stroke-linecap="round" stroke-linejoin="round"
+                    stroke-dasharray={CHECK_LENGTH} stroke-dashoffset={CHECK_LENGTH * (1 - s.check)} opacity="1" />
+            </g>
+        </g>
+        <text data-part="text" class="loopText loopDone" x="116" y="56" dominant-baseline="central">{done}</text>
+    </g>
+</svg>

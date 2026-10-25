@@ -26,9 +26,11 @@ Lokal wie in Produktion testen (mit `_headers`, `_redirects` und 404-Seite):
 | `src/copy.js` | alle Texte, Deutsch und Englisch, und `APP_URL` |
 | `src/pages/index.astro`, `src/pages/en/index.astro` | die Seite auf Deutsch (`/`) und Englisch (`/en/`) |
 | `src/pages/404.astro` | unbekannte Adressen; leitet alte App-Adressen (`/calendar`, `/verify-email?token=…`) an die App weiter |
-| `src/components/Landing.astro` | die ganze Seite: Leiste, Hero, vier Features, Fragen, E-Mail-Zeile, Footer |
+| `src/components/Landing.astro` | die ganze Seite: Leiste, Hero, fünf Features, Für wen, Funktionen, Fragen, E-Mail-Zeile, Footer |
+| `src/layouts/Base.astro` | Kopf jeder Seite: Titel, Beschreibung, Sprachen, Social Cards, strukturierte Daten (inkl. FAQ) |
+| `scripts/og-image.mjs` | zeichnet die Social Cards `public/og/quidey-de.png` / `-en.png` (1200 × 630) mit Headless Chrome |
 | `src/components/FocusLoop.astro` + `src/scripts/focusLoop.js` | das Wort im Hero: Timer → Q → Logo, als SVG |
-| `src/scripts/landing.js` | Leistenfarbe, Einblenden, tickende App-Ausschnitte, Farbwahl, E-Mail-Zeile |
+| `src/scripts/landing.js` | Leistenfarbe, Einblenden, tickende App-Ausschnitte, Woche und Serie ab heute, Farbwahl, E-Mail-Zeile |
 | `src/styles/landing.css` | alle Styles |
 | `public/_headers` | CSP und Sicherheits-Header (keine Inline-Skripte/-Styles, nichts von fremden Hosts) |
 | `public/_redirects` | alte Adressen der Rechtstexte → app.quidey.com |

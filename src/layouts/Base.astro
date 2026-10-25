@@ -6,38 +6,73 @@ import '../styles/landing.css';
 import { COPY } from '../copy.js';
 
 const { lang = 'de', title, description, noindex = false } = Astro.props;
+const c = COPY[lang] ?? COPY.de;
 const site = Astro.site ?? new URL('https://quidey.com');
 const canonical = new URL(Astro.url.pathname, site).href;
+const home = new URL(c.path, site).href;
 const alternates = Object.values(COPY).map(c => ({ lang: c.lang, href: new URL(c.path, site).href }));
-const image = new URL('/icons/icon-512.png', site).href;
+const logo = new URL('/icons/icon-512.png', site).href;
+// the social card (1200 × 630, made by scripts/og-image.mjs): the hero as a picture
+const image = new URL(c.meta.image, site).href;
 
 // what search engines read about the site and the product (a data block, not a script: the CSP
-// doesn't block it). WebSite gives Google the site name it shows above the result.
+// doesn't block it). WebSite gives Google the site name it shows above the result; the questions
+// are the ones on the page, word for word.
 const structured = JSON.stringify({
     '@context': 'https://schema.org',
     '@graph': [
         {
             '@type': 'WebSite',
+            '@id': 'https://quidey.com/#website',
             name: 'Quidey',
             url: 'https://quidey.com/',
             inLanguage: ['de', 'en'],
+            publisher: { '@id': 'https://quidey.com/#organization' },
         },
         // the logo Google may show beside the name (a raster image, at least 112 × 112)
         {
             '@type': 'Organization',
+            '@id': 'https://quidey.com/#organization',
             name: 'Quidey',
             url: 'https://quidey.com/',
-            logo: image,
+            logo,
+        },
+        {
+            '@type': 'WebPage',
+            '@id': `${home}#webpage`,
+            url: home,
+            name: title,
+            description,
+            inLanguage: lang,
+            isPartOf: { '@id': 'https://quidey.com/#website' },
+            about: { '@id': 'https://quidey.com/#app' },
+            primaryImageOfPage: image,
         },
         {
             '@type': 'SoftwareApplication',
+            '@id': 'https://quidey.com/#app',
             name: 'Quidey',
             url: 'https://quidey.com/',
             applicationCategory: 'EducationalApplication',
-            operatingSystem: 'Web',
+            applicationSubCategory: lang === 'de' ? 'Lernplaner' : 'Study planner',
+            operatingSystem: 'Web, Android, iOS, Windows, macOS',
+            browserRequirements: 'Requires JavaScript',
             inLanguage: ['de', 'en'],
             description,
+            image,
+            featureList: c.meta.featureList,
             offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
+            publisher: { '@id': 'https://quidey.com/#organization' },
+        },
+        {
+            '@type': 'FAQPage',
+            '@id': `${home}#faq`,
+            inLanguage: lang,
+            mainEntity: c.faq.items.map(([question, answer]) => ({
+                '@type': 'Question',
+                name: question,
+                acceptedAnswer: { '@type': 'Answer', text: answer },
+            })),
         },
     ],
 });
@@ -52,21 +87,29 @@ const structured = JSON.stringify({
         {noindex
             ? <meta name="robots" content="noindex" />
             : <>
+                {/* large previews in search, Discover and social cards */}
+                <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
                 <link rel="canonical" href={canonical} />
                 {alternates.map(a => <link rel="alternate" hreflang={a.lang} href={a.href} />)}
                 <link rel="alternate" hreflang="x-default" href={alternates[0].href} />
+                <meta name="application-name" content="Quidey" />
                 <meta property="og:type" content="website" />
                 <meta property="og:site_name" content="Quidey" />
                 <meta property="og:title" content={title} />
                 <meta property="og:description" content={description} />
                 <meta property="og:url" content={canonical} />
                 <meta property="og:image" content={image} />
-                <meta property="og:image:width" content="512" />
-                <meta property="og:image:height" content="512" />
-                <meta property="og:image:alt" content="Quidey" />
+                <meta property="og:image:type" content="image/png" />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                <meta property="og:image:alt" content={c.meta.imageAlt} />
                 <meta property="og:locale" content={lang === 'de' ? 'de_DE' : 'en_GB'} />
                 <meta property="og:locale:alternate" content={lang === 'de' ? 'en_GB' : 'de_DE'} />
-                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={title} />
+                <meta name="twitter:description" content={description} />
+                <meta name="twitter:image" content={image} />
+                <meta name="twitter:image:alt" content={c.meta.imageAlt} />
                 <script type="application/ld+json" set:html={structured} />
             </>}
         <link rel="icon" type="image/svg+xml" href="/quidey-logo.svg" />

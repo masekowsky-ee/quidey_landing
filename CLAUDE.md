@@ -17,12 +17,25 @@ Kept apart on purpose: it changes rarely and differently from the app.
 - Search engines: this page is what Google should find (the app on app.quidey.com is
   `noindex`). `public/robots.txt` points to the sitemap, which `src/pages/sitemap.xml.js` builds
   from the languages in `copy.js` (hreflang pairs, lastmod = build day; a new page outside COPY
-  must be added there). `layouts/Base.astro` writes canonical, hreflang, Open Graph and JSON-LD
-  (`WebSite` for the site name, `Organization` with logo, `SoftwareApplication`); the 404 page is
-  `noindex`.
+  must be added there). `layouts/Base.astro` writes canonical, hreflang, `robots`
+  (`max-image-preview:large`), Open Graph / Twitter (`summary_large_image`) and JSON-LD
+  (`WebSite` for the site name, `Organization` with logo, `WebPage`, `SoftwareApplication` with
+  `featureList` from `copy.js` `meta.featureList`, `FAQPage` from `faq.items`, word for word as on
+  the page); the 404 page is `noindex`. Search words (Lernplaner, Fokus-Timer, Kalender, zusammen
+  lernen / study planner, …) live in the title, description, h2s and questions; headings must stay
+  ≤ 2 lines (≈16 characters per line in the feature text column at desktop size).
+  Social cards: `public/og/quidey-<lang>.png` (1200 × 630, the hero as a picture), drawn by
+  `node scripts/og-image.mjs` (headless Chrome/Edge); its words are copied from the hero, so
+  re-run it when those change.
   Ownership is verified in Google Search Console as a Domain property (DNS TXT at Cloudflare),
   which covers quidey.com and app.quidey.com; no verification file lives in this repo.
 - `public/sw.js` unregisters the old app service worker that once ran on quidey.com.
 - The page stores nothing and sets no cookies. If that ever changes, the privacy policy in the
   app repo (`src/legal/LegalPage.jsx`, section "Aufruf der Website") must change with it.
-- Visual check: `npm run build && npx wrangler dev`, then headless Chrome over CDP.
+- Page order (`components/Landing.astro`): hero (sentence, what Quidey is, button), five features
+  (focus, plan, together, progress, style — statement, three points, a piece of the app marked
+  `data-ui`), who it is for, everything else (`more`), questions, email line, footer. Fields
+  alternate light / dark / accent / deep so two of a kind never touch.
+- Visual check: `npm run build && npx wrangler dev` (or `npx astro preview`), then headless Chrome
+  over CDP, or the taste-skill inspector from the app repo (`.claude/skills/design-taste-frontend/
+  scripts/inspect.mjs <url>`; it needs the served site, not `dist/index.html`, as paths are absolute).

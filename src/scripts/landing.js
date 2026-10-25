@@ -74,6 +74,18 @@ function weekFromToday(page) {
     });
 }
 
+// the streak ends today: the last seven days, names from Monday
+function streakToToday(page) {
+    const row = page.querySelector('[data-streak]');
+    if (!row) return;
+    const names = JSON.parse(row.dataset.streak);
+    const today = new Date();
+    row.querySelectorAll('li').forEach((li, i) => {
+        const day = new Date(today.getFullYear(), today.getMonth(), today.getDate() - 6 + i);
+        li.querySelector('[data-day-name]').textContent = names[(day.getDay() + 6) % 7];
+    });
+}
+
 // the colour picked in the last feature recolours every piece of the app on the page
 function accentPicker(page) {
     const swatches = [...page.querySelectorAll('[data-accent]')];
@@ -109,6 +121,7 @@ export function startLanding() {
     reveal(page);
     countdowns(page);
     weekFromToday(page);
+    streakToToday(page);
     accentPicker(page);
     emailLine(page);
 }

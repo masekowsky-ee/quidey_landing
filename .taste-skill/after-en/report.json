@@ -1,0 +1,2754 @@
+{
+ "url": "http://localhost:4329/en/",
+ "at": "2026-10-25T20:54:57.937Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.54,
+    0.75,
+    0.77,
+    0.85,
+    0.46,
+    0.83,
+    0.96,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 53,
+    "css": 4,
+    "transitions": 49,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 7985,
+     "screens": 8.9,
+     "words": 754,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 9,
+     "sections": 10,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 5,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 5,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "One thing 17:10 after another.",
+     "words": 5,
+     "chars": 30,
+     "lines": 2,
+     "size": 144,
+     "vw": 10,
+     "font": "Inter Variable",
+     "weight": 800,
+     "tracking": -0.045,
+     "leading": 0.95,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.95,
+     "top": 237,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "One thing 17:10 after another.",
+     "words": 5,
+     "lines": 2,
+     "size": 144,
+     "font": "Inter Variable"
+    },
+    "headings": [
+     {
+      "text": "One thing 17:10 after another.",
+      "words": 5,
+      "chars": 30,
+      "lines": 2,
+      "size": 144,
+      "vw": 10,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.045,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 237,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "A focus timer for one task.",
+      "words": 6,
+      "chars": 27,
+      "lines": 2,
+      "size": 66.2,
+      "vw": 4.6,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 1022,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Study plan and calendar.",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 66.2,
+      "vw": 4.6,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.39,
+      "top": 1610,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Study together online.",
+      "words": 3,
+      "chars": 22,
+      "lines": 2,
+      "size": 66.2,
+      "vw": 4.6,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 2204,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Streaks, levels, statistics.",
+      "words": 3,
+      "chars": 28,
+      "lines": 2,
+      "size": 66.2,
+      "vw": 4.6,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.39,
+      "top": 2798,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Made to your taste.",
+      "words": 4,
+      "chars": 19,
+      "lines": 2,
+      "size": 66.2,
+      "vw": 4.6,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 3433,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "For school and university.",
+      "words": 4,
+      "chars": 26,
+      "lines": 2,
+      "size": 66.2,
+      "vw": 4.6,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 4074,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "School and final exams",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "Inter Variable",
+      "weight": 750,
+      "tracking": -0.03,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.54,
+      "top": 4074,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "University and exam season",
+      "words": 4,
+      "chars": 26,
+      "lines": 1,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "Inter Variable",
+      "weight": 750,
+      "tracking": -0.03,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.54,
+      "top": 4236,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Study groups and friends",
+      "words": 4,
+      "chars": 24,
+      "lines": 1,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "Inter Variable",
+      "weight": 750,
+      "tracking": -0.03,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.54,
+      "top": 4398,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Everything for your study days.",
+      "words": 5,
+      "chars": 31,
+      "lines": 2,
+      "size": 66.2,
+      "vw": 4.6,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 4876,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Questions about Quidey",
+      "words": 3,
+      "chars": 22,
+      "lines": 2,
+      "size": 66.2,
+      "vw": 4.6,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 5738,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "New here?",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 66.2,
+      "vw": 4.6,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 6663,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Go",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 86.4,
+      "vw": 6,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.12,
+      "top": 6755,
+      "tag": "button",
+      "kind": "heading"
+     },
+     {
+      "text": "Start with one thing.",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 66.2,
+      "vw": 4.6,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.35,
+      "top": 7196,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Quidey",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 403.2,
+      "vw": 28,
+      "font": "Inter Variable",
+      "weight": 850,
+      "tracking": -0.06,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 7746,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 16,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter Variable",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      21,
+      22,
+      23,
+      32,
+      66,
+      86,
+      144,
+      403
+     ],
+     "sizeCount": 14,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter Variable",
+      "size": 17,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": -0.006,
+      "contrast": 16.9
+     },
+     "measureChars": 66,
+     "max": {
+      "size": 403.2,
+      "vw": 28,
+      "font": "Inter Variable",
+      "text": "Quidey"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0e0d0c",
+     "bodyBgHsl": {
+      "h": 30,
+      "s": 0.08,
+      "l": 0.05
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#0e0d0c",
+       "top": 0,
+       "hsl": {
+        "h": 30,
+        "s": 0.08,
+        "l": 0.05
+       }
+      },
+      {
+       "color": "#fb923c",
+       "top": 387,
+       "hsl": {
+        "h": 27,
+        "s": 0.96,
+        "l": 0.61
+       }
+      },
+      {
+       "color": "#f5f5f3",
+       "top": 900,
+       "hsl": {
+        "h": 60,
+        "s": 0.09,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#181716",
+       "top": 2676,
+       "hsl": {
+        "h": 30,
+        "s": 0.04,
+        "l": 0.09
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#151413",
+       "share": 0.41
+      },
+      {
+       "color": "#f4f3f1",
+       "share": 0.41
+      },
+      {
+       "color": "#2a1305",
+       "share": 0.12
+      },
+      {
+       "color": "#9b958f",
+       "share": 0.05
+      },
+      {
+       "color": "#fb923c",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#0e0d0c",
+      "hsl": {
+       "h": 30,
+       "s": 0.08,
+       "l": 0.05
+      },
+      "fg": "#9b958f"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 8,
+     "inHero": 2,
+     "radius": 14,
+     "height": 80,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Get a beta spot",
+      "Get a beta spot"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 8,
+     "boxRadius": 22,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 9,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "inter variable"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 7985,
+    "margins": {
+     "left": 35,
+     "right": 41
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 900,
+      "words": 41,
+      "media": 1,
+      "middle": 207,
+      "heading": {
+       "text": "One thing",
+       "size": 144,
+       "tag": "h1"
+      },
+      "left": 35,
+      "right": 35,
+      "textLeft": 35,
+      "textRight": 46,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#fokus.feature.feature_light",
+      "tag": "section",
+      "top": 900,
+      "height": 588,
+      "words": 71,
+      "media": 0,
+      "middle": 372,
+      "heading": {
+       "text": "A focus timer for one task.",
+       "size": 66,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 241,
+      "textLeft": 35,
+      "textRight": 241,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#planen.feature.feature_dark",
+      "tag": "section",
+      "top": 1488,
+      "height": 594,
+      "words": 77,
+      "media": 0,
+      "middle": 264,
+      "heading": {
+       "text": "Study plan and calendar.",
+       "size": 66,
+       "tag": "h2"
+      },
+      "left": 75,
+      "right": 96,
+      "textLeft": 75,
+      "textRight": 96,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#zusammen.feature.feature_accent",
+      "tag": "section",
+      "top": 2082,
+      "height": 594,
+      "words": 65,
+      "media": 0,
+      "middle": 367,
+      "heading": {
+       "text": "Study together online.",
+       "size": 66,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 59,
+      "textLeft": 35,
+      "textRight": 59,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#fortschritt.feature.feature_deep",
+      "tag": "section",
+      "top": 2676,
+      "height": 623,
+      "words": 93,
+      "media": 0,
+      "middle": 317,
+      "heading": {
+       "text": "Streaks, levels, statistics.",
+       "size": 66,
+       "tag": "h2"
+      },
+      "left": 59,
+      "right": 98,
+      "textLeft": 59,
+      "textRight": 98,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#stil.feature.feature_light",
+      "tag": "section",
+      "top": 3298,
+      "height": 589,
+      "words": 55,
+      "media": 0,
+      "middle": 425,
+      "heading": {
+       "text": "Made to your taste.",
+       "size": 66,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 59,
+      "textLeft": 35,
+      "textRight": 88,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#fuer-wen.audience",
+      "tag": "section",
+      "top": 3887,
+      "height": 802,
+      "words": 74,
+      "media": 0,
+      "middle": 136,
+      "heading": {
+       "text": "For school and university.",
+       "size": 66,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 211,
+      "textLeft": 35,
+      "textRight": 211,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#funktionen.more",
+      "tag": "section",
+      "top": 4689,
+      "height": 862,
+      "words": 144,
+      "media": 0,
+      "middle": 58,
+      "heading": {
+       "text": "Everything for your study days.",
+       "size": 66,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 46,
+      "textLeft": 35,
+      "textRight": 46,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#fragen.faq",
+      "tag": "section",
+      "top": 5551,
+      "height": 968,
+      "words": 223,
+      "media": 0,
+      "middle": 183,
+      "heading": {
+       "text": "Questions about Quidey",
+       "size": 66,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 260,
+      "textLeft": 35,
+      "textRight": 260,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.cta",
+      "tag": "section",
+      "top": 6519,
+      "height": 533,
+      "words": 17,
+      "media": 0,
+      "middle": 17,
+      "heading": {
+       "text": "Go",
+       "size": 86,
+       "tag": "button"
+      },
+      "left": 35,
+      "right": 223,
+      "textLeft": 35,
+      "textRight": 253,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 7052,
+      "height": 933,
+      "words": 43,
+      "media": 0,
+      "middle": 725,
+      "heading": {
+       "text": "Start with one thing.",
+       "size": 66,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 35,
+      "textLeft": 35,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 3752,
+      "height": 312
+     },
+     {
+      "top": 4500,
+      "height": 368
+     },
+     {
+      "top": 5364,
+      "height": 364
+     },
+     {
+      "top": 6380,
+      "height": 272
+     },
+     {
+      "top": 6908,
+      "height": 280
+     }
+    ],
+    "h1s": [
+     {
+      "text": "One thing 16:36 after another.",
+      "size": 144,
+      "top": 237,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 624,
+      "n": 20
+     },
+     {
+      "x": 35,
+      "n": 14
+     },
+     {
+      "x": 848,
+      "n": 4
+     }
+    ],
+    "leftBlocks": 38,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.18,
+    "voidBox": {
+     "x": 1080,
+     "y": 120,
+     "w": 360,
+     "h": 660
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.68,
+    0.73,
+    0.89,
+    0.65,
+    0.49,
+    0.96,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 51,
+    "css": 4,
+    "transitions": 47,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 8023,
+     "screens": 7.8,
+     "words": 749,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 9,
+     "sections": 10,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 5,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 5,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "One thing 22:13 after another.",
+     "words": 5,
+     "chars": 30,
+     "lines": 2,
+     "size": 76.8,
+     "vw": 10,
+     "font": "Inter Variable",
+     "weight": 800,
+     "tracking": -0.045,
+     "leading": 0.95,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.95,
+     "top": 264,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "One thing 22:13 after another.",
+     "words": 5,
+     "lines": 2,
+     "size": 76.8,
+     "font": "Inter Variable"
+    },
+    "headings": [
+     {
+      "text": "One thing 22:13 after another.",
+      "words": 5,
+      "chars": 30,
+      "lines": 2,
+      "size": 76.8,
+      "vw": 10,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.045,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 264,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "A focus timer for one task.",
+      "words": 6,
+      "chars": 27,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 879,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your task",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Inter Variable",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.4,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 1235,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Study plan and calendar.",
+      "words": 4,
+      "chars": 24,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.67,
+      "top": 1597,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Study together online.",
+      "words": 3,
+      "chars": 22,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 2258,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Streaks, levels, statistics.",
+      "words": 3,
+      "chars": 28,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.67,
+      "top": 2983,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Made to your taste.",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 3753,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "For school and university.",
+      "words": 4,
+      "chars": 26,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 4548,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Everything for your study days.",
+      "words": 5,
+      "chars": 31,
+      "lines": 2,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.52,
+      "top": 5229,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Questions about Quidey",
+      "words": 3,
+      "chars": 22,
+      "lines": 2,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 6099,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "New here?",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 6962,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Go",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 46.1,
+      "vw": 6,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.12,
+      "top": 7013,
+      "tag": "button",
+      "kind": "heading"
+     },
+     {
+      "text": "Start with one thing.",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 7308,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Quidey",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 215,
+      "vw": 28,
+      "font": "Inter Variable",
+      "weight": 850,
+      "tracking": -0.06,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 7895,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 14,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter Variable",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      21,
+      24,
+      36,
+      46,
+      77,
+      215
+     ],
+     "sizeCount": 13,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter Variable",
+      "size": 17,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": -0.006,
+      "contrast": 16.9
+     },
+     "measureChars": 66,
+     "max": {
+      "size": 215,
+      "vw": 28,
+      "font": "Inter Variable",
+      "text": "Quidey"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0e0d0c",
+     "bodyBgHsl": {
+      "h": 30,
+      "s": 0.08,
+      "l": 0.05
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#0e0d0c",
+       "top": 0,
+       "hsl": {
+        "h": 30,
+        "s": 0.08,
+        "l": 0.05
+       }
+      },
+      {
+       "color": "#fb923c",
+       "top": 343,
+       "hsl": {
+        "h": 27,
+        "s": 0.96,
+        "l": 0.61
+       }
+      },
+      {
+       "color": "#f5f5f3",
+       "top": 799,
+       "hsl": {
+        "h": 60,
+        "s": 0.09,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#181716",
+       "top": 2867,
+       "hsl": {
+        "h": 30,
+        "s": 0.04,
+        "l": 0.09
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#151413",
+       "share": 0.42
+      },
+      {
+       "color": "#f4f3f1",
+       "share": 0.4
+      },
+      {
+       "color": "#2a1305",
+       "share": 0.12
+      },
+      {
+       "color": "#9b958f",
+       "share": 0.05
+      },
+      {
+       "color": "#fb923c",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#0e0d0c",
+      "hsl": {
+       "h": 30,
+       "s": 0.08,
+       "l": 0.05
+      },
+      "fg": "#9b958f"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 9,
+     "inHero": 2,
+     "radius": 14,
+     "height": 80,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Get a beta spot",
+      "Get a beta spot"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 5,
+     "boxRadius": 22,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 4,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "inter variable"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 8023,
+    "margins": {
+     "left": 18,
+     "right": 27
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 799,
+      "words": 41,
+      "media": 0,
+      "middle": 49,
+      "heading": {
+       "text": "One thing",
+       "size": 77,
+       "tag": "h1"
+      },
+      "left": 18,
+      "right": 18,
+      "textLeft": 18,
+      "textRight": 30,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#fokus.feature.feature_light",
+      "tag": "section",
+      "top": 799,
+      "height": 719,
+      "words": 71,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A focus timer for one task.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 18,
+      "right": 250,
+      "textLeft": 18,
+      "textRight": 250,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#planen.feature.feature_dark",
+      "tag": "section",
+      "top": 1517,
+      "height": 660,
+      "words": 77,
+      "media": 0,
+      "middle": 69,
+      "heading": {
+       "text": "Study plan and calendar.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 18,
+      "right": 79,
+      "textLeft": 18,
+      "textRight": 79,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#zusammen.feature.feature_accent",
+      "tag": "section",
+      "top": 2178,
+      "height": 690,
+      "words": 65,
+      "media": 0,
+      "middle": 147,
+      "heading": {
+       "text": "Study together online.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 18,
+      "right": 42,
+      "textLeft": 18,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#fortschritt.feature.feature_deep",
+      "tag": "section",
+      "top": 2867,
+      "height": 806,
+      "words": 90,
+      "media": 0,
+      "middle": 45,
+      "heading": null,
+      "left": 18,
+      "right": 42,
+      "textLeft": 18,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#stil.feature.feature_light",
+      "tag": "section",
+      "top": 3673,
+      "height": 754,
+      "words": 55,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Made to your taste.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 18,
+      "right": 42,
+      "textLeft": 18,
+      "textRight": 93,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#fuer-wen.audience",
+      "tag": "section",
+      "top": 4428,
+      "height": 682,
+      "words": 74,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "For school and university.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 18,
+      "right": 201,
+      "textLeft": 18,
+      "textRight": 201,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#funktionen.more",
+      "tag": "section",
+      "top": 5109,
+      "height": 870,
+      "words": 144,
+      "media": 0,
+      "middle": 45,
+      "heading": {
+       "text": "Everything for your study days.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 18,
+      "right": 20,
+      "textLeft": 18,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#fragen.faq",
+      "tag": "section",
+      "top": 5979,
+      "height": 888,
+      "words": 257,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Questions about Quidey",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 18,
+      "right": 194,
+      "textLeft": 18,
+      "textRight": 194,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.cta",
+      "tag": "section",
+      "top": 6866,
+      "height": 346,
+      "words": 17,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Go",
+       "size": 46,
+       "tag": "button"
+      },
+      "left": 18,
+      "right": 119,
+      "textLeft": 18,
+      "textRight": 135,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 7212,
+      "height": 811,
+      "words": 43,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Start with one thing.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 18,
+      "right": 309,
+      "textLeft": 18,
+      "textRight": 309,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "One thing 22:03 after another.",
+      "size": 77,
+      "top": 264,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 18,
+      "n": 39
+     }
+    ],
+    "leftBlocks": 39,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.65,
+    0.68,
+    0.61,
+    1,
+    0.81,
+    0.67,
+    0.65,
+    0.98,
+    0.99,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 53,
+    "css": 4,
+    "transitions": 49,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 9337,
+     "screens": 11.1,
+     "words": 738,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 9,
+     "sections": 10,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 5,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 4,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "One thing 01:38 after another.",
+     "words": 5,
+     "chars": 30,
+     "lines": 2,
+     "size": 40.6,
+     "vw": 10.4,
+     "font": "Inter Variable",
+     "weight": 800,
+     "tracking": -0.045,
+     "leading": 0.95,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 241,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "One thing 01:38 after another.",
+     "words": 5,
+     "lines": 2,
+     "size": 40.6,
+     "font": "Inter Variable"
+    },
+    "headings": [
+     {
+      "text": "One thing 01:38 after another.",
+      "words": 5,
+      "chars": 30,
+      "lines": 2,
+      "size": 40.6,
+      "vw": 10.4,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.045,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 241,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "A focus timer for one task.",
+      "words": 6,
+      "chars": 27,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 771,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Study plan and calendar.",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1607,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Study together online.",
+      "words": 3,
+      "chars": 22,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2348,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Streaks, levels, statistics.",
+      "words": 3,
+      "chars": 28,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3164,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Made to your taste.",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 4132,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "For school and university.",
+      "words": 4,
+      "chars": 26,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5008,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "School and final exams",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Inter Variable",
+      "weight": 750,
+      "tracking": -0.03,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5136,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "University and exam season",
+      "words": 4,
+      "chars": 26,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Inter Variable",
+      "weight": 750,
+      "tracking": -0.03,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5293,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Study groups and friends",
+      "words": 4,
+      "chars": 24,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Inter Variable",
+      "weight": 750,
+      "tracking": -0.03,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5475,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Everything for your study days.",
+      "words": 5,
+      "chars": 31,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5831,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Questions about Quidey",
+      "words": 3,
+      "chars": 22,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 7227,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "New here?",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 8120,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Go",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.18,
+      "top": 8219,
+      "tag": "button",
+      "kind": "heading"
+     },
+     {
+      "text": "Start with one thing.",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Inter Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.7,
+      "top": 8529,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Quidey",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 132.6,
+      "vw": 34,
+      "font": "Inter Variable",
+      "weight": 850,
+      "tracking": -0.06,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.93,
+      "top": 9259,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 16,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter Variable",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      24,
+      36,
+      41,
+      133
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter Variable",
+      "size": 17,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": -0.006,
+      "contrast": 16.9
+     },
+     "measureChars": 42,
+     "max": {
+      "size": 132.6,
+      "vw": 34,
+      "font": "Inter Variable",
+      "text": "Quidey"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0e0d0c",
+     "bodyBgHsl": {
+      "h": 30,
+      "s": 0.08,
+      "l": 0.05
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#0e0d0c",
+       "top": 0,
+       "hsl": {
+        "h": 30,
+        "s": 0.08,
+        "l": 0.05
+       }
+      },
+      {
+       "color": "#fb923c",
+       "top": 284,
+       "hsl": {
+        "h": 27,
+        "s": 0.96,
+        "l": 0.61
+       }
+      },
+      {
+       "color": "#f5f5f3",
+       "top": 675,
+       "hsl": {
+        "h": 60,
+        "s": 0.09,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#181716",
+       "top": 3068,
+       "hsl": {
+        "h": 30,
+        "s": 0.04,
+        "l": 0.09
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#151413",
+       "share": 0.42
+      },
+      {
+       "color": "#f4f3f1",
+       "share": 0.4
+      },
+      {
+       "color": "#2a1305",
+       "share": 0.12
+      },
+      {
+       "color": "#9b958f",
+       "share": 0.04
+      },
+      {
+       "color": "#fb923c",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#0e0d0c",
+      "hsl": {
+       "h": 30,
+       "s": 0.08,
+       "l": 0.05
+      },
+      "fg": "#9b958f"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 9,
+     "inHero": 2,
+     "radius": 14,
+     "height": 80,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Get a beta spot",
+      "Get a beta spot"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 5,
+     "boxRadius": 22,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 3,
+     "fixed": true,
+     "height": 56,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "inter variable"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 9337,
+    "margins": {
+     "left": 16,
+     "right": 21
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 675,
+      "words": 41,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "One thing",
+       "size": 41,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 27,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#fokus.feature.feature_light",
+      "tag": "section",
+      "top": 675,
+      "height": 800,
+      "words": 71,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A focus timer for one task.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#planen.feature.feature_dark",
+      "tag": "section",
+      "top": 1475,
+      "height": 777,
+      "words": 65,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 23,
+      "textLeft": 16,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#zusammen.feature.feature_accent",
+      "tag": "section",
+      "top": 2252,
+      "height": 815,
+      "words": 65,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Study together online.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 21,
+      "textLeft": 16,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#fortschritt.feature.feature_deep",
+      "tag": "section",
+      "top": 3068,
+      "height": 932,
+      "words": 93,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Streaks, levels, statistics.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 34,
+      "textLeft": 16,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#stil.feature.feature_light",
+      "tag": "section",
+      "top": 4000,
+      "height": 889,
+      "words": 51,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 28,
+      "textLeft": 16,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#fuer-wen.audience",
+      "tag": "section",
+      "top": 4888,
+      "height": 823,
+      "words": 74,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "For school and university.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 21,
+      "textLeft": 16,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#funktionen.more",
+      "tag": "section",
+      "top": 5711,
+      "height": 1396,
+      "words": 144,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Everything for your study days.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 21,
+      "textLeft": 16,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#fragen.faq",
+      "tag": "section",
+      "top": 7107,
+      "height": 917,
+      "words": 218,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Questions about Quidey",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 21,
+      "textLeft": 16,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.cta",
+      "tag": "section",
+      "top": 8024,
+      "height": 409,
+      "words": 17,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "New here?",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 8433,
+      "height": 905,
+      "words": 43,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Start with one thing.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 42,
+      "textLeft": 16,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 1352,
+      "height": 312
+     },
+     {
+      "top": 3884,
+      "height": 268
+     }
+    ],
+    "h1s": [
+     {
+      "text": "One thing 01:30 after another.",
+      "size": 41,
+      "top": 241,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 36
+     }
+    ],
+    "leftBlocks": 36,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "14 different font sizes (13, 14, 15, 16, 17, 19, 21, 22, 23, 32, 66, 86, 144, 403).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-real-pictures",
+   "width": 1440,
+   "message": "Only 0 real photograph(s) or clip(s); the rest are interface fragments.",
+   "fix": "Add two or more real pictures of the customer's world from scripts/assets.mjs, not stock of people at laptops."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\eesge\\quidey_landing\\.taste-skill\\after-en\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\eesge\\quidey_landing\\.taste-skill\\after-en\\desktop-page-01.jpg",
+    "C:\\Users\\eesge\\quidey_landing\\.taste-skill\\after-en\\desktop-page-02.jpg",
+    "C:\\Users\\eesge\\quidey_landing\\.taste-skill\\after-en\\desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\eesge\\quidey_landing\\.taste-skill\\after-en\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\eesge\\quidey_landing\\.taste-skill\\after-en\\tablet-page-01.jpg",
+    "C:\\Users\\eesge\\quidey_landing\\.taste-skill\\after-en\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\eesge\\quidey_landing\\.taste-skill\\after-en\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\eesge\\quidey_landing\\.taste-skill\\after-en\\mobile-page-01.jpg",
+    "C:\\Users\\eesge\\quidey_landing\\.taste-skill\\after-en\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

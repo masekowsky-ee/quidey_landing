@@ -212,10 +212,12 @@ button{
 
 /* ---------- hero: the sentence across two fields ---------- */
 
+/* the seam sits a little above the middle: the orange field holds the second line, what Quidey
+   is and the button */
 .hero{
-    --seam: 50%;
+    --seam: 43%;
     position: relative;
-    height: max(100svh, 620px);
+    height: max(100svh, 700px);
     background: var(--night);
     overflow: hidden;
 }
@@ -288,15 +290,58 @@ button{
     fill: var(--primary);
 }
 
-.heroSub{
+/* what it is and the way in, at the foot of the orange field */
+.heroFoot{
     position: absolute;
     left: var(--m);
+    right: var(--m);
     bottom: 56px;
-    max-width: 36ch;
+    display: grid;
+    justify-items: start;
+    gap: 24px;
+    color: var(--sun-ink);
+}
+
+.heroSub{
+    max-width: 38ch;
     margin: 0;
     font-size: clamp(18px, 1.5vw, 22px);
     line-height: 1.45;
-    color: var(--sun-ink);
+}
+
+.heroActions{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 20px;
+}
+
+.inkBtn{
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 0 1.4rem;
+    font-size: 16px;
+    font-weight: 650;
+    text-decoration: none;
+    transition: transform 0.2s var(--ease), background-color 0.2s ease;
+}
+
+.page .inkBtn{
+    color: var(--sun);
+    background: var(--sun-ink);
+}
+
+.page .inkBtn:hover{
+    background: #4a2310;
+}
+
+.inkBtn:active{
+    transform: scale(0.96);
+}
+
+.heroNote{
+    font-size: 15px;
 }
 
 /* stops the endless loop in the headline */
@@ -338,7 +383,7 @@ button{
 .feature_deep{ color: var(--ink); background: var(--night-2); }
 
 .featureText{
-    max-width: 30rem;
+    max-width: 35rem;
 }
 
 /* every second row turns around: the piece of the app on the left, the words on the right */
@@ -355,7 +400,8 @@ button{
     justify-self: end;
 }
 
-.featureTitle{
+.featureTitle,
+.sectionTitle{
     font-size: var(--title);
     font-weight: 800;
     letter-spacing: -0.04em;
@@ -363,9 +409,29 @@ button{
 }
 
 .featureBody{
+    max-width: 32rem;
     margin: 1.25rem 0 0;
     font-size: var(--text);
     line-height: 1.55;
+}
+
+/* what the feature does, in three plain lines */
+.featurePoints{
+    max-width: 32rem;
+    margin: 1.5rem 0 0;
+    padding: 0 0 0 1.1em;
+    display: grid;
+    gap: 0.5rem;
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+.featurePoints li{
+    padding-left: 0.25em;
+}
+
+.featurePoints li::marker{
+    content: '–';
 }
 
 .featureUI{
@@ -660,6 +726,138 @@ button{
 .memberBar > [data-share="61"]{ width: 61%; }
 .memberBar > [data-share="40"]{ width: 40%; }
 
+/* progress: the streak of the last seven days, the level and today's challenges */
+.streakCount{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 650;
+    color: var(--ink);
+}
+
+.streakCount svg{
+    width: 20px;
+    height: 20px;
+}
+
+.streakDays{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 6px;
+}
+
+.streakDay{
+    display: grid;
+    justify-items: center;
+    gap: 8px;
+}
+
+.streakDot{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--ui-accent);
+    transition: background-color 0.3s ease;
+}
+
+.streakToday .streakDot{
+    outline: 2px solid var(--ink);
+    outline-offset: 3px;
+}
+
+.streakToday .weekName{
+    font-weight: 650;
+    color: var(--ink);
+}
+
+.levelRow{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-top: 6px;
+}
+
+.levelBadge{
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    font-weight: 750;
+    color: var(--ui-accent-ink);
+    background: var(--ui-accent);
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.xpBar{
+    height: 8px;
+    background: var(--night-3);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* 340 of 600 XP */
+.xpBar > span{
+    display: block;
+    width: 57%;
+    height: 100%;
+    background: var(--ui-accent);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.challenges{
+    list-style: none;
+    margin: -6px 0 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+}
+
+.challenge{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.challengeCheck{
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+    border: 2px solid var(--ui-muted);
+    border-radius: 50%;
+}
+
+.challengeDone .challengeCheck{
+    color: var(--ui-accent-ink);
+    background: var(--ui-accent);
+    border-color: var(--ui-accent);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.challengeCheck svg{
+    width: 16px;
+    height: 16px;
+}
+
+.challengeName{
+    flex: 1;
+    min-width: 0;
+    color: var(--ink);
+}
+
+.challengeDone .challengeName{
+    color: var(--ui-muted);
+    text-decoration: line-through;
+}
+
 /* style */
 .styleUI{
     gap: 10px;
@@ -732,6 +930,66 @@ button{
     background: var(--ink);
 }
 
+/* ---------- who it is for: the heading on the left, the three of them down the right ---------- */
+
+.audience{
+    padding: var(--gap) var(--m);
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: 32px;
+    align-items: start;
+    color: var(--ink);
+    background: var(--night);
+}
+
+.audienceGroups{
+    display: grid;
+    gap: clamp(40px, 4vw, 64px);
+}
+
+.audienceGroup h3{
+    font-size: clamp(24px, 2.2vw, 34px);
+    font-weight: 750;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+}
+
+.audienceGroup p{
+    max-width: 52ch;
+    margin: 0.6rem 0 0;
+}
+
+/* ---------- everything else: the heading across, the list in four columns ---------- */
+
+.more{
+    padding: var(--gap) var(--m);
+    color: var(--ink);
+    background: var(--night-2);
+}
+
+.moreTitle{
+    max-width: 14ch;
+}
+
+.moreList{
+    margin: clamp(48px, 5vw, 80px) 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(40px, 4vw, 56px) 32px;
+}
+
+.moreItem dt{
+    font-size: clamp(19px, 1.5vw, 22px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.moreItem dd{
+    margin: 0.5rem 0 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 /* ---------- questions ---------- */
 
 .faq{
@@ -781,6 +1039,11 @@ button{
 
 .question summary::-webkit-details-marker{
     display: none;
+}
+
+.question summary h3{
+    font: inherit;
+    letter-spacing: -0.01em;
 }
 
 .chevron{
@@ -910,11 +1173,22 @@ button{
     max-width: 11ch;
 }
 
+.footerAbout{
+    max-width: 44ch;
+    margin: 2rem 0 0;
+    font-size: 16px;
+}
+
+.footerLists{
+    justify-self: end;
+    display: flex;
+    gap: clamp(40px, 5vw, 96px);
+}
+
 .footerLinks{
     list-style: none;
     margin: 0;
     padding: 0;
-    justify-self: end;
     display: grid;
     align-content: start;
     gap: 0.6rem;
@@ -932,8 +1206,18 @@ button{
 .footerLegal{
     margin-top: clamp(72px, 9vw, 140px);
     padding-bottom: 12px;
+    display: flex;
+    gap: 1.5rem;
     font-size: 13px;
     color: var(--paper-soft);
+}
+
+.page .footerLegal a{
+    color: var(--paper-soft);
+}
+
+.footerLegal a:hover{
+    color: var(--paper-ink);
 }
 
 .wordmark{
@@ -966,6 +1250,10 @@ button{
     .heroSub{
         animation: rise 0.68s var(--ease) 0.15s both;
     }
+
+    .heroActions{
+        animation: rise 0.68s var(--ease) 0.24s both;
+    }
 }
 
 /* scripts/landing.js marks what is still below the screen as waiting, then shown */
@@ -997,10 +1285,32 @@ button{
         height: max(78svh, 560px);
     }
 
+    /* below the hint line, not beside it */
+    .pauseBtn{
+        bottom: 8px;
+    }
+
     .feature,
     .faq,
+    .audience,
     .footerTop{
         grid-template-columns: 1fr;
+    }
+
+    .moreTitle{
+        max-width: 16ch;
+    }
+
+    .audienceGroups{
+        margin-top: 24px;
+    }
+
+    .moreList{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footerLists{
+        justify-self: start;
     }
 
     .featureText{
@@ -1057,15 +1367,23 @@ button{
     }
 
     .hero{
-        --seam: 46%;
+        --seam: 42%;
         --display: 10.4vw;
+        height: max(80svh, 600px);
+    }
+
+    .heroFoot{
+        bottom: 44px;
+        gap: 18px;
     }
 
     .heroSub{
-        right: var(--m);
-        bottom: 48px;
         font-size: 16px;
-        max-width: 30ch;
+        max-width: 34ch;
+    }
+
+    .heroNote{
+        font-size: 14px;
     }
 
     .pauseBtn{
@@ -1119,6 +1437,20 @@ button{
     .ctaLine input{
         flex-basis: 100%;
         max-width: none;
+    }
+
+    .moreList{
+        grid-template-columns: 1fr;
+    }
+
+    .streakDot{
+        width: 22px;
+        height: 22px;
+    }
+
+    .footerLists{
+        flex-direction: column;
+        gap: 2rem;
     }
 
     .wordmark{

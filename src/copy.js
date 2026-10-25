@@ -15,7 +15,7 @@ const de = {
     lang: 'de',
     path: '/',
     meta: {
-        title: 'Quidey – der ruhige Planer fürs Studium',
+        title: 'Quidey – Plane Alltag, Studium und mehr',
         description: 'Aufgaben, Fokus-Timer und Kalender in einer App, und Freunde, mit denen du live gemeinsam lernst. Kostenlos in der Beta, ohne Werbung und ohne Tracking.',
     },
     nav: { focus: 'Fokus', plan: 'Planen', together: 'Zusammen', faq: 'Fragen', signIn: 'Anmelden', cta: 'Beta-Platz sichern', language: 'English', languageCode: 'en', languagePath: '/en/' },
@@ -25,7 +25,7 @@ const de = {
         done: 'Fertig',
         pause: 'Animation anhalten',
         play: 'Animation abspielen',
-        sub: 'Quidey ist dein ruhiger Planer: Aufgaben, Fokus-Timer und Kalender in einer App, und Freunde, mit denen du gemeinsam lernst.',
+        sub: 'Quidey ist dein Planer für Lernen und Studium: Aufgaben, Fokus-Timer und Kalender in einer App, und Freunde, mit denen du gemeinsam lernst.',
     },
     features: [
         {
@@ -89,7 +89,7 @@ const en = {
     lang: 'en',
     path: '/en/',
     meta: {
-        title: 'Quidey – the calm planner for students',
+        title: 'Quidey – plan your days, your studies and more',
         description: 'Tasks, a focus timer and a calendar in one app, and friends to study with live. Free during the beta, no ads, no tracking.',
     },
     nav: { focus: 'Focus', plan: 'Plan', together: 'Together', faq: 'Questions', signIn: 'Sign in', cta: 'Get a beta spot', language: 'Deutsch', languageCode: 'de', languagePath: '/' },
@@ -99,7 +99,7 @@ const en = {
         done: 'Done',
         pause: 'Pause animation',
         play: 'Play animation',
-        sub: 'Quidey is your calm planner: tasks, a focus timer and a calendar in one app, and friends to study with.',
+        sub: 'Quidey is your planner for learning and studying: tasks, a focus timer and a calendar in one app, and friends to study with.',
     },
     features: [
         {

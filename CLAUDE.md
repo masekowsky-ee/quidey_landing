@@ -14,6 +14,14 @@ Kept apart on purpose: it changes rarely and differently from the app.
   `style="…"` attributes, nothing from other hosts. Check `dist/*.html` after changes.
 - `public/_redirects`: old legal URLs → app. `src/pages/404.astro` + `scripts/forward.js`:
   old app routes → app with query and hash (keep `APP_PATHS` in step with the app's routes).
+- Search engines: this page is what Google should find (the app on app.quidey.com is
+  `noindex`). `public/robots.txt` points to the sitemap, which `src/pages/sitemap.xml.js` builds
+  from the languages in `copy.js` (hreflang pairs, lastmod = build day; a new page outside COPY
+  must be added there). `layouts/Base.astro` writes canonical, hreflang, Open Graph and JSON-LD
+  (`WebSite` for the site name, `Organization` with logo, `SoftwareApplication`); the 404 page is
+  `noindex`.
+  Ownership is verified in Google Search Console as a Domain property (DNS TXT at Cloudflare),
+  which covers quidey.com and app.quidey.com; no verification file lives in this repo.
 - `public/sw.js` unregisters the old app service worker that once ran on quidey.com.
 - The page stores nothing and sets no cookies. If that ever changes, the privacy policy in the
   app repo (`src/legal/LegalPage.jsx`, section "Aufruf der Website") must change with it.

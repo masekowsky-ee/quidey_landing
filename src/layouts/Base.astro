@@ -11,17 +11,35 @@ const canonical = new URL(Astro.url.pathname, site).href;
 const alternates = Object.values(COPY).map(c => ({ lang: c.lang, href: new URL(c.path, site).href }));
 const image = new URL('/icons/icon-512.png', site).href;
 
-// what search engines read about the product (a data block, not a script: the CSP doesn't block it)
+// what search engines read about the site and the product (a data block, not a script: the CSP
+// doesn't block it). WebSite gives Google the site name it shows above the result.
 const structured = JSON.stringify({
     '@context': 'https://schema.org',
-    '@type': 'SoftwareApplication',
-    name: 'Quidey',
-    url: 'https://quidey.com/',
-    applicationCategory: 'EducationalApplication',
-    operatingSystem: 'Web',
-    inLanguage: ['de', 'en'],
-    description,
-    offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
+    '@graph': [
+        {
+            '@type': 'WebSite',
+            name: 'Quidey',
+            url: 'https://quidey.com/',
+            inLanguage: ['de', 'en'],
+        },
+        // the logo Google may show beside the name (a raster image, at least 112 × 112)
+        {
+            '@type': 'Organization',
+            name: 'Quidey',
+            url: 'https://quidey.com/',
+            logo: image,
+        },
+        {
+            '@type': 'SoftwareApplication',
+            name: 'Quidey',
+            url: 'https://quidey.com/',
+            applicationCategory: 'EducationalApplication',
+            operatingSystem: 'Web',
+            inLanguage: ['de', 'en'],
+            description,
+            offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
+        },
+    ],
 });
 ---
 <!doctype html>
@@ -43,11 +61,17 @@ const structured = JSON.stringify({
                 <meta property="og:description" content={description} />
                 <meta property="og:url" content={canonical} />
                 <meta property="og:image" content={image} />
+                <meta property="og:image:width" content="512" />
+                <meta property="og:image:height" content="512" />
+                <meta property="og:image:alt" content="Quidey" />
                 <meta property="og:locale" content={lang === 'de' ? 'de_DE' : 'en_GB'} />
+                <meta property="og:locale:alternate" content={lang === 'de' ? 'en_GB' : 'de_DE'} />
                 <meta name="twitter:card" content="summary" />
                 <script type="application/ld+json" set:html={structured} />
             </>}
         <link rel="icon" type="image/svg+xml" href="/quidey-logo.svg" />
+        {/* raster fallback: browsers without SVG icons, and the favicon in search results */}
+        <link rel="icon" type="image/png" sizes="512x512" href="/icons/icon-512.png" />
         <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
         <meta name="theme-color" content="#0e0d0c" />
     </head>

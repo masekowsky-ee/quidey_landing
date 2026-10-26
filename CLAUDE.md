@@ -22,8 +22,12 @@ Kept apart on purpose: it changes rarely and differently from the app.
   (`WebSite` for the site name, `Organization` with logo, `WebPage`, `SoftwareApplication` with
   `featureList` from `copy.js` `meta.featureList`, `FAQPage` from `faq.items`, word for word as on
   the page); the 404 page is `noindex`. Search words (Lernplaner, Fokus-Timer, Kalender, zusammen
-  lernen / study planner, …) live in the title, description, h2s and questions; headings must stay
+  lernen / study planner, …) live in the description, h2s and questions (the title is the plain
+  line "Quidey – dein Planer für Alltag und Studium"); headings must stay
   ≤ 2 lines (≈16 characters per line in the feature text column at desktop size).
+  Favicon (also the picture beside the result in Google): `quidey-logo.svg`, plus
+  `public/icons/icon-192.png` (Google wants a multiple of 48 px) and `public/favicon.ico`, both
+  drawn from `icons/icon-512.png` by `node scripts/favicons.mjs`.
   Social cards: `public/og/quidey-<lang>.png` (1200 × 630, the hero as a picture), drawn by
   `node scripts/og-image.mjs` (headless Chrome/Edge); its words are copied from the hero, so
   re-run it when those change.

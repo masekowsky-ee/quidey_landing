@@ -1,7 +1,8 @@
 // The landing page's words, German and English: one page of marketing copy, written as a whole.
 // Names in the examples (Mathe, Lernen, ...) are sample content. The words people search for
-// (Lernplaner, Fokus-Timer, Kalender, zusammen lernen, study planner, ...) sit in the title, the
-// description, the section headings and the questions, said the way a person would say them.
+// (Lernplaner, Fokus-Timer, Kalender, zusammen lernen, study planner, ...) sit in the
+// description, the section headings and the questions, said the way a person would say them; the
+// title is the plain line under the name ("dein Planer für Alltag und Studium").
 
 // The app, where signing in, signing up and the legal pages live
 export const APP_URL = (import.meta.env.PUBLIC_APP_URL || 'https://app.quidey.com').replace(/\/+$/, '');
@@ -17,7 +18,7 @@ const de = {
     lang: 'de',
     path: '/',
     meta: {
-        title: 'Quidey – Lernplaner mit Fokus-Timer, Kalender & Lerngruppen',
+        title: 'Quidey – dein Planer für Alltag und Studium',
         description: 'Lernplaner für Schule und Studium: Aufgaben, Fokus-Timer, Kalender und live mit Freunden lernen. Kostenlos in der Beta, ohne Werbung und ohne Tracking.',
         image: '/og/quidey-de.png',
         imageAlt: 'Quidey: Eine Sache nach der anderen. Lernplaner mit Fokus-Timer, Kalender und Lerngruppen.',
@@ -168,7 +169,7 @@ const en = {
     lang: 'en',
     path: '/en/',
     meta: {
-        title: 'Quidey – study planner, focus timer and calendar in one app',
+        title: 'Quidey – your planner for everyday life and studies',
         description: 'A study planner for school and university: tasks, a focus timer, a calendar and live study sessions with friends. Free during the beta, no ads, no tracking.',
         image: '/og/quidey-en.png',
         imageAlt: 'Quidey: One thing after another. A study planner with a focus timer, a calendar and study groups.',

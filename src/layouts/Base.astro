@@ -90,6 +90,8 @@ const structured = JSON.stringify({
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        {/* the landing page in the device's language (public/lang.js), before anything is drawn */}
+        {page === 'landing' && !noindex && <script is:inline src="/lang.js"></script>}
         <title>{title}</title>
         <meta name="description" content={description} />
         {noindex

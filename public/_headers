@@ -1,5 +1,6 @@
 # Security headers for every response (Cloudflare Workers static assets read this file).
-# The page loads nothing from other hosts and keeps no data: no cookies, no storage, no API calls.
+# The page loads nothing from other hosts and keeps no data: no cookies, no API calls; only the
+# language picked by hand on the switch stays in localStorage (public/lang.js).
 /*
   Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; manifest-src 'self'; worker-src 'self'; connect-src 'self'; base-uri 'none'; form-action https://app.quidey.com; frame-ancestors 'none'
   Strict-Transport-Security: max-age=31536000; includeSubDomains

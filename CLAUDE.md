@@ -46,7 +46,11 @@ Kept apart on purpose: it changes rarely and differently from the app.
   sitemap lists all of them. The landing page links there from the bar (wide screens), the hero's
   "Neu" line (`hero.news` in copy.js, point it at the newest update) and the footer.
 - `public/sw.js` unregisters the old app service worker that once ran on quidey.com.
-- The page stores nothing and sets no cookies. If that ever changes, the privacy policy in the
+- Language: `public/lang.js` (in `<head>` of / and /en/ only) sends a first visit to the device's
+  version (German on a German device, English on every other) before anything is drawn; never
+  bots (each version is indexed as it is). A click on a link with `data-lang-pick` (the switch in
+  bar and footers) is remembered in localStorage `quidey-lang` and wins from then on.
+- The page sets no cookies and stores nothing else. If that ever changes, the privacy policy in the
   app repo (`src/legal/LegalPage.jsx`, section "Aufruf der Website") must change with it.
 - Page order (`components/Landing.astro`): hero (sentence, what Quidey is, button), five features
   (focus, plan, together, progress, style — statement, three points, a piece of the app marked

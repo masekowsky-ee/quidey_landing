@@ -10,7 +10,7 @@ Ein guter Lernplan beginnt beim Ziel, zum Beispiel der Klausur am 12. Februar, u
 
 ## 1. Termine eintragen
 
-Trag die festen Termine als **Event** in den Kalender ein: Klausuren, Vorlesungen, Abgaben. Vorlesungen wiederholen sich wöchentlich, das stellst du einmal ein. Mit eigenen **Event-Typen** (Einstellungen → Planen) bekommen Vorlesung, Übung und Klausur ihre eigene Farbe.
+Trag die festen Termine als **Event** in den Kalender ein: Klausuren, Vorlesungen, Abgaben. Ein Event bekommt einen Beginn und ein Ende, zum Beispiel 14 bis 16 Uhr. Die Dauer rechnet Quidey selbst aus, und änderst du die Dauer, rückt das Ende mit. Vorlesungen wiederholen sich wöchentlich, das stellst du einmal ein. Mit eigenen **Event-Typen** (Einstellungen → Planen) bekommen Vorlesung, Übung und Klausur ihre eigene Farbe.
 
 ## 2. Stoff in Aufgaben teilen
 

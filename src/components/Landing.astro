@@ -46,7 +46,7 @@ const signIn = `${APP_URL}/signin`;
             {c.nav.pages.map(([href, label]) => <a href={href} class="barPage">{label}</a>)}
         </nav>
         <div class="barActions">
-            <a class="langBtn" href={c.nav.languagePath} hreflang={c.nav.languageCode} lang={c.nav.languageCode}>{c.nav.language}</a>
+            <a class="langBtn" href={c.nav.languagePath} hreflang={c.nav.languageCode} lang={c.nav.languageCode} data-lang-pick={c.nav.languageCode}>{c.nav.language}</a>
             <a class="textBtn" href={signIn}>{c.nav.signIn}</a>
             <a class="actionBtn" href={signUp}>{c.nav.cta}</a>
         </div>
@@ -310,7 +310,7 @@ const signIn = `${APP_URL}/signin`;
         </div>
         <div class="footerLegal">
             <span>© {COPYRIGHT_YEAR} Quidey</span>
-            <a href={c.nav.languagePath} hreflang={c.nav.languageCode} lang={c.nav.languageCode}>{c.nav.language}</a>
+            <a href={c.nav.languagePath} hreflang={c.nav.languageCode} lang={c.nav.languageCode} data-lang-pick={c.nav.languageCode}>{c.nav.language}</a>
         </div>
         <div class="wordmark" aria-hidden="true" translate="no">Quidey</div>
     </footer>

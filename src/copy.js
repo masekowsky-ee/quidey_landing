@@ -48,7 +48,7 @@ const de = {
         sub: 'Quidey ist der Lernplaner für Schule und Studium: Aufgaben, Fokus-Timer und Kalender in einer App, und Freunde, mit denen du live zusammen lernst.',
         cta: 'Beta-Platz sichern',
         note: 'Kostenlos in der Beta. Ohne Werbung, ohne Tracking.',
-        news: { label: 'Neu', text: 'Fokusraum, Pomodoro und Routinen', href: '/updates/fokusraum-pomodoro-routinen/' },
+        news: { label: 'Neu', text: 'Fokusraum, Pomodoro, Routinen und Untergruppen', href: '/updates/' },
     },
     features: [
         {
@@ -207,7 +207,7 @@ const en = {
         sub: 'Quidey is the study planner for school and university: tasks, a focus timer and a calendar in one app, and friends to study with live.',
         cta: 'Get a beta spot',
         note: 'Free during the beta. No ads, no tracking.',
-        news: { label: 'New', text: 'Focus room, Pomodoro and routines', href: '/updates/fokusraum-pomodoro-routinen/' },
+        news: { label: 'New', text: 'Focus room, Pomodoro, routines and sub-groups', href: '/updates/' },
     },
     features: [
         {

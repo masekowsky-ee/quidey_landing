@@ -5,26 +5,28 @@ import '@fontsource-variable/inter';
 import '../styles/landing.css';
 import { COPY } from '../copy.js';
 
-const { lang = 'de', title, description, noindex = false } = Astro.props;
+// page: 'landing' (the two language versions, with their hreflang pair and the app's data) or
+// 'content' (help articles, updates: German only, their own structured data in `graph`)
+const { lang = 'de', title, description, noindex = false, page = 'landing', graph = [], image: pageImage, ogType = 'website' } = Astro.props;
 const c = COPY[lang] ?? COPY.de;
 const site = Astro.site ?? new URL('https://quidey.com');
 const canonical = new URL(Astro.url.pathname, site).href;
 const home = new URL(c.path, site).href;
-const alternates = Object.values(COPY).map(c => ({ lang: c.lang, href: new URL(c.path, site).href }));
+const alternates = page === 'landing' ? Object.values(COPY).map(c => ({ lang: c.lang, href: new URL(c.path, site).href })) : [];
 const logo = new URL('/icons/icon-512.png', site).href;
 // the social card (1200 × 630, made by scripts/og-image.mjs): the hero as a picture
-const image = new URL(c.meta.image, site).href;
+const image = new URL(pageImage ?? c.meta.image, site).href;
 
 // what search engines read about the site and the product (a data block, not a script: the CSP
 // doesn't block it). WebSite gives Google the site name it shows above the result; the questions
 // are the ones on the page, word for word.
-const structured = JSON.stringify({
-    '@context': 'https://schema.org',
-    '@graph': [
+const SITE_GRAPH = [
         {
             '@type': 'WebSite',
             '@id': 'https://quidey.com/#website',
             name: 'Quidey',
+            // other names Google may use for the site name (it prefers the plain one above)
+            alternateName: ['Quidey Lernplaner', 'quidey.com'],
             url: 'https://quidey.com/',
             inLanguage: ['de', 'en'],
             publisher: { '@id': 'https://quidey.com/#organization' },
@@ -35,8 +37,11 @@ const structured = JSON.stringify({
             '@id': 'https://quidey.com/#organization',
             name: 'Quidey',
             url: 'https://quidey.com/',
-            logo,
+            logo: { '@type': 'ImageObject', url: logo, width: 512, height: 512 },
+            description: COPY.de.meta.description,
         },
+];
+const LANDING_GRAPH = [
         {
             '@type': 'WebPage',
             '@id': `${home}#webpage`,
@@ -74,7 +79,10 @@ const structured = JSON.stringify({
                 acceptedAnswer: { '@type': 'Answer', text: answer },
             })),
         },
-    ],
+];
+const structured = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@graph': [...SITE_GRAPH, ...(page === 'landing' ? LANDING_GRAPH : graph)],
 });
 ---
 <!doctype html>
@@ -91,20 +99,21 @@ const structured = JSON.stringify({
                 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
                 <link rel="canonical" href={canonical} />
                 {alternates.map(a => <link rel="alternate" hreflang={a.lang} href={a.href} />)}
-                <link rel="alternate" hreflang="x-default" href={alternates[0].href} />
+                {alternates.length > 0 && <link rel="alternate" hreflang="x-default" href={alternates[0].href} />}
+                <link rel="alternate" type="application/rss+xml" title="Quidey Updates" href="/updates/rss.xml" />
                 <meta name="application-name" content="Quidey" />
-                <meta property="og:type" content="website" />
+                <meta property="og:type" content={ogType} />
                 <meta property="og:site_name" content="Quidey" />
                 <meta property="og:title" content={title} />
                 <meta property="og:description" content={description} />
                 <meta property="og:url" content={canonical} />
                 <meta property="og:image" content={image} />
                 <meta property="og:image:type" content="image/png" />
-                <meta property="og:image:width" content="1200" />
-                <meta property="og:image:height" content="630" />
+                {!pageImage && <meta property="og:image:width" content="1200" />}
+                {!pageImage && <meta property="og:image:height" content="630" />}
                 <meta property="og:image:alt" content={c.meta.imageAlt} />
                 <meta property="og:locale" content={lang === 'de' ? 'de_DE' : 'en_GB'} />
-                <meta property="og:locale:alternate" content={lang === 'de' ? 'en_GB' : 'de_DE'} />
+                {alternates.length > 0 && <meta property="og:locale:alternate" content={lang === 'de' ? 'en_GB' : 'de_DE'} />}
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content={title} />
                 <meta name="twitter:description" content={description} />

@@ -1,0 +1,79 @@
+---
+// One help page: the question as the title, the answer as an article, and the other questions
+// of its group. Structured data: an Article plus a QAPage-like FAQ of the one question.
+import Content from '../../layouts/Content.astro';
+import { helpPosts, HELP_CATEGORIES, formatDate } from '../../posts.js';
+
+export function getStaticPaths() {
+    return helpPosts().map(post => ({ params: { slug: post.slug }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content: Body } = post;
+const site = Astro.site ?? new URL('https://quidey.com');
+const url = new URL(`/hilfe/${post.slug}/`, site).href;
+const category = HELP_CATEGORIES.find(([key]) => key === post.category)?.[1] ?? 'Hilfe';
+const related = helpPosts().filter(other => other.category === post.category && other.slug !== post.slug).slice(0, 4);
+const toc = post.headings.filter(h => h.depth === 2);
+const graph = [
+    {
+        '@type': 'Article',
+        '@id': `${url}#article`,
+        headline: post.title,
+        description: post.description,
+        inLanguage: 'de',
+        url,
+        mainEntityOfPage: url,
+        ...(post.updated ? { dateModified: post.updated, datePublished: post.updated } : {}),
+        author: { '@type': 'Person', name: 'Eesge Masekowsky', url: 'https://quidey.com/' },
+        publisher: { '@id': 'https://quidey.com/#organization' },
+        about: { '@id': 'https://quidey.com/#app' },
+        isPartOf: { '@id': 'https://quidey.com/#website' },
+    },
+    {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Quidey', item: new URL('/', site).href },
+            { '@type': 'ListItem', position: 2, name: 'Hilfe', item: new URL('/hilfe/', site).href },
+            { '@type': 'ListItem', position: 3, name: post.title, item: url },
+        ],
+    },
+];
+---
+<Content title={`${post.title} – Quidey Hilfe`} description={post.description} graph={graph} ogType="article" current="hilfe">
+    <article class="article">
+        <header class="articleHead">
+            <ol class="crumbs">
+                <li><a href="/">Quidey</a></li>
+                <li><a href="/hilfe/">Hilfe</a></li>
+                <li>{category}</li>
+            </ol>
+            <h1 class="pageTitle">{post.title}</h1>
+            <p class="pageLead">{post.description}</p>
+            {post.updated && <p class="articleMeta"><span>Aktualisiert am <time datetime={post.updated}>{formatDate(post.updated)}</time></span></p>}
+        </header>
+        <div>
+            <div class="prose"><Body /></div>
+            <div class="articleCta">
+                <p>Probier es selbst aus.</p>
+                <a class="darkBtn" href="https://app.quidey.com/signup">Beta-Platz sichern</a>
+            </div>
+            {related.length > 0 && (
+                <nav class="related" aria-labelledby="related-title">
+                    <h2 id="related-title">Mehr zu „{category}“</h2>
+                    <ul class="helpList">
+                        {related.map(other => (
+                            <li><a class="helpCard" href={`/hilfe/${other.slug}/`}><strong>{other.title}</strong><span>{other.description}</span></a></li>
+                        ))}
+                    </ul>
+                </nav>
+            )}
+        </div>
+        {toc.length > 1 && (
+            <nav class="toc" aria-label="Auf dieser Seite">
+                <p>Auf dieser Seite</p>
+                <ol>{toc.map(h => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol>
+            </nav>
+        )}
+    </article>
+</Content>

@@ -1,0 +1,69 @@
+---
+// Hilfe & Fragen: every common question as a page of its own, grouped, with a filter
+import Content from '../../layouts/Content.astro';
+import { helpPosts, HELP_CATEGORIES } from '../../posts.js';
+
+const posts = helpPosts();
+const title = 'Hilfe & Fragen zu Quidey – Lernplaner, Pomodoro, Routinen';
+const description = 'Antworten auf häufige Fragen zu Quidey: Fokus-Timer und Pomodoro, Lernplan und Kalender, Routinen, zusammen lernen, App installieren und Datenschutz.';
+const site = Astro.site ?? new URL('https://quidey.com');
+const graph = [
+    {
+        '@type': 'CollectionPage',
+        '@id': new URL('/hilfe/#webpage', site).href,
+        url: new URL('/hilfe/', site).href,
+        name: title,
+        description,
+        inLanguage: 'de',
+        isPartOf: { '@id': 'https://quidey.com/#website' },
+        hasPart: posts.map(post => ({ '@type': 'WebPage', name: post.title, url: new URL(`/hilfe/${post.slug}/`, site).href })),
+    },
+    {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Quidey', item: new URL('/', site).href },
+            { '@type': 'ListItem', position: 2, name: 'Hilfe', item: new URL('/hilfe/', site).href },
+        ],
+    },
+];
+---
+<Content title={title} description={description} graph={graph} current="hilfe">
+    <div class="listHead">
+        <div>
+            <p class="kicker">Hilfe &amp; Fragen</p>
+            <h1 class="pageTitle">Wie geht das mit Quidey?</h1>
+            <p class="pageLead">Antworten auf typische Fragen rund um Quidey, jede ausführlich auf einer eigenen Seite. Fehlt deine? Schreib mir über das Feedback in der App.</p>
+        </div>
+        <label class="search">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6" /><path d="M15 15l5 5" /></svg>
+            <input type="search" placeholder="Frage suchen, z. B. Pomodoro" aria-label="Fragen durchsuchen" data-help-search />
+        </label>
+    </div>
+
+    <div class="helpGroups">
+        {HELP_CATEGORIES.map(([key, label]) => {
+            const inGroup = posts.filter(post => post.category === key);
+            return inGroup.length > 0 && (
+                <section class="helpGroup" aria-labelledby={`group-${key}`} data-help-group>
+                    <h2 id={`group-${key}`}>{label}</h2>
+                    <ul class="helpList">
+                        {inGroup.map(post => (
+                            <li data-help-item data-text={`${post.title} ${post.description}`.toLowerCase()}>
+                                <a class="helpCard" href={`/hilfe/${post.slug}/`}>
+                                    <strong>{post.title}</strong>
+                                    <span>{post.description}</span>
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </section>
+            );
+        })}
+        <p class="noMatch" data-help-empty hidden>Dazu habe ich noch keine Antwort. Frag mich gern über das Feedback in der App.</p>
+    </div>
+</Content>
+
+<script>
+    import { startHelpSearch } from '../../scripts/helpSearch.js';
+    startHelpSearch();
+</script>

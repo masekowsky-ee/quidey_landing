@@ -1,0 +1,62 @@
+---
+// The frame of the written pages (Hilfe, Updates): the same bar and footer as the landing page,
+// on the light paper field, with a reading column in between. German only.
+import Base from './Base.astro';
+import Logo from '../components/Logo.astro';
+import { APP_URL, COPY } from '../copy.js';
+import '../styles/content.css';
+
+const { title, description, graph = [], image, ogType = 'website', current } = Astro.props;
+const c = COPY.de;
+const COPYRIGHT_YEAR = 2026;
+const links = [
+    ['/#funktionen', 'Funktionen', 'features'],
+    ['/hilfe/', 'Hilfe', 'hilfe'],
+    ['/updates/', 'Updates', 'updates'],
+];
+---
+<Base lang="de" title={title} description={description} page="content" graph={graph} image={image} ogType={ogType}>
+    <div class="page contentPage">
+        <header class="bar contentBar" data-tone="light">
+            <a href="/" class="wordmarkSmall" aria-label="Quidey, Startseite">
+                <Logo id="content-logo" class="barLogo" /> <span translate="no">Quidey</span>
+            </a>
+            <nav class="barLinks" aria-label="Bereiche der Website">
+                {links.map(([href, label, id]) => <a href={href} aria-current={current === id ? 'page' : undefined}>{label}</a>)}
+            </nav>
+            <div class="barActions">
+                <a class="textBtn" href={`${APP_URL}/signin`}>{c.nav.signIn}</a>
+                <a class="actionBtn" href={`${APP_URL}/signup`}>{c.nav.cta}</a>
+            </div>
+        </header>
+
+        <main class="contentMain">
+            <slot />
+        </main>
+
+        <footer class="footer contentFooter" data-tone="light">
+            <div class="footerTop">
+                <div>
+                    <p class="footerInvite">{c.footer.invitation}</p>
+                    <a class="darkBtn" href={`${APP_URL}/signup`}>{c.footer.button}</a>
+                    <p class="footerAbout">{c.footer.about}</p>
+                </div>
+                <div class="footerLists">
+                    <ul class="footerLinks" aria-label="Seiten">
+                        <li><a href="/">Startseite</a></li>
+                        <li><a href="/hilfe/">Hilfe &amp; Fragen</a></li>
+                        <li><a href="/updates/">Updates</a></li>
+                        <li><a href="/updates/rss.xml">RSS-Feed</a></li>
+                    </ul>
+                    <ul class="footerLinks" aria-label={c.footer.legalLabel}>
+                        {c.footer.links.map(([label, href]) => <li><a href={href}>{label}</a></li>)}
+                    </ul>
+                </div>
+            </div>
+            <div class="footerLegal">
+                <span>© {COPYRIGHT_YEAR} Quidey</span>
+                <a href="/en/" hreflang="en" lang="en">English</a>
+            </div>
+        </footer>
+    </div>
+</Base>

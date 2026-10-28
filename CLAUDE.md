@@ -23,7 +23,7 @@ Kept apart on purpose: it changes rarely and differently from the app.
   `featureList` from `copy.js` `meta.featureList`, `FAQPage` from `faq.items`, word for word as on
   the page); the 404 page is `noindex`. Search words (Lernplaner, Fokus-Timer, Kalender, zusammen
   lernen / study planner, …) live in the description, h2s and questions (the title is the plain
-  line "Quidey – dein Planer für Alltag und Studium"); headings must stay
+  line "Quidey – dein Planer für Lernen, Alltag und Studium"); headings must stay
   ≤ 2 lines (≈16 characters per line in the feature text column at desktop size).
   Favicon (also the picture beside the result in Google): `quidey-logo.svg`, plus
   `public/icons/icon-192.png` (Google wants a multiple of 48 px) and `public/favicon.ico`, both
@@ -33,6 +33,18 @@ Kept apart on purpose: it changes rarely and differently from the app.
   re-run it when those change.
   Ownership is verified in Google Search Console as a Domain property (DNS TXT at Cloudflare),
   which covers quidey.com and app.quidey.com; no verification file lives in this repo.
+- **Hilfe & Updates** (German only): Markdown files with frontmatter, read by `src/posts.js`
+  (`import.meta.glob`, the file name is the address). `src/posts/hilfe/<slug>.md` → `/hilfe/<slug>/`
+  (title, description, category from `HELP_CATEGORIES`, order, updated; one common question per page,
+  the "forum" of answers; `/hilfe/` lists them by category with a filter, `scripts/helpSearch.js`).
+  `src/posts/updates/<slug>.md` → `/updates/<slug>/` (title, description, date "YYYY-MM-DD", image,
+  imageAlt, tags; release notes with pictures under `public/updates/<date>/`, WebP made with sharp
+  from screenshots of the app), `/updates/` the list, `/updates/rss.xml` the feed. Every session of
+  work on Quidey ends with an update post. Layout `layouts/Content.astro` (bar, reading column,
+  footer on the paper field, `styles/content.css`); `Base.astro` takes `page="content"` (no hreflang
+  pair, its own JSON-LD `graph`: Article / BlogPosting / CollectionPage + BreadcrumbList). The
+  sitemap lists all of them. The landing page links there from the bar (wide screens), the hero's
+  "Neu" line (`hero.news` in copy.js, point it at the newest update) and the footer.
 - `public/sw.js` unregisters the old app service worker that once ran on quidey.com.
 - The page stores nothing and sets no cookies. If that ever changes, the privacy policy in the
   app repo (`src/legal/LegalPage.jsx`, section "Aufruf der Website") must change with it.

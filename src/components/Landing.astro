@@ -43,6 +43,7 @@ const signIn = `${APP_URL}/signin`;
         </a>
         <nav class="barLinks" aria-label={c.nav.label}>
             {nav.map(([id, label]) => <a href={`#${id}`}>{label}</a>)}
+            {c.nav.pages.map(([href, label]) => <a href={href} class="barPage">{label}</a>)}
         </nav>
         <div class="barActions">
             <a class="langBtn" href={c.nav.languagePath} hreflang={c.nav.languageCode} lang={c.nav.languageCode}>{c.nav.language}</a>
@@ -65,6 +66,12 @@ const signIn = `${APP_URL}/signin`;
             </h1>
             {/* what it is, and the one way in */}
             <div class="heroFoot">
+                {/* the latest update, one line above what Quidey is */}
+                <a class="heroNews" href={c.hero.news.href}>
+                    <span class="heroNewsLabel">{c.hero.news.label}</span>
+                    <span>{c.hero.news.text}</span>
+                    <span aria-hidden="true">→</span>
+                </a>
                 <p class="heroSub">{c.hero.sub}</p>
                 <div class="heroActions">
                     <a class="inkBtn" href={signUp}>{c.hero.cta}</a>
@@ -292,6 +299,9 @@ const signIn = `${APP_URL}/signin`;
             <div class="footerLists reveal" data-order="1">
                 <ul class="footerLinks" aria-label={c.footer.pagesLabel}>
                     {nav.map(([id, label]) => <li><a href={`#${id}`}>{label}</a></li>)}
+                </ul>
+                <ul class="footerLinks" aria-label={c.nav.pagesLabel}>
+                    {c.nav.pages.map(([href, label]) => <li><a href={href}>{label}</a></li>)}
                 </ul>
                 <ul class="footerLinks" aria-label={c.footer.legalLabel}>
                     {c.footer.links.map(([label, href]) => <li><a href={href}>{label}</a></li>)}

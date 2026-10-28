@@ -22,7 +22,7 @@ Beides fügen die Knöpfe **Checkliste** und **Überschrift** über dem Text fü
 ## Links und Bilder anhängen
 
 - **Link**: über den Knopf oder einfach eine Adresse einfügen. Sie erscheint als Anhang unter der Notiz.
-- **Bild**: über den Knopf auswählen oder ein Bild direkt einfügen (Strg+V), zum Beispiel ein Foto vom Tafelbild. Quidey verkleinert es vorher auf deinem Gerät. Pro Notiz gehen bis zu vier Bilder.
+- **Bild**: über den Knopf auswählen oder ein Bild direkt einfügen (Strg+V), zum Beispiel ein Foto vom Tafelbild. Quidey verkleinert es vorher auf deinem Gerät, dabei fallen Angaben wie der Aufnahmeort weg. Pro Notiz gehen bis zu vier Bilder, alle Bilder deiner Notizen zusammen bis zu 25 MB. Erlaubt sind PNG, JPEG, WebP und GIF.
 
 ## Eine Zeile als Aufgabe planen
 
@@ -34,4 +34,4 @@ Arbeitest du gerade an einer Aufgabe, kannst du eine Notiz mit ihr **verknüpfen
 
 ## Wer sieht meine Notizen?
 
-Nur du. Notizen werden mit deinem Konto auf dem Server in Deutschland gespeichert und gelöscht, wenn du dein Konto löschst.
+Nur du. Notizen werden mit deinem Konto auf dem Server in Deutschland gespeichert und gelöscht, wenn du dein Konto löschst. Leg trotzdem keine besonders sensiblen Daten wie Gesundheitsangaben darin ab, die du nicht brauchst.

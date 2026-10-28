@@ -21,14 +21,18 @@ Unter **Gemeinschaft → Sitzungen** legst du eine neue Sitzung an und lädst de
 - einen **Verlauf**, wer woran gearbeitet hat,
 - einen **Chat**.
 
-## 3. Jede:r an seinem, aber gemeinsam
+## 3. Aufgaben in Untergruppen sortieren
+
+Über der gemeinsamen Aufgabenliste legt jedes Mitglied **Untergruppen** an, etwa „Kapitel 1“, „Kapitel 2“ und „Altklausuren“. Mit einem Tipp auf eine Untergruppe seht ihr nur ihre Aufgaben, und neue landen gleich darin. Löscht ihr eine Untergruppe, bleiben ihre Aufgaben erhalten.
+
+## 4. Jede:r an seinem, aber gemeinsam
 
 Ihr müsst nicht am selben Thema sitzen. Jede:r nimmt sich eine Aufgabe, und ihr seht, woran die anderen gerade arbeiten. Die Zeit wird euch allen gutgeschrieben.
 
-## Gemeinsam motivieren
+## 5. Gemeinsam motivieren
 
 Im **Feed** unter Gemeinschaft seht ihr die Lerntage, Serien und geschafften Challenges eurer Freund:innen und könnt euch anfeuern. Eine Rangliste vergleicht eure Woche, aber nur mit denen, die ihre Statistik zeigen.
 
 ## Für WG, Familie oder Lerngruppe
 
-Für einen festen Kreis gibt es **Quidey Family**: einen gemeinsamen Kalender, eine Pinnwand, eine Liste und einen Chat.
+Für einen festen Kreis gibt es **Quidey Family**: einen gemeinsamen Kalender, eine Pinnwand, eine Liste mit Untergruppen und einen Chat.

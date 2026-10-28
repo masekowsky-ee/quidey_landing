@@ -15,6 +15,7 @@ Deine Aufgaben, Termine, Notizen (auch die Bilder darin), Routinen, deine Statis
 ## Was andere sehen
 
 - **Freund:innen** sehen dein Profil, ob du online bist (das kannst du ausschalten) und deine Statistik, wenn du sie zeigst.
+- Ein **Profilbild** (gerade nur für Tester) sehen deine Freund:innen und die Mitglieder deiner Sitzungen und Families, im Test nur Tester. Du kannst es jederzeit entfernen.
 - In **gemeinsamen Sitzungen** und einer **Family** sehen die Mitglieder, was ihr dort zusammen anlegt, und den Chat.
 - Den **Feed** mit deinen Lerntagen sehen nur deine Freund:innen, und automatische Einträge kannst du abschalten.
 

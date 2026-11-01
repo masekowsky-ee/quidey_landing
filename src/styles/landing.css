@@ -1003,7 +1003,55 @@ button{
 }
 
 .proIntro{
-    grid-row: span 3;
+    grid-row: span 5;
+}
+
+/* "Geplant für nach der Beta": a stamp above the heading */
+.proSoon{
+    display: inline-block;
+    margin: 0 0 1.25rem;
+    padding: 0.35em 0.8em;
+    font-size: 14px;
+    font-weight: 750;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border: 2px solid currentColor;
+}
+
+/* the free plan: what everybody keeps */
+.proFreeList{
+    margin: 0.6rem 0 0.4rem;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 24px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.proFreeList li{
+    padding-left: 1.4em;
+    position: relative;
+}
+
+.proFreeList li::before{
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    font-weight: 800;
+}
+
+.proFree .proPlanNote{
+    color: var(--paper-soft);
+}
+
+/* "Quidey Pro – kommt nach der Beta": above the two planned plans */
+.proPlanned{
+    margin: 0.5rem 0 -0.25rem;
+    font-size: clamp(20px, 1.8vw, 26px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
 }
 
 .proLead{
@@ -1157,7 +1205,8 @@ button{
 
 @media (max-width: 560px){
     .proPlans,
-    .proGives{
+    .proGives,
+    .proFreeList{
         grid-template-columns: minmax(0, 1fr);
     }
 

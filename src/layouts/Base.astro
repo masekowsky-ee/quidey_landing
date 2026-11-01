@@ -67,11 +67,8 @@ const LANDING_GRAPH = [
             image,
             featureList: c.meta.featureList,
             // free, and Quidey Pro to support the development (monthly / yearly)
-            offers: [
-                { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
-                { '@type': 'Offer', name: 'Quidey Pro (monatlich)', price: '2.99', priceCurrency: 'EUR' },
-                { '@type': 'Offer', name: 'Quidey Pro (jährlich)', price: '25.00', priceCurrency: 'EUR' },
-            ],
+            // Quidey Pro isn't on sale yet (planned for after the beta): only the free offer
+            offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
             publisher: { '@id': 'https://quidey.com/#organization' },
         },
         {

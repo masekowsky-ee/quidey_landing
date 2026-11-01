@@ -5,7 +5,7 @@
 // the email line).
 import Logo from './Logo.astro';
 import FocusLoop from './FocusLoop.astro';
-import { APP_URL, PRO_URL } from '../copy.js';
+import { APP_URL } from '../copy.js';
 
 const { c } = Astro.props;
 const COPYRIGHT_YEAR = 2026;
@@ -15,7 +15,7 @@ const ACCENTS = ['sunset', 'green', 'ocean', 'rose', 'gold'];
 // the fields of the feature rows; 'deep' is the dark one step up, so two dark rows never run together
 const TONES = ['light', 'dark', 'accent', 'deep', 'light'];
 const ANCHORS = { focus: 'fokus', plan: 'planen', together: 'zusammen', progress: 'fortschritt', style: 'stil' };
-const nav = [['fokus', c.nav.focus], ['planen', c.nav.plan], ['zusammen', c.nav.together], ['funktionen', c.nav.more], ['unterstuetzen', c.nav.pro], ['fragen', c.nav.faq]];
+const nav = [['fokus', c.nav.focus], ['planen', c.nav.plan], ['zusammen', c.nav.together], ['funktionen', c.nav.more], ['preise', c.nav.pro], ['fragen', c.nav.faq]];
 
 const clock = (s) => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
 
@@ -261,22 +261,33 @@ const signIn = `${APP_URL}/signin`;
             </dl>
         </section>
 
-        {/* Quidey Pro: why it exists first (kindly: the free Quidey stays welcome), then the two
-            plans with the year's saving big, what it gives, the terms in one line */}
-        <section id="unterstuetzen" class="pro" data-tone="accent" aria-labelledby="pro-title">
+        {/* Prices: Quidey Pro is planned for after the beta and can't be bought yet. Why it would
+            exist first (kindly: the free Quidey stays welcome), the free plan, then the planned plans
+            with the year's saving big, what Pro gives, and the way into the beta */}
+        <section id="preise" class="pro" data-tone="accent" aria-labelledby="pro-title">
             <div class="proIntro">
+                <p class="proSoon reveal" data-order="0">{c.pro.soon}</p>
                 <h2 id="pro-title" class="sectionTitle reveal" data-order="0">{c.pro.heading}</h2>
                 <p class="proLead reveal" data-order="1">{c.pro.lead}</p>
                 <p class="proKind reveal" data-order="1.5">{c.pro.kind}</p>
             </div>
+            <div class="proPlan proFree reveal" data-order="1">
+                <span class="proPlanName">{c.pro.freeName}</span>
+                <span class="proPrice">{c.pro.freePrice} <small>{c.pro.freePer}</small></span>
+                <ul class="proFreeList">
+                    {c.pro.free.map((item) => <li>{item}</li>)}
+                </ul>
+                <span class="proPlanNote">{c.pro.freeNote}</span>
+            </div>
+            <h3 class="proPlanned reveal" data-order="1.5">{c.pro.planned}</h3>
             <div class="proPlans">
-                <div class="proPlan proPlanYearly reveal" data-order="1">
+                <div class="proPlan proPlanYearly reveal" data-order="1.5">
                     <span class="proBadge">{c.pro.badge}</span>
                     <span class="proPlanName">{c.pro.yearly}</span>
                     <span class="proPrice">{c.pro.yearlyPrice} <small>{c.pro.perYear}</small></span>
                     <span class="proPlanNote">{c.pro.yearlyNote}</span>
                 </div>
-                <div class="proPlan reveal" data-order="1.5">
+                <div class="proPlan reveal" data-order="2">
                     <span class="proPlanName">{c.pro.monthly}</span>
                     <span class="proPrice">{c.pro.monthlyPrice} <small>{c.pro.perMonth}</small></span>
                     <span class="proPlanNote">{c.pro.monthlyNote}</span>
@@ -286,7 +297,7 @@ const signIn = `${APP_URL}/signin`;
                 {c.pro.gives.map((give) => <li>{give}</li>)}
             </ul>
             <div class="proAction reveal" data-order="2">
-                <a class="proBtn" href={PRO_URL}>{c.pro.button}</a>
+                <a class="proBtn" href={signUp}>{c.pro.button}</a>
                 <p class="proNote">{c.pro.note}</p>
             </div>
         </section>

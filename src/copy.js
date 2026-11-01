@@ -12,13 +12,11 @@ const legal = (labels) => [
     [labels[1], `${APP_URL}/impressum`],
     [labels[2], `${APP_URL}/datenschutz`],
     [labels[3], `${APP_URL}/nutzungsbedingungen`],
-    // § 312k BGB: Quidey Pro can be cancelled there without signing in (always German: the law's words)
-    ['Verträge hier kündigen', `${APP_URL}/kuendigen`],
+    // once Quidey Pro is sold: ['Verträge hier kündigen', `${APP_URL}/kuendigen`] (§ 312k BGB, always German)
 ];
 
-// Quidey Pro: the page in the app where it is bought (signing in first, if needed)
-export const PRO_URL = `${APP_URL}/pro`;
-// the prices as shown (the real ones live at Stripe / Google Play): 12 × 2,99 € = 35,88 € → 25 €
+// Quidey Pro is planned for after the beta and can't be bought yet: the section "Preise" shows the
+// free plan and the planned prices (12 × 2,99 € = 35,88 € → 25 €), and leads to the beta.
 export const PRICES = { monthly: 2.99, yearly: 25, saves: 10.88, savesPercent: 30 };
 
 const de = {
@@ -44,7 +42,7 @@ const de = {
             'Als App auf Handy und Rechner installierbar',
         ],
     },
-    nav: { focus: 'Fokus', plan: 'Planen', together: 'Zusammen', more: 'Funktionen', pro: 'Unterstützen', faq: 'Fragen', label: 'Bereiche der Seite', signIn: 'Anmelden', cta: 'Beta-Platz sichern', language: 'English', languageCode: 'en', languagePath: '/en/',
+    nav: { focus: 'Fokus', plan: 'Planen', together: 'Zusammen', more: 'Funktionen', pro: 'Preise', faq: 'Fragen', label: 'Bereiche der Seite', signIn: 'Anmelden', cta: 'Beta-Platz sichern', language: 'English', languageCode: 'en', languagePath: '/en/',
         pages: [['/hilfe/', 'Hilfe'], ['/updates/', 'Updates']], pagesLabel: 'Mehr auf quidey.com' },
     hero: {
         before: 'Eine Sache',
@@ -142,9 +140,22 @@ const de = {
         ],
     },
     pro: {
-        heading: 'Quidey unterstützen.',
-        lead: 'Quidey entsteht in meiner Freizeit – ohne Werbung, ohne Investoren und ohne dass deine Daten verkauft werden. Quidey Pro gibt es aus genau einem Grund: damit ich Quidey weiterentwickeln kann.',
-        kind: 'Wenn dir Quidey beim Lernen hilft und es für dich passt, freue ich mich riesig über deine Unterstützung. Und wenn nicht, ist das völlig in Ordnung – Quidey bleibt kostenlos, und du bist genauso willkommen.',
+        soon: 'Geplant für nach der Beta',
+        heading: 'Kostenlos lernen. Freiwillig unterstützen.',
+        lead: 'Während der Beta ist Quidey für alle Testerinnen und Tester komplett kostenlos, mit allem, was es gibt. Auch danach bleibt Quidey kostenlos nutzbar. Dazu soll es Quidey Pro geben: ein freiwilliges Abo, das genau einen Zweck hat – dass ich Quidey weiterentwickeln kann. Quidey entsteht in meiner Freizeit, ohne Werbung, ohne Investoren und ohne dass deine Daten verkauft werden.',
+        kind: 'Wenn dir Quidey dann beim Lernen hilft und es für dich passt, freue ich mich riesig über deine Unterstützung. Und wenn nicht, ist das völlig in Ordnung – mit dem kostenlosen Plan bist du genauso willkommen.',
+        freeName: 'Kostenlos',
+        freePrice: '0 €',
+        freePer: 'für immer',
+        free: [
+            'Fokusraum mit Timer, Pomodoro, Notizbuch und Fokus-Sounds',
+            'Kalender, Routinen, Erinnerungen und Benachrichtigungen',
+            '10 offene Aufgaben und 5 anstehende Termine gleichzeitig',
+            '3 Gruppen, 3 Freunde und 1 gemeinsame Sitzung',
+            'Statistiken der laufenden Woche, Level, Serien und Challenges',
+        ],
+        freeNote: 'So ist der kostenlose Plan nach der Beta geplant. Während der Beta gibt es keine Grenzen.',
+        planned: 'Quidey Pro – kommt nach der Beta',
         yearly: 'Jährlich',
         monthly: 'Monatlich',
         yearlyPrice: '25 €',
@@ -155,26 +166,26 @@ const de = {
         yearlyNote: '10,88 € weniger als zwölf Monate einzeln – nur 2,08 € im Monat.',
         monthlyNote: 'Flexibel, jeden Monat kündbar.',
         gives: [
-            'Während der Beta sofort dabei, ohne auf die Freischaltung zu warten',
-            'Nach der Beta unbegrenzt Aufgaben, Termine, Gruppen, Sitzungen und Freunde',
+            'Unbegrenzt Aufgaben, Termine, Gruppen, Sitzungen und Freunde',
             'Alle Statistiken: Monat, Jahr und deine ganze Geschichte',
+            'Jeder Euro fließt in die Weiterentwicklung von Quidey',
             'Das gute Gefühl, Quidey möglich zu machen',
         ],
-        button: 'Quidey unterstützen',
-        note: 'Endpreise, gemäß § 19 UStG ohne Umsatzsteuer. Verlängert sich automatisch, jederzeit zum Ende des Zeitraums kündbar. Im Browser über Stripe, in der Android-App über Google Play.',
+        button: 'Kostenlos in die Beta',
+        note: 'Geplante Preise, noch nicht buchbar: Quidey Pro gibt es erst nach der Beta, bis dahin können sich Preise und Umfang noch ändern. Endpreise, gemäß § 19 UStG ohne Umsatzsteuer.',
     },
     faq: {
         heading: 'Fragen zu Quidey',
         items: [
-            ['Was kostet Quidey?', 'Quidey ist kostenlos. Wer die Entwicklung unterstützen möchte, kann Quidey Pro abonnieren: 2,99 € im Monat oder 25 € im Jahr (30 % gespart). Während der Beta bringt Pro dich sofort in die App; danach hat der kostenlose Plan Grenzen (z. B. 10 offene Aufgaben und 3 Freunde), Pro nicht. Kündigen kannst du jederzeit.'],
+            ['Was kostet Quidey?', 'Während der Beta nichts: Testerinnen und Tester nutzen alles kostenlos und ohne Grenzen. Auch nach der Beta bleibt Quidey kostenlos nutzbar, dann mit einem kostenlosen Plan (z. B. 10 offene Aufgaben, 5 anstehende Termine und 3 Freunde). Wer mehr braucht oder die Entwicklung unterstützen möchte, kann dann Quidey Pro abonnieren – geplant sind 2,99 € im Monat oder 25 € im Jahr (30 % gespart). Buchen kann man Pro noch nicht.'],
             ['Hat Quidey einen Pomodoro-Timer?', 'Ja. Im Fokusraum wechseln sich Fokus und Pausen ab, standardmäßig 25 und 5 Minuten mit einer langen Pause nach vier Runden. Die Längen stellst du selbst ein. Daneben gibt es einen Countdown mit freier Länge und eine Stoppuhr. Die Zeit wird der Aufgabe gutgeschrieben, an der du gerade sitzt.'],
             ['Läuft der Timer weiter, wenn mein Handy aus ist?', 'Ja. Quidey rechnet mit der echten Uhrzeit, der Timer läuft also weiter, wenn das Display ausgeht oder du die App schließt. Mit Benachrichtigungen sagt dir Quidey Bescheid, wenn die Zeit um ist.'],
             ['Was sind Routinen?', 'Feste Abläufe wie eine Putz-, Morgen- oder Lernroutine. Du legst die Schritte fest, planst sie an Wochentagen mit Uhrzeit ein oder startest sie einfach, und Quidey führt dich Schritt für Schritt durch.'],
             ['Kann ich online mit Freunden zusammen lernen?', 'Ja. In einer gemeinsamen Sitzung seht ihr, wer gerade lernt und woran, eine Stoppuhr zählt für alle, und es gibt einen Chat. Ihr braucht dafür beide ein Konto und seid in Quidey befreundet.'],
             ['Für wen ist Quidey gedacht?', 'Für alle, die lernen: Schülerinnen und Schüler, Studierende, Azubis und Lerngruppen. Quidey ist kein Werkzeug für Firmenteams, sondern für deinen eigenen Lernalltag und die Leute, mit denen du lernst.'],
-            ['Warum eine geschlossene Beta?', 'Damit ich jede Rückmeldung lesen und Fehler schnell beheben kann. Du legst ein Konto an, sagst in einem Satz, wofür du Quidey nutzen willst, und ich schalte dich frei. Mit Quidey Pro bist du sofort dabei.'],
-            ['Was passiert mit meinen Daten?', 'Sie liegen auf einem Server bei STRATO in Deutschland. Keine Werbung, kein Tracking, keine Cookies. Im Profil kannst du dein Konto jederzeit löschen, mit allem, was dazugehört.'],
-            ['Gibt es eine App fürs Handy?', 'Für Android gibt es Quidey als App im Google Play Store, mit Benachrichtigungen und Anmeldung mit Google. Außerdem läuft Quidey im Browser unter app.quidey.com, auf dem Handy genauso wie am Rechner, auch auf dem iPhone. Du kannst die Seite zu deinem Startbildschirm hinzufügen, dann öffnet sie sich wie eine App.'],
+            ['Warum eine geschlossene Beta?', 'Damit ich jede Rückmeldung lesen und Fehler schnell beheben kann. Du legst ein Konto an, sagst in einem Satz, wofür du Quidey nutzen willst, und ich schalte dich frei.'],
+            ['Was passiert mit meinen Daten?', 'Sie liegen auf einem Server bei STRATO in Deutschland. Keine Werbung und keine Cookies, im Browser auch kein Tracking; in der Android-App nutze ich Google Analytics für Firebase, aber nur, wenn du einwilligst. Im Profil kannst du dein Konto jederzeit löschen, mit allem, was dazugehört.'],
+            ['Gibt es eine App fürs Handy?', 'Für Android gibt es Quidey als App, mit Benachrichtigungen und Anmeldung mit Google: Du lädst sie in Quidey unter Einstellungen → App herunter, später auch im Google Play Store. Außerdem läuft Quidey im Browser unter app.quidey.com, auf dem Handy genauso wie am Rechner, auch auf dem iPhone. Du kannst die Seite zu deinem Startbildschirm hinzufügen, dann öffnet sie sich wie eine App.'],
             ['Gibt es Quidey auch auf Englisch?', 'Ja. Die App gibt es auf Deutsch und auf Englisch, die Sprache stellst du in den Einstellungen um.'],
         ],
     },
@@ -225,7 +236,7 @@ const en = {
             'Installable as an app on phone and computer',
         ],
     },
-    nav: { focus: 'Focus', plan: 'Plan', together: 'Together', more: 'Features', pro: 'Support', faq: 'Questions', label: 'Sections of the page', signIn: 'Sign in', cta: 'Get a beta spot', language: 'Deutsch', languageCode: 'de', languagePath: '/',
+    nav: { focus: 'Focus', plan: 'Plan', together: 'Together', more: 'Features', pro: 'Pricing', faq: 'Questions', label: 'Sections of the page', signIn: 'Sign in', cta: 'Get a beta spot', language: 'Deutsch', languageCode: 'de', languagePath: '/',
         pages: [['/hilfe/', 'Help (German)'], ['/updates/', 'Updates (German)']], pagesLabel: 'More on quidey.com' },
     hero: {
         before: 'One thing',
@@ -323,9 +334,22 @@ const en = {
         ],
     },
     pro: {
-        heading: 'Support Quidey.',
-        lead: 'Quidey is made in my spare time – no ads, no investors, and your data is never sold. Quidey Pro exists for exactly one reason: so I can keep developing Quidey.',
-        kind: 'If Quidey helps you study and it works for you, I would be so happy about your support. And if not, that is completely fine – Quidey stays free and you are just as welcome.',
+        soon: 'Planned for after the beta',
+        heading: 'Study for free. Support if you like.',
+        lead: 'During the beta, Quidey is completely free for every tester, with everything it has. It stays free to use afterwards too. On top of that there is to be Quidey Pro: a voluntary subscription with exactly one purpose – so I can keep developing Quidey. Quidey is made in my spare time, with no ads, no investors, and your data is never sold.',
+        kind: 'If Quidey helps you study by then and it works for you, I would be so happy about your support. And if not, that is completely fine – you are just as welcome on the free plan.',
+        freeName: 'Free',
+        freePrice: '€0',
+        freePer: 'forever',
+        free: [
+            'Focus room with timer, Pomodoro, notebook and focus sounds',
+            'Calendar, routines, reminders and notifications',
+            '10 open tasks and 5 upcoming events at a time',
+            '3 groups, 3 friends and 1 shared session',
+            "This week's statistics, levels, streaks and challenges",
+        ],
+        freeNote: 'This is the free plan as planned for after the beta. During the beta there are no limits.',
+        planned: 'Quidey Pro – coming after the beta',
         yearly: 'Yearly',
         monthly: 'Monthly',
         yearlyPrice: '€25',
@@ -336,26 +360,26 @@ const en = {
         yearlyNote: '€10.88 less than twelve single months – just €2.08 a month.',
         monthlyNote: 'Flexible, cancel any month.',
         gives: [
-            'In right away during the beta, no waiting for access',
-            'After the beta: unlimited tasks, events, groups, sessions and friends',
+            'Unlimited tasks, events, groups, sessions and friends',
             'All statistics: month, year and your whole history',
+            'Every euro goes into developing Quidey further',
             'The good feeling of making Quidey possible',
         ],
-        button: 'Support Quidey',
-        note: 'Final prices, no VAT charged (small business, § 19 UStG). Renews automatically, cancel any time to the end of the period. In the browser through Stripe, in the Android app through Google Play.',
+        button: 'Join the beta for free',
+        note: 'Planned prices, not available yet: Quidey Pro only comes after the beta, and prices and scope may still change until then. Final prices, no VAT charged (small business, § 19 UStG).',
     },
     faq: {
         heading: 'Questions about Quidey',
         items: [
-            ['What does Quidey cost?', 'Quidey is free. If you want to support the development, you can subscribe to Quidey Pro: €2.99 a month or €25 a year (save 30%). During the beta, Pro gets you into the app right away; afterwards the free plan has limits (e.g. 10 open tasks and 3 friends), Pro has none. You can cancel any time.'],
+            ['What does Quidey cost?', 'Nothing during the beta: testers use everything for free and without limits. Quidey stays free to use after the beta too, then with a free plan (e.g. 10 open tasks, 5 upcoming events and 3 friends). If you need more or want to support the development, you can then subscribe to Quidey Pro – planned at €2.99 a month or €25 a year (save 30%). Pro cannot be booked yet.'],
             ['Does Quidey have a Pomodoro timer?', 'Yes. In the focus room, focus and breaks take turns, 25 and 5 minutes by default with a long break after four rounds. You set the lengths. There is also a countdown of any length and a stopwatch. The time goes to the task you are working on.'],
             ['Does the timer keep running when my phone is off?', 'Yes. Quidey counts by the real clock, so the timer keeps going when the screen turns off or you close the app. With notifications on, Quidey tells you when time is up.'],
             ['What are routines?', 'Fixed sequences like a cleaning, morning or study routine. You set the steps, plan them on weekdays at a time or just start them, and Quidey guides you step by step.'],
             ['Can I study online with friends?', 'Yes. In a shared session you see who is studying right now and on what, one stopwatch counts for everyone, and there is a chat. You both need an account and to be friends in Quidey.'],
             ['Who is Quidey for?', 'For everyone who studies: pupils, students, apprentices and study groups. Quidey is not a tool for company teams but for your own study days and the people you study with.'],
-            ['Why a closed beta?', 'So I can read every piece of feedback and fix things fast. You create an account, say in one sentence what you want to use Quidey for, and I let you in. With Quidey Pro you are in right away.'],
-            ['What happens to my data?', 'It sits on a server at STRATO in Germany. No ads, no tracking, no cookies. You can delete your account in your profile at any time, with everything in it.'],
-            ['Is there a phone app?', 'On Android, Quidey is an app in the Google Play Store, with notifications and sign-in with Google. Quidey also runs in the browser at app.quidey.com, on your phone just like on your computer, the iPhone included. Add it to your home screen and it opens like an app.'],
+            ['Why a closed beta?', 'So I can read every piece of feedback and fix things fast. You create an account, say in one sentence what you want to use Quidey for, and I let you in.'],
+            ['What happens to my data?', 'It sits on a server at STRATO in Germany. No ads and no cookies, and no tracking in the browser; the Android app uses Google Analytics for Firebase, but only if you agree. You can delete your account in your profile at any time, with everything in it.'],
+            ['Is there a phone app?', 'On Android, Quidey is an app with notifications and sign-in with Google: download it in Quidey under Settings → App, later also from the Google Play Store. Quidey also runs in the browser at app.quidey.com, on your phone just like on your computer, the iPhone included. Add it to your home screen and it opens like an app.'],
             ['Is Quidey available in English?', 'Yes. The app is in English and in German; you switch the language in the settings.'],
         ],
     },

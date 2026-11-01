@@ -1,11 +1,11 @@
 ---
 // The whole page for one language: bar, hero, the five features, who it is for, everything else
-// in it, questions, the email line and the footer. Everything is plain HTML; scripts/landing.js
+// in it, Quidey Pro (supporting the development), questions, the email line and the footer. Everything is plain HTML; scripts/landing.js
 // adds the live parts (bar colours, reveals, the ticking pieces of the app, the colour picker,
 // the email line).
 import Logo from './Logo.astro';
 import FocusLoop from './FocusLoop.astro';
-import { APP_URL } from '../copy.js';
+import { APP_URL, PRO_URL } from '../copy.js';
 
 const { c } = Astro.props;
 const COPYRIGHT_YEAR = 2026;
@@ -15,7 +15,7 @@ const ACCENTS = ['sunset', 'green', 'ocean', 'rose', 'gold'];
 // the fields of the feature rows; 'deep' is the dark one step up, so two dark rows never run together
 const TONES = ['light', 'dark', 'accent', 'deep', 'light'];
 const ANCHORS = { focus: 'fokus', plan: 'planen', together: 'zusammen', progress: 'fortschritt', style: 'stil' };
-const nav = [['fokus', c.nav.focus], ['planen', c.nav.plan], ['zusammen', c.nav.together], ['funktionen', c.nav.more], ['fragen', c.nav.faq]];
+const nav = [['fokus', c.nav.focus], ['planen', c.nav.plan], ['zusammen', c.nav.together], ['funktionen', c.nav.more], ['unterstuetzen', c.nav.pro], ['fragen', c.nav.faq]];
 
 const clock = (s) => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
 
@@ -259,6 +259,36 @@ const signIn = `${APP_URL}/signin`;
                     </div>
                 ))}
             </dl>
+        </section>
+
+        {/* Quidey Pro: why it exists first (kindly: the free Quidey stays welcome), then the two
+            plans with the year's saving big, what it gives, the terms in one line */}
+        <section id="unterstuetzen" class="pro" data-tone="accent" aria-labelledby="pro-title">
+            <div class="proIntro">
+                <h2 id="pro-title" class="sectionTitle reveal" data-order="0">{c.pro.heading}</h2>
+                <p class="proLead reveal" data-order="1">{c.pro.lead}</p>
+                <p class="proKind reveal" data-order="1.5">{c.pro.kind}</p>
+            </div>
+            <div class="proPlans">
+                <div class="proPlan proPlanYearly reveal" data-order="1">
+                    <span class="proBadge">{c.pro.badge}</span>
+                    <span class="proPlanName">{c.pro.yearly}</span>
+                    <span class="proPrice">{c.pro.yearlyPrice} <small>{c.pro.perYear}</small></span>
+                    <span class="proPlanNote">{c.pro.yearlyNote}</span>
+                </div>
+                <div class="proPlan reveal" data-order="1.5">
+                    <span class="proPlanName">{c.pro.monthly}</span>
+                    <span class="proPrice">{c.pro.monthlyPrice} <small>{c.pro.perMonth}</small></span>
+                    <span class="proPlanNote">{c.pro.monthlyNote}</span>
+                </div>
+            </div>
+            <ul class="proGives reveal" data-order="2">
+                {c.pro.gives.map((give) => <li>{give}</li>)}
+            </ul>
+            <div class="proAction reveal" data-order="2">
+                <a class="proBtn" href={PRO_URL}>{c.pro.button}</a>
+                <p class="proNote">{c.pro.note}</p>
+            </div>
         </section>
 
         {/* questions (the same words go to search engines as FAQPage data, see layouts/Base.astro) */}

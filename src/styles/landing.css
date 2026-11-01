@@ -990,6 +990,182 @@ button{
     line-height: 1.5;
 }
 
+/* ---------- Quidey Pro: supporting the development ---------- */
+
+.pro{
+    padding: var(--gap) var(--m);
+    color: var(--sun-ink);
+    background: var(--sun);
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: clamp(40px, 5vw, 80px) 48px;
+    align-items: start;
+}
+
+.proIntro{
+    grid-row: span 3;
+}
+
+.proLead{
+    max-width: 34rem;
+    margin: 1.5rem 0 0;
+    font-size: var(--text);
+    font-weight: 600;
+    line-height: 1.55;
+}
+
+.proKind{
+    max-width: 34rem;
+    margin: 1rem 0 0;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.proPlans{
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 20px;
+}
+
+/* a plan: a paper card on the orange field */
+.proPlan{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: clamp(28px, 3vw, 40px) clamp(22px, 2.4vw, 32px);
+    color: var(--paper-ink);
+    background: var(--paper);
+}
+
+.proPlanYearly{
+    outline: 4px solid var(--sun-ink);
+    outline-offset: -4px;
+}
+
+/* "Spare 30 %": as big as a heading can get on a card, impossible to miss */
+.proBadge{
+    position: absolute;
+    top: -0.9em;
+    right: 1rem;
+    padding: 0.35em 0.8em;
+    font-size: clamp(18px, 1.6vw, 24px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--sun);
+    background: var(--sun-ink);
+}
+
+.proPlanName{
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--paper-soft);
+}
+
+.proPrice{
+    font-size: clamp(40px, 4.2vw, 64px);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.proPrice small{
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: var(--paper-soft);
+}
+
+.proPlanNote{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.proPlanYearly .proPlanNote{
+    font-weight: 700;
+}
+
+.proGives{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px 28px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.proGives li{
+    padding-left: 1.6em;
+    position: relative;
+}
+
+/* a small heart before each point */
+.proGives li::before{
+    content: '\2665';
+    position: absolute;
+    left: 0;
+    font-weight: 800;
+}
+
+.proAction{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.proBtn{
+    display: inline-block;
+    padding: 0.9rem 1.6rem;
+    font-size: 18px;
+    font-weight: 750;
+    text-decoration: none;
+    color: var(--sun);
+    background: var(--sun-ink);
+    transition: transform 0.2s var(--ease);
+}
+
+.page .proBtn{
+    color: var(--sun);
+}
+
+.proBtn:active{
+    transform: scale(0.96);
+}
+
+.proNote{
+    max-width: 40rem;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+@media (max-width: 900px){
+    .pro{
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .proIntro{
+        grid-row: auto;
+    }
+}
+
+@media (max-width: 560px){
+    .proPlans,
+    .proGives{
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .proPlans{
+        gap: 32px;
+    }
+}
+
 /* ---------- questions ---------- */
 
 .faq{

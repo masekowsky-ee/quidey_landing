@@ -6,7 +6,7 @@ order: 1
 updated: "2026-10-28"
 ---
 
-Kurz gesagt: Deine Daten liegen auf einem Server bei **STRATO in Deutschland**. Es gibt **keine Werbung, kein Tracking und keine Cookies**.
+Kurz gesagt: Deine Daten liegen auf einem Server bei **STRATO in Deutschland**. Es gibt **keine Werbung, kein Tracking und keine Cookies**. Externe Dienste kommen nur zum Einsatz, wenn du sie auslöst (zum Beispiel die optionalen KI-Schätzungen für Lernziele über Anthropic).
 
 ## Was nur du siehst
 

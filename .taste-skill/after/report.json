@@ -1,28 +1,31 @@
 {
- "url": "http://localhost:4329/",
- "at": "2026-10-25T20:56:18.828Z",
+ "url": "http://localhost:4891/",
+ "at": "2026-11-07T11:24:45.194Z",
  "allow": [],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 9,
+   "screens": 12,
    "filled": [
-    0.6,
-    0.73,
-    0.7,
-    0.93,
-    0.54,
-    0.74,
-    0.99,
+    0.53,
+    0.72,
+    0.69,
+    0.84,
+    0.52,
+    0.79,
+    0.98,
+    1,
+    1,
+    1,
     1,
     1
    ],
    "motion": {
-    "elements": 54,
+    "elements": 67,
     "css": 4,
-    "transitions": 50,
+    "transitions": 63,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -33,14 +36,14 @@
      "h": 900
     },
     "page": {
-     "height": 8100,
-     "screens": 9,
-     "words": 705,
+     "height": 9938,
+     "screens": 11,
+     "words": 1030,
      "img": 0,
      "video": 0,
      "canvas": 0,
      "svg": 9,
-     "sections": 10,
+     "sections": 11,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 5,
@@ -56,15 +59,15 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "Eine Sache 14:30 nach der anderen.",
+     "text": "Eine Sache Fertig nach der anderen.",
      "words": 6,
-     "chars": 34,
+     "chars": 35,
      "lines": 2,
      "size": 144,
      "vw": 10,
-     "font": "Inter Variable",
-     "weight": 800,
-     "tracking": -0.045,
+     "font": "Newsreader Variable",
+     "weight": 400,
+     "tracking": -0.02,
      "leading": 0.95,
      "upper": false,
      "italic": false,
@@ -77,23 +80,23 @@
      "kind": "heading"
     },
     "h1": {
-     "text": "Eine Sache 14:30 nach der anderen.",
+     "text": "Eine Sache Fertig nach der anderen.",
      "words": 6,
      "lines": 2,
      "size": 144,
-     "font": "Inter Variable"
+     "font": "Newsreader Variable"
     },
     "headings": [
      {
-      "text": "Eine Sache 14:30 nach der anderen.",
+      "text": "Eine Sache Fertig nach der anderen.",
       "words": 6,
-      "chars": 34,
+      "chars": 35,
       "lines": 2,
       "size": 144,
       "vw": 10,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.045,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 0.95,
       "upper": false,
       "italic": false,
@@ -106,15 +109,15 @@
       "kind": "heading"
      },
      {
-      "text": "Fokus-Timer für eine Aufgabe.",
-      "words": 4,
-      "chars": 29,
+      "text": "Pomodoro im Fokusraum.",
+      "words": 3,
+      "chars": 22,
       "lines": 2,
       "size": 66.2,
       "vw": 4.6,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -133,9 +136,9 @@
       "lines": 2,
       "size": 66.2,
       "vw": 4.6,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -154,9 +157,9 @@
       "lines": 2,
       "size": 66.2,
       "vw": 4.6,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -164,7 +167,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 2285,
+      "top": 2256,
       "tag": "h2",
       "kind": "heading"
      },
@@ -175,9 +178,9 @@
       "lines": 2,
       "size": 66.2,
       "vw": 4.6,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -185,7 +188,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.39,
-      "top": 2879,
+      "top": 2850,
       "tag": "h2",
       "kind": "heading"
      },
@@ -196,9 +199,9 @@
       "lines": 2,
       "size": 66.2,
       "vw": 4.6,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -206,7 +209,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 3502,
+      "top": 3473,
       "tag": "h2",
       "kind": "heading"
      },
@@ -217,9 +220,9 @@
       "lines": 2,
       "size": 66.2,
       "vw": 4.6,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -227,7 +230,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 4161,
+      "top": 4132,
       "tag": "h2",
       "kind": "heading"
      },
@@ -238,7 +241,7 @@
       "lines": 1,
       "size": 31.7,
       "vw": 2.2,
-      "font": "Inter Variable",
+      "font": "Instrument Sans Variable",
       "weight": 750,
       "tracking": -0.03,
       "leading": 1.15,
@@ -248,7 +251,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.54,
-      "top": 4161,
+      "top": 4132,
       "tag": "h3",
       "kind": "heading"
      },
@@ -259,7 +262,7 @@
       "lines": 1,
       "size": 31.7,
       "vw": 2.2,
-      "font": "Inter Variable",
+      "font": "Instrument Sans Variable",
       "weight": 750,
       "tracking": -0.03,
       "leading": 1.15,
@@ -269,7 +272,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.54,
-      "top": 4351,
+      "top": 4293,
       "tag": "h3",
       "kind": "heading"
      },
@@ -280,7 +283,7 @@
       "lines": 1,
       "size": 31.7,
       "vw": 2.2,
-      "font": "Inter Variable",
+      "font": "Instrument Sans Variable",
       "weight": 750,
       "tracking": -0.03,
       "leading": 1.15,
@@ -290,7 +293,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.54,
-      "top": 4513,
+      "top": 4455,
       "tag": "h3",
       "kind": "heading"
      },
@@ -301,30 +304,9 @@
       "lines": 2,
       "size": 66.2,
       "vw": 4.6,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
-      "leading": 1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.45,
-      "top": 4991,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "Fragen zu Quidey",
-      "words": 3,
-      "chars": 16,
-      "lines": 1,
-      "size": 66.2,
-      "vw": 4.6,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -332,7 +314,112 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.38,
-      "top": 5853,
+      "top": 4933,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Kostenlos lernen.",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 66.2,
+      "vw": 4.6,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 5989,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "0 € für immer",
+      "words": 4,
+      "chars": 13,
+      "lines": 1,
+      "size": 60.5,
+      "vw": 4.2,
+      "font": "Instrument Sans Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.49,
+      "top": 6029,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "25 € im Jahr",
+      "words": 4,
+      "chars": 12,
+      "lines": 1,
+      "size": 60.5,
+      "vw": 4.2,
+      "font": "Instrument Sans Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.23,
+      "top": 6600,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "2,99 € im Monat",
+      "words": 4,
+      "chars": 15,
+      "lines": 1,
+      "size": 60.5,
+      "vw": 4.2,
+      "font": "Instrument Sans Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.2,
+      "top": 6600,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Fragen zu Quidey",
+      "words": 3,
+      "chars": 16,
+      "lines": 2,
+      "size": 66.2,
+      "vw": 4.6,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.33,
+      "top": 7540,
       "tag": "h2",
       "kind": "heading"
      },
@@ -343,9 +430,9 @@
       "lines": 1,
       "size": 66.2,
       "vw": 4.6,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -353,7 +440,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.95,
-      "top": 6778,
+      "top": 8616,
       "tag": "h2",
       "kind": "heading"
      },
@@ -364,8 +451,8 @@
       "lines": 1,
       "size": 86.4,
       "vw": 6,
-      "font": "Inter Variable",
-      "weight": 800,
+      "font": "Newsreader Variable",
+      "weight": 400,
       "tracking": -0.04,
       "leading": 1.05,
       "upper": false,
@@ -373,8 +460,8 @@
       "mono": false,
       "align": "center",
       "position": "right",
-      "widthRatio": 0.14,
-      "top": 6871,
+      "widthRatio": 0.13,
+      "top": 8709,
       "tag": "button",
       "kind": "heading"
      },
@@ -385,17 +472,17 @@
       "lines": 2,
       "size": 66.2,
       "vw": 4.6,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.35,
-      "top": 7311,
+      "widthRatio": 0.3,
+      "top": 9149,
       "tag": "h2",
       "kind": "heading"
      },
@@ -406,7 +493,7 @@
       "lines": 1,
       "size": 403.2,
       "vw": 28,
-      "font": "Inter Variable",
+      "font": "Instrument Sans Variable",
       "weight": 850,
       "tracking": -0.06,
       "leading": 0.8,
@@ -416,13 +503,13 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 7861,
+      "top": 9699,
       "tag": "div",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 16,
+     "count": 20,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 0,
@@ -433,43 +520,51 @@
     "type": {
      "families": [
       {
-       "family": "Inter Variable",
-       "share": 1,
+       "family": "Instrument Sans Variable",
+       "share": 0.97,
+       "mono": false
+      },
+      {
+       "family": "Newsreader Variable",
+       "share": 0.03,
        "mono": false
       }
      ],
-     "familyCount": 1,
+     "familyCount": 2,
      "sizes": [
       13,
       14,
       15,
       16,
       17,
+      18,
       19,
       21,
       22,
       23,
+      26,
       32,
+      61,
       66,
       86,
       144,
       403
      ],
-     "sizeCount": 14,
+     "sizeCount": 17,
      "notLoaded": [],
      "body": {
-      "font": "Inter Variable",
+      "font": "Instrument Sans Variable",
       "size": 17,
-      "leading": 1.55,
+      "leading": 1.6,
       "weight": 400,
-      "tracking": -0.006,
-      "contrast": 16.9
+      "tracking": 0,
+      "contrast": 7.8
      },
-     "measureChars": 66,
+     "measureChars": 69,
      "max": {
       "size": 403.2,
       "vw": 28,
-      "font": "Inter Variable",
+      "font": "Instrument Sans Variable",
       "text": "Quidey"
      },
      "monoShare": 0,
@@ -513,17 +608,17 @@
        }
       },
       {
-       "color": "#f5f5f3",
+       "color": "#f4f3ef",
        "top": 900,
        "hsl": {
-        "h": 60,
-        "s": 0.09,
-        "l": 0.96
+        "h": 48,
+        "s": 0.19,
+        "l": 0.95
        }
       },
       {
        "color": "#181716",
-       "top": 2757,
+       "top": 2728,
        "hsl": {
         "h": 30,
         "s": 0.04,
@@ -534,22 +629,22 @@
      "textColors": [
       {
        "color": "#151413",
-       "share": 0.43
+       "share": 0.47
       },
       {
        "color": "#f4f3f1",
-       "share": 0.4
+       "share": 0.29
       },
       {
        "color": "#2a1305",
-       "share": 0.11
+       "share": 0.19
       },
       {
        "color": "#9b958f",
-       "share": 0.04
+       "share": 0.03
       },
       {
-       "color": "#fb923c",
+       "color": "#57524d",
        "share": 0.01
       }
      ],
@@ -565,7 +660,7 @@
      "lowContrast": []
     },
     "buttons": {
-     "count": 8,
+     "count": 9,
      "inHero": 2,
      "radius": 14,
      "height": 80,
@@ -601,14 +696,15 @@
     },
     "heroMedia": [],
     "nav": {
-     "links": 9,
+     "links": 12,
      "fixed": true,
      "height": 64,
      "floatingPill": false,
      "blur": false
     },
     "fontsLoaded": [
-     "inter variable"
+     "instrument sans variable",
+     "newsreader variable"
     ]
    },
    "layout": {
@@ -616,10 +712,10 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 8100,
+    "pageH": 9938,
     "margins": {
      "left": 35,
-     "right": 47
+     "right": 43
     },
     "sections": [
      {
@@ -627,9 +723,9 @@
       "tag": "section",
       "top": 0,
       "height": 900,
-      "words": 42,
+      "words": 48,
       "media": 1,
-      "middle": 37,
+      "middle": 122,
       "heading": {
        "text": "Eine Sache",
        "size": 144,
@@ -650,18 +746,18 @@
       "tag": "section",
       "top": 900,
       "height": 617,
-      "words": 69,
+      "words": 74,
       "media": 0,
       "middle": 360,
       "heading": {
-       "text": "Fokus-Timer für eine Aufgabe.",
+       "text": "Pomodoro im Fokusraum.",
        "size": 66,
        "tag": "h2"
       },
       "left": 35,
-      "right": 166,
+      "right": 176,
       "textLeft": 35,
-      "textRight": 166,
+      "textRight": 176,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -672,19 +768,19 @@
       "sel": "section#planen.feature.feature_dark",
       "tag": "section",
       "top": 1517,
-      "height": 646,
-      "words": 79,
+      "height": 617,
+      "words": 76,
       "media": 0,
-      "middle": 264,
+      "middle": 265,
       "heading": {
        "text": "Lernplan und Kalender.",
        "size": 66,
        "tag": "h2"
       },
-      "left": 75,
-      "right": 84,
-      "textLeft": 75,
-      "textRight": 84,
+      "left": 76,
+      "right": 74,
+      "textLeft": 76,
+      "textRight": 74,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -694,11 +790,11 @@
      {
       "sel": "section#zusammen.feature.feature_accent",
       "tag": "section",
-      "top": 2163,
+      "top": 2134,
       "height": 594,
       "words": 61,
       "media": 0,
-      "middle": 325,
+      "middle": 365,
       "heading": {
        "text": "Online zusammen lernen.",
        "size": 66,
@@ -717,7 +813,7 @@
      {
       "sel": "section#fortschritt.feature.feature_deep",
       "tag": "section",
-      "top": 2757,
+      "top": 2728,
       "height": 623,
       "words": 90,
       "media": 0,
@@ -728,9 +824,9 @@
        "tag": "h2"
       },
       "left": 59,
-      "right": 85,
+      "right": 100,
       "textLeft": 59,
-      "textRight": 85,
+      "textRight": 100,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -740,11 +836,11 @@
      {
       "sel": "section#stil.feature.feature_light",
       "tag": "section",
-      "top": 3380,
+      "top": 3351,
       "height": 594,
       "words": 52,
       "media": 0,
-      "middle": 410,
+      "middle": 375,
       "heading": {
        "text": "Ganz nach deinem Stil.",
        "size": 66,
@@ -763,20 +859,20 @@
      {
       "sel": "section#fuer-wen.audience",
       "tag": "section",
-      "top": 3973,
-      "height": 831,
+      "top": 3944,
+      "height": 802,
       "words": 77,
       "media": 0,
-      "middle": 81,
+      "middle": 117,
       "heading": {
        "text": "Für Schule, Uni und Lerngruppe.",
        "size": 66,
        "tag": "h2"
       },
       "left": 35,
-      "right": 203,
+      "right": 168,
       "textLeft": 35,
-      "textRight": 203,
+      "textRight": 168,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -786,20 +882,43 @@
      {
       "sel": "section#funktionen.more",
       "tag": "section",
-      "top": 4804,
-      "height": 862,
-      "words": 129,
+      "top": 4746,
+      "height": 1055,
+      "words": 173,
       "media": 0,
-      "middle": 43,
+      "middle": 49,
       "heading": {
        "text": "Alles für deinen Lernalltag.",
        "size": 66,
        "tag": "h2"
       },
       "left": 35,
-      "right": 47,
+      "right": 39,
       "textLeft": 35,
-      "textRight": 47,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#preise.pro",
+      "tag": "section",
+      "top": 5801,
+      "height": 1551,
+      "words": 266,
+      "media": 0,
+      "middle": 57,
+      "heading": {
+       "text": "Kostenlos lernen.",
+       "size": 66,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 35,
+      "textLeft": 35,
+      "textRight": 35,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -809,20 +928,20 @@
      {
       "sel": "section#fragen.faq",
       "tag": "section",
-      "top": 5666,
-      "height": 968,
-      "words": 276,
+      "top": 7353,
+      "height": 1120,
+      "words": 452,
       "media": 0,
-      "middle": 61,
+      "middle": 317,
       "heading": {
        "text": "Fragen zu Quidey",
        "size": 66,
        "tag": "h2"
       },
       "left": 35,
-      "right": 259,
+      "right": 227,
       "textLeft": 35,
-      "textRight": 259,
+      "textRight": 227,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -832,7 +951,7 @@
      {
       "sel": "section.cta",
       "tag": "section",
-      "top": 6634,
+      "top": 8472,
       "height": 533,
       "words": 18,
       "media": 0,
@@ -843,9 +962,9 @@
        "tag": "button"
       },
       "left": 35,
-      "right": 193,
+      "right": 249,
       "textLeft": 35,
-      "textRight": 223,
+      "textRight": 279,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -855,11 +974,11 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 7167,
+      "top": 9005,
       "height": 933,
-      "words": 42,
+      "words": 50,
       "media": 0,
-      "middle": 619,
+      "middle": 472,
       "heading": {
        "text": "Fang mit einer Sache an.",
        "size": 66,
@@ -878,29 +997,29 @@
     ],
     "gaps": [
      {
-      "top": 3852,
-      "height": 300
+      "top": 3820,
+      "height": 308
      },
      {
-      "top": 4616,
+      "top": 4556,
+      "height": 376
+     },
+     {
+      "top": 5616,
       "height": 368
      },
      {
-      "top": 5480,
-      "height": 364
+      "top": 7164,
+      "height": 372
      },
      {
-      "top": 6496,
-      "height": 272
-     },
-     {
-      "top": 7024,
-      "height": 280
+      "top": 8860,
+      "height": 288
      }
     ],
     "h1s": [
      {
-      "text": "Eine Sache 14:11 nach der anderen.",
+      "text": "Eine Sache Fertig nach der anderen.",
       "size": 144,
       "top": 237,
       "firstScreen": true
@@ -910,28 +1029,28 @@
     "edges": [
      {
       "x": 624,
-      "n": 22
+      "n": 26
      },
      {
       "x": 35,
-      "n": 14
+      "n": 17
      },
      {
       "x": 848,
       "n": 4
      }
     ],
-    "leftBlocks": 40,
-    "bodySize": 16,
+    "leftBlocks": 47,
+    "bodySize": 17,
     "stage": false,
     "explains": true,
     "slivers": [],
-    "voidShare": 0.13,
+    "voidShare": 0.15,
     "voidBox": {
-     "x": 660,
-     "y": 600,
-     "w": 540,
-     "h": 300
+     "x": 1140,
+     "y": 120,
+     "w": 300,
+     "h": 660
     }
    },
    "app": null,
@@ -941,21 +1060,23 @@
    "width": 768,
    "height": 1024,
    "load": "load",
-   "screens": 8,
+   "screens": 10,
    "filled": [
-    0.71,
-    0.67,
-    0.91,
-    0.77,
-    0.55,
-    0.96,
+    0.64,
+    0.59,
+    0.83,
+    0.78,
+    0.49,
+    0.97,
+    1,
+    1,
     1,
     1
    ],
    "motion": {
-    "elements": 51,
+    "elements": 65,
     "css": 4,
-    "transitions": 47,
+    "transitions": 61,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -966,14 +1087,14 @@
      "h": 1024
     },
     "page": {
-     "height": 8060,
-     "screens": 7.9,
-     "words": 700,
+     "height": 9966,
+     "screens": 9.7,
+     "words": 1022,
      "img": 0,
      "video": 0,
      "canvas": 0,
      "svg": 9,
-     "sections": 10,
+     "sections": 11,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 5,
@@ -989,15 +1110,15 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "Eine Sache 23:50 nach der anderen.",
+     "text": "Eine Sache 07:18 nach der anderen.",
      "words": 6,
      "chars": 34,
      "lines": 2,
      "size": 76.8,
      "vw": 10,
-     "font": "Inter Variable",
-     "weight": 800,
-     "tracking": -0.045,
+     "font": "Newsreader Variable",
+     "weight": 400,
+     "tracking": -0.02,
      "leading": 0.95,
      "upper": false,
      "italic": false,
@@ -1010,23 +1131,23 @@
      "kind": "heading"
     },
     "h1": {
-     "text": "Eine Sache 23:50 nach der anderen.",
+     "text": "Eine Sache 07:18 nach der anderen.",
      "words": 6,
      "lines": 2,
      "size": 76.8,
-     "font": "Inter Variable"
+     "font": "Newsreader Variable"
     },
     "headings": [
      {
-      "text": "Eine Sache 23:50 nach der anderen.",
+      "text": "Eine Sache 07:18 nach der anderen.",
       "words": 6,
       "chars": 34,
       "lines": 2,
       "size": 76.8,
       "vw": 10,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.045,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 0.95,
       "upper": false,
       "italic": false,
@@ -1039,15 +1160,15 @@
       "kind": "heading"
      },
      {
-      "text": "Fokus-Timer für eine Aufgabe.",
-      "words": 4,
-      "chars": 29,
+      "text": "Pomodoro im Fokusraum.",
+      "words": 3,
+      "chars": 22,
       "lines": 1,
       "size": 36,
       "vw": 4.7,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -1066,7 +1187,7 @@
       "lines": 1,
       "size": 26,
       "vw": 3.4,
-      "font": "Inter Variable",
+      "font": "Instrument Sans Variable",
       "weight": 700,
       "tracking": -0.02,
       "leading": 1.4,
@@ -1075,8 +1196,8 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.24,
-      "top": 1235,
+      "widthRatio": 0.23,
+      "top": 1262,
       "tag": "span",
       "kind": "heading"
      },
@@ -1087,9 +1208,9 @@
       "lines": 1,
       "size": 36,
       "vw": 4.7,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -1097,7 +1218,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.69,
-      "top": 1597,
+      "top": 1624,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1108,9 +1229,9 @@
       "lines": 1,
       "size": 36,
       "vw": 4.7,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -1118,7 +1239,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.95,
-      "top": 2281,
+      "top": 2307,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1129,9 +1250,9 @@
       "lines": 1,
       "size": 36,
       "vw": 4.7,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -1139,7 +1260,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.67,
-      "top": 2980,
+      "top": 3006,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1150,9 +1271,9 @@
       "lines": 1,
       "size": 36,
       "vw": 4.7,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -1171,9 +1292,9 @@
       "lines": 1,
       "size": 36,
       "vw": 4.7,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -1192,7 +1313,70 @@
       "lines": 2,
       "size": 36,
       "vw": 4.7,
-      "font": "Inter Variable",
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 5252,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Kostenlos lernen.",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 6296,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "0 € für immer",
+      "words": 4,
+      "chars": 13,
+      "lines": 1,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Instrument Sans Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 6706,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "25 € im Jahr",
+      "words": 4,
+      "chars": 12,
+      "lines": 1,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Instrument Sans Variable",
       "weight": 800,
       "tracking": -0.04,
       "leading": 1,
@@ -1201,29 +1385,50 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.52,
-      "top": 5279,
-      "tag": "h2",
+      "widthRatio": 0.44,
+      "top": 7160,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "2,99 € im Monat",
+      "words": 4,
+      "chars": 15,
+      "lines": 1,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Instrument Sans Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.37,
+      "top": 7160,
+      "tag": "span",
       "kind": "heading"
      },
      {
       "text": "Fragen zu Quidey",
       "words": 3,
       "chars": 16,
-      "lines": 1,
+      "lines": 2,
       "size": 36,
       "vw": 4.7,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.39,
-      "top": 6173,
+      "widthRatio": 0.32,
+      "top": 7869,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1234,9 +1439,9 @@
       "lines": 1,
       "size": 36,
       "vw": 4.7,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -1244,7 +1449,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.95,
-      "top": 7000,
+      "top": 8872,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1255,8 +1460,8 @@
       "lines": 1,
       "size": 46.1,
       "vw": 6,
-      "font": "Inter Variable",
-      "weight": 800,
+      "font": "Newsreader Variable",
+      "weight": 400,
       "tracking": -0.04,
       "leading": 1.05,
       "upper": false,
@@ -1264,8 +1469,8 @@
       "mono": false,
       "align": "center",
       "position": "right",
-      "widthRatio": 0.14,
-      "top": 7050,
+      "widthRatio": 0.13,
+      "top": 8922,
       "tag": "button",
       "kind": "heading"
      },
@@ -1276,17 +1481,17 @@
       "lines": 2,
       "size": 36,
       "vw": 4.7,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.36,
-      "top": 7346,
+      "widthRatio": 0.29,
+      "top": 9217,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1297,7 +1502,7 @@
       "lines": 1,
       "size": 215,
       "vw": 28,
-      "font": "Inter Variable",
+      "font": "Instrument Sans Variable",
       "weight": 850,
       "tracking": -0.06,
       "leading": 0.8,
@@ -1307,13 +1512,13 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.96,
-      "top": 7933,
+      "top": 9839,
       "tag": "div",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 14,
+     "count": 18,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 0,
@@ -1324,12 +1529,17 @@
     "type": {
      "families": [
       {
-       "family": "Inter Variable",
-       "share": 1,
+       "family": "Instrument Sans Variable",
+       "share": 0.97,
+       "mono": false
+      },
+      {
+       "family": "Newsreader Variable",
+       "share": 0.03,
        "mono": false
       }
      ],
-     "familyCount": 1,
+     "familyCount": 2,
      "sizes": [
       13,
       14,
@@ -1338,28 +1548,30 @@
       17,
       18,
       19,
+      20,
       21,
       24,
       36,
+      40,
       46,
       77,
       215
      ],
-     "sizeCount": 13,
+     "sizeCount": 15,
      "notLoaded": [],
      "body": {
-      "font": "Inter Variable",
+      "font": "Instrument Sans Variable",
       "size": 17,
       "leading": 1.55,
       "weight": 400,
-      "tracking": -0.006,
-      "contrast": 16.9
+      "tracking": 0,
+      "contrast": 16.6
      },
-     "measureChars": 66,
+     "measureChars": 69,
      "max": {
       "size": 215,
       "vw": 28,
-      "font": "Inter Variable",
+      "font": "Instrument Sans Variable",
       "text": "Quidey"
      },
      "monoShare": 0,
@@ -1403,17 +1615,17 @@
        }
       },
       {
-       "color": "#f5f5f3",
+       "color": "#f4f3ef",
        "top": 799,
        "hsl": {
-        "h": 60,
-        "s": 0.09,
-        "l": 0.96
+        "h": 48,
+        "s": 0.19,
+        "l": 0.95
        }
       },
       {
        "color": "#181716",
-       "top": 2864,
+       "top": 2890,
        "hsl": {
         "h": 30,
         "s": 0.04,
@@ -1424,22 +1636,22 @@
      "textColors": [
       {
        "color": "#151413",
-       "share": 0.43
+       "share": 0.47
       },
       {
        "color": "#f4f3f1",
-       "share": 0.39
+       "share": 0.28
       },
       {
        "color": "#2a1305",
-       "share": 0.11
+       "share": 0.19
       },
       {
        "color": "#9b958f",
-       "share": 0.04
+       "share": 0.03
       },
       {
-       "color": "#fb923c",
+       "color": "#57524d",
        "share": 0.01
       }
      ],
@@ -1455,7 +1667,7 @@
      "lowContrast": []
     },
     "buttons": {
-     "count": 9,
+     "count": 10,
      "inHero": 2,
      "radius": 14,
      "height": 80,
@@ -1498,7 +1710,8 @@
      "blur": false
     },
     "fontsLoaded": [
-     "inter variable"
+     "instrument sans variable",
+     "newsreader variable"
     ]
    },
    "layout": {
@@ -1506,10 +1719,10 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 8060,
+    "pageH": 9966,
     "margins": {
      "left": 18,
-     "right": 30
+     "right": 42
     },
     "sections": [
      {
@@ -1517,7 +1730,7 @@
       "tag": "section",
       "top": 0,
       "height": 799,
-      "words": 42,
+      "words": 48,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1539,12 +1752,12 @@
       "sel": "section#fokus.feature.feature_light",
       "tag": "section",
       "top": 799,
-      "height": 719,
-      "words": 69,
+      "height": 745,
+      "words": 74,
       "media": 0,
       "middle": 0,
       "heading": {
-       "text": "Fokus-Timer für eine Aufgabe.",
+       "text": "Pomodoro im Fokusraum.",
        "size": 36,
        "tag": "h2"
       },
@@ -1561,11 +1774,11 @@
      {
       "sel": "section#planen.feature.feature_dark",
       "tag": "section",
-      "top": 1517,
+      "top": 1544,
       "height": 683,
-      "words": 79,
+      "words": 76,
       "media": 0,
-      "middle": 65,
+      "middle": 66,
       "heading": {
        "text": "Lernplan und Kalender.",
        "size": 36,
@@ -1584,11 +1797,11 @@
      {
       "sel": "section#zusammen.feature.feature_accent",
       "tag": "section",
-      "top": 2201,
+      "top": 2227,
       "height": 663,
       "words": 61,
       "media": 0,
-      "middle": 147,
+      "middle": 162,
       "heading": {
        "text": "Online zusammen lernen.",
        "size": 36,
@@ -1607,11 +1820,11 @@
      {
       "sel": "section#fortschritt.feature.feature_deep",
       "tag": "section",
-      "top": 2864,
-      "height": 832,
+      "top": 2890,
+      "height": 806,
       "words": 87,
       "media": 0,
-      "middle": 61,
+      "middle": 56,
       "heading": null,
       "left": 18,
       "right": 42,
@@ -1650,7 +1863,7 @@
       "sel": "section#fuer-wen.audience",
       "tag": "section",
       "top": 4451,
-      "height": 708,
+      "height": 682,
       "words": 77,
       "media": 0,
       "middle": 0,
@@ -1660,9 +1873,9 @@
        "tag": "h2"
       },
       "left": 18,
-      "right": 194,
+      "right": 162,
       "textLeft": 18,
-      "textRight": 194,
+      "textRight": 162,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1672,20 +1885,43 @@
      {
       "sel": "section#funktionen.more",
       "tag": "section",
-      "top": 5159,
-      "height": 894,
-      "words": 129,
+      "top": 5132,
+      "height": 1043,
+      "words": 173,
       "media": 0,
-      "middle": 72,
+      "middle": 38,
       "heading": {
        "text": "Alles für deinen Lernalltag.",
        "size": 36,
        "tag": "h2"
       },
       "left": 18,
-      "right": 20,
+      "right": 19,
       "textLeft": 18,
-      "textRight": 20,
+      "textRight": 19,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#preise.pro",
+      "tag": "section",
+      "top": 6176,
+      "height": 1574,
+      "words": 260,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "0 €",
+       "size": 40,
+       "tag": "span"
+      },
+      "left": 18,
+      "right": 47,
+      "textLeft": 18,
+      "textRight": 47,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1695,9 +1931,9 @@
      {
       "sel": "section#fragen.faq",
       "tag": "section",
-      "top": 6053,
-      "height": 852,
-      "words": 276,
+      "top": 7749,
+      "height": 1026,
+      "words": 431,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1706,9 +1942,9 @@
        "tag": "h2"
       },
       "left": 18,
-      "right": 193,
+      "right": 161,
       "textLeft": 18,
-      "textRight": 193,
+      "textRight": 161,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1718,7 +1954,7 @@
      {
       "sel": "section.cta",
       "tag": "section",
-      "top": 6904,
+      "top": 8776,
       "height": 346,
       "words": 18,
       "media": 0,
@@ -1729,9 +1965,9 @@
        "tag": "button"
       },
       "left": 18,
-      "right": 103,
+      "right": 136,
       "textLeft": 18,
-      "textRight": 119,
+      "textRight": 153,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1741,9 +1977,9 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 7250,
-      "height": 811,
-      "words": 42,
+      "top": 9121,
+      "height": 845,
+      "words": 50,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1752,9 +1988,9 @@
        "tag": "h2"
       },
       "left": 18,
-      "right": 331,
+      "right": 310,
       "textLeft": 18,
-      "textRight": 331,
+      "textRight": 310,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -1765,7 +2001,7 @@
     "gaps": [],
     "h1s": [
      {
-      "text": "Eine Sache 23:37 nach der anderen.",
+      "text": "Eine Sache 06:46 nach der anderen.",
       "size": 77,
       "top": 264,
       "firstScreen": true
@@ -1775,10 +2011,10 @@
     "edges": [
      {
       "x": 18,
-      "n": 39
+      "n": 45
      }
     ],
-    "leftBlocks": 39,
+    "leftBlocks": 45,
     "bodySize": 17,
     "stage": false,
     "explains": true,
@@ -1795,23 +2031,23 @@
    "load": "load",
    "screens": 12,
    "filled": [
-    0.66,
-    0.76,
-    0.62,
-    1,
-    0.71,
-    0.74,
     0.6,
-    0.99,
+    0.79,
+    0.68,
+    1,
+    0.72,
+    0.59,
+    0.66,
     0.98,
+    0.99,
     1,
     1,
     1
    ],
    "motion": {
-    "elements": 53,
+    "elements": 66,
     "css": 4,
-    "transitions": 49,
+    "transitions": 62,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -1822,14 +2058,14 @@
      "h": 844
     },
     "page": {
-     "height": 9452,
-     "screens": 11.2,
-     "words": 690,
+     "height": 12189,
+     "screens": 14.4,
+     "words": 1012,
      "img": 0,
      "video": 0,
      "canvas": 0,
      "svg": 9,
-     "sections": 10,
+     "sections": 11,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 5,
@@ -1845,15 +2081,15 @@
      "videosNoPoster": 0
     },
     "hero": {
-     "text": "Eine Sache 00:21 nach der anderen.",
+     "text": "Eine Sache 00:07 nach der anderen.",
      "words": 6,
      "chars": 34,
      "lines": 2,
      "size": 40.6,
      "vw": 10.4,
-     "font": "Inter Variable",
-     "weight": 800,
-     "tracking": -0.045,
+     "font": "Newsreader Variable",
+     "weight": 400,
+     "tracking": -0.02,
      "leading": 0.95,
      "upper": false,
      "italic": false,
@@ -1866,23 +2102,23 @@
      "kind": "heading"
     },
     "h1": {
-     "text": "Eine Sache 00:21 nach der anderen.",
+     "text": "Eine Sache 00:07 nach der anderen.",
      "words": 6,
      "lines": 2,
      "size": 40.6,
-     "font": "Inter Variable"
+     "font": "Newsreader Variable"
     },
     "headings": [
      {
-      "text": "Eine Sache 00:21 nach der anderen.",
+      "text": "Eine Sache 00:07 nach der anderen.",
       "words": 6,
       "chars": 34,
       "lines": 2,
       "size": 40.6,
       "vw": 10.4,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.045,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 0.95,
       "upper": false,
       "italic": false,
@@ -1895,15 +2131,15 @@
       "kind": "heading"
      },
      {
-      "text": "Fokus-Timer für eine Aufgabe.",
-      "words": 4,
-      "chars": 29,
+      "text": "Pomodoro im Fokusraum.",
+      "words": 3,
+      "chars": 22,
       "lines": 2,
       "size": 36,
       "vw": 9.2,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -1919,12 +2155,12 @@
       "text": "Lernplan und Kalender.",
       "words": 3,
       "chars": 22,
-      "lines": 2,
+      "lines": 1,
       "size": 36,
       "vw": 9.2,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -1932,7 +2168,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 1616,
+      "top": 1619,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1943,9 +2179,9 @@
       "lines": 2,
       "size": 36,
       "vw": 9.2,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -1953,7 +2189,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 2392,
+      "top": 2360,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1964,9 +2200,9 @@
       "lines": 1,
       "size": 36,
       "vw": 9.2,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -1974,7 +2210,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 3208,
+      "top": 3175,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1982,12 +2218,12 @@
       "text": "Ganz nach deinem Stil.",
       "words": 4,
       "chars": 22,
-      "lines": 2,
+      "lines": 1,
       "size": 36,
       "vw": 9.2,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -1995,7 +2231,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 4140,
+      "top": 4071,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2006,9 +2242,9 @@
       "lines": 2,
       "size": 36,
       "vw": 9.2,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -2016,7 +2252,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 5052,
+      "top": 4984,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2027,7 +2263,7 @@
       "lines": 1,
       "size": 24,
       "vw": 6.2,
-      "font": "Inter Variable",
+      "font": "Instrument Sans Variable",
       "weight": 750,
       "tracking": -0.03,
       "leading": 1.15,
@@ -2037,7 +2273,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 5180,
+      "top": 5112,
       "tag": "h3",
       "kind": "heading"
      },
@@ -2048,7 +2284,7 @@
       "lines": 1,
       "size": 24,
       "vw": 6.2,
-      "font": "Inter Variable",
+      "font": "Instrument Sans Variable",
       "weight": 750,
       "tracking": -0.03,
       "leading": 1.15,
@@ -2058,7 +2294,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 5363,
+      "top": 5294,
       "tag": "h3",
       "kind": "heading"
      },
@@ -2069,7 +2305,7 @@
       "lines": 1,
       "size": 24,
       "vw": 6.2,
-      "font": "Inter Variable",
+      "font": "Instrument Sans Variable",
       "weight": 750,
       "tracking": -0.03,
       "leading": 1.15,
@@ -2079,7 +2315,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 5546,
+      "top": 5450,
       "tag": "h3",
       "kind": "heading"
      },
@@ -2090,9 +2326,30 @@
       "lines": 2,
       "size": 36,
       "vw": 9.2,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 5833,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Kostenlos lernen.",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -2100,18 +2357,18 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 5928,
+      "top": 7527,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "Fragen zu Quidey",
-      "words": 3,
-      "chars": 16,
+      "text": "0 € für immer",
+      "words": 4,
+      "chars": 13,
       "lines": 1,
-      "size": 36,
-      "vw": 9.2,
-      "font": "Inter Variable",
+      "size": 40,
+      "vw": 10.3,
+      "font": "Instrument Sans Variable",
       "weight": 800,
       "tracking": -0.04,
       "leading": 1,
@@ -2120,8 +2377,71 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.77,
-      "top": 7324,
+      "widthRatio": 0.81,
+      "top": 8071,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "25 € im Jahr",
+      "words": 4,
+      "chars": 12,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Instrument Sans Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 8685,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "2,99 € im Monat",
+      "words": 4,
+      "chars": 15,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Instrument Sans Variable",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 8901,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Fragen zu Quidey",
+      "words": 3,
+      "chars": 16,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.63,
+      "top": 9760,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2132,9 +2452,9 @@
       "lines": 1,
       "size": 36,
       "vw": 9.2,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -2142,7 +2462,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 8210,
+      "top": 10857,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2153,8 +2473,8 @@
       "lines": 1,
       "size": 36,
       "vw": 9.2,
-      "font": "Inter Variable",
-      "weight": 800,
+      "font": "Newsreader Variable",
+      "weight": 400,
       "tracking": -0.04,
       "leading": 1.05,
       "upper": false,
@@ -2162,8 +2482,8 @@
       "mono": false,
       "align": "center",
       "position": "left",
-      "widthRatio": 0.22,
-      "top": 8309,
+      "widthRatio": 0.19,
+      "top": 10956,
       "tag": "button",
       "kind": "heading"
      },
@@ -2174,17 +2494,17 @@
       "lines": 2,
       "size": 36,
       "vw": 9.2,
-      "font": "Inter Variable",
-      "weight": 800,
-      "tracking": -0.04,
+      "font": "Newsreader Variable",
+      "weight": 400,
+      "tracking": -0.02,
       "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.7,
-      "top": 8619,
+      "widthRatio": 0.58,
+      "top": 11266,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2195,7 +2515,7 @@
       "lines": 1,
       "size": 132.6,
       "vw": 34,
-      "font": "Inter Variable",
+      "font": "Instrument Sans Variable",
       "weight": 850,
       "tracking": -0.06,
       "leading": 0.8,
@@ -2205,13 +2525,13 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.93,
-      "top": 9374,
+      "top": 12110,
       "tag": "div",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 16,
+     "count": 20,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 0,
@@ -2222,12 +2542,17 @@
     "type": {
      "families": [
       {
-       "family": "Inter Variable",
-       "share": 1,
+       "family": "Instrument Sans Variable",
+       "share": 0.97,
+       "mono": false
+      },
+      {
+       "family": "Newsreader Variable",
+       "share": 0.03,
        "mono": false
       }
      ],
-     "familyCount": 1,
+     "familyCount": 2,
      "sizes": [
       13,
       14,
@@ -2236,26 +2561,28 @@
       17,
       18,
       19,
+      20,
       24,
       36,
+      40,
       41,
       133
      ],
-     "sizeCount": 11,
+     "sizeCount": 13,
      "notLoaded": [],
      "body": {
-      "font": "Inter Variable",
+      "font": "Instrument Sans Variable",
       "size": 17,
       "leading": 1.55,
       "weight": 400,
-      "tracking": -0.006,
-      "contrast": 16.9
+      "tracking": 0,
+      "contrast": 16.6
      },
      "measureChars": 42,
      "max": {
       "size": 132.6,
       "vw": 34,
-      "font": "Inter Variable",
+      "font": "Instrument Sans Variable",
       "text": "Quidey"
      },
      "monoShare": 0,
@@ -2299,17 +2626,17 @@
        }
       },
       {
-       "color": "#f5f5f3",
+       "color": "#f4f3ef",
        "top": 675,
        "hsl": {
-        "h": 60,
-        "s": 0.09,
-        "l": 0.96
+        "h": 48,
+        "s": 0.19,
+        "l": 0.95
        }
       },
       {
        "color": "#181716",
-       "top": 3112,
+       "top": 3079,
        "hsl": {
         "h": 30,
         "s": 0.04,
@@ -2320,23 +2647,23 @@
      "textColors": [
       {
        "color": "#151413",
-       "share": 0.43
+       "share": 0.47
       },
       {
        "color": "#f4f3f1",
-       "share": 0.39
+       "share": 0.28
       },
       {
        "color": "#2a1305",
-       "share": 0.11
+       "share": 0.19
       },
       {
        "color": "#9b958f",
-       "share": 0.04
+       "share": 0.03
       },
       {
-       "color": "#fb923c",
-       "share": 0.01
+       "color": "#57524d",
+       "share": 0.02
       }
      ],
      "button": {
@@ -2351,7 +2678,7 @@
      "lowContrast": []
     },
     "buttons": {
-     "count": 9,
+     "count": 10,
      "inHero": 2,
      "radius": 14,
      "height": 80,
@@ -2394,7 +2721,8 @@
      "blur": false
     },
     "fontsLoaded": [
-     "inter variable"
+     "instrument sans variable",
+     "newsreader variable"
     ]
    },
    "layout": {
@@ -2402,10 +2730,10 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 9452,
+    "pageH": 12189,
     "margins": {
      "left": 16,
-     "right": 22
+     "right": 17
     },
     "sections": [
      {
@@ -2413,7 +2741,7 @@
       "tag": "section",
       "top": 0,
       "height": 675,
-      "words": 42,
+      "words": 48,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -2424,7 +2752,7 @@
       "left": 16,
       "right": 16,
       "textLeft": 16,
-      "textRight": 25,
+      "textRight": 27,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -2435,19 +2763,19 @@
       "sel": "section#fokus.feature.feature_light",
       "tag": "section",
       "top": 675,
-      "height": 844,
-      "words": 69,
+      "height": 848,
+      "words": 74,
       "media": 0,
       "middle": 0,
       "heading": {
-       "text": "Fokus-Timer für eine Aufgabe.",
+       "text": "Pomodoro im Fokusraum.",
        "size": 36,
        "tag": "h2"
       },
       "left": 16,
-      "right": 24,
+      "right": 18,
       "textLeft": 16,
-      "textRight": 24,
+      "textRight": 18,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -2457,13 +2785,151 @@
      {
       "sel": "section#planen.feature.feature_dark",
       "tag": "section",
-      "top": 1520,
-      "height": 777,
-      "words": 71,
+      "top": 1523,
+      "height": 741,
+      "words": 68,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Lernplan und Kalender.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 17,
+      "textLeft": 16,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#zusammen.feature.feature_accent",
+      "tag": "section",
+      "top": 2264,
+      "height": 815,
+      "words": 61,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Online zusammen lernen.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 18,
+      "textLeft": 16,
+      "textRight": 18,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#fortschritt.feature.feature_deep",
+      "tag": "section",
+      "top": 3079,
+      "height": 896,
+      "words": 90,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Serie, Level, Statistik.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 34,
+      "textLeft": 16,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#stil.feature.feature_light",
+      "tag": "section",
+      "top": 3975,
+      "height": 889,
+      "words": 52,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Ganz nach deinem Stil.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 34,
+      "textLeft": 16,
+      "textRight": 37,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#fuer-wen.audience",
+      "tag": "section",
+      "top": 4864,
+      "height": 849,
+      "words": 77,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Für Schule, Uni und Lerngruppe.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 17,
+      "textLeft": 16,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#funktionen.more",
+      "tag": "section",
+      "top": 5713,
+      "height": 1694,
+      "words": 173,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Alles für deinen Lernalltag.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.proIntro",
+      "tag": "div",
+      "top": 7527,
+      "height": 475,
+      "words": 103,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Kostenlos lernen.",
        "size": 36,
        "tag": "h2"
       },
@@ -2478,21 +2944,63 @@
       "pinned": false
      },
      {
-      "sel": "section#zusammen.feature.feature_accent",
-      "tag": "section",
-      "top": 2296,
-      "height": 815,
-      "words": 61,
+      "sel": "div.proPlan.proFree",
+      "tag": "div",
+      "top": 8043,
+      "height": 503,
+      "words": 62,
       "media": 0,
       "middle": 0,
       "heading": {
-       "text": "Online zusammen lernen.",
-       "size": 36,
-       "tag": "h2"
+       "text": "0 €",
+       "size": 40,
+       "tag": "span"
       },
-      "left": 16,
+      "left": 38,
+      "right": 41,
+      "textLeft": 38,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.proPlans",
+      "tag": "div",
+      "top": 8657,
+      "height": 377,
+      "words": 29,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "25 €",
+       "size": 40,
+       "tag": "span"
+      },
+      "left": 38,
+      "right": 46,
+      "textLeft": 38,
+      "textRight": 46,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "ul.proGives.reveal",
+      "tag": "ul",
+      "top": 9074,
+      "height": 246,
+      "words": 33,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 43,
       "right": 22,
-      "textLeft": 16,
+      "textLeft": 43,
       "textRight": 22,
       "fullBleed": false,
       "footer": false,
@@ -2501,87 +3009,18 @@
       "pinned": false
      },
      {
-      "sel": "section#fortschritt.feature.feature_deep",
-      "tag": "section",
-      "top": 3112,
-      "height": 896,
-      "words": 90,
-      "media": 0,
-      "middle": 0,
-      "heading": {
-       "text": "Serie, Level, Statistik.",
-       "size": 36,
-       "tag": "h2"
-      },
-      "left": 16,
-      "right": 22,
-      "textLeft": 16,
-      "textRight": 22,
-      "fullBleed": false,
-      "footer": false,
-      "hero": false,
-      "continues": true,
-      "pinned": false
-     },
-     {
-      "sel": "section#stil.feature.feature_light",
-      "tag": "section",
-      "top": 4008,
-      "height": 925,
-      "words": 48,
+      "sel": "div.proAction.reveal",
+      "tag": "div",
+      "top": 9360,
+      "height": 159,
+      "words": 33,
       "media": 0,
       "middle": 0,
       "heading": null,
       "left": 16,
-      "right": 29,
+      "right": 17,
       "textLeft": 16,
-      "textRight": 29,
-      "fullBleed": false,
-      "footer": false,
-      "hero": false,
-      "continues": true,
-      "pinned": false
-     },
-     {
-      "sel": "section#fuer-wen.audience",
-      "tag": "section",
-      "top": 4932,
-      "height": 876,
-      "words": 77,
-      "media": 0,
-      "middle": 0,
-      "heading": {
-       "text": "Für Schule, Uni und Lerngruppe.",
-       "size": 36,
-       "tag": "h2"
-      },
-      "left": 16,
-      "right": 22,
-      "textLeft": 16,
-      "textRight": 22,
-      "fullBleed": false,
-      "footer": false,
-      "hero": false,
-      "continues": true,
-      "pinned": false
-     },
-     {
-      "sel": "section#funktionen.more",
-      "tag": "section",
-      "top": 5808,
-      "height": 1396,
-      "words": 113,
-      "media": 0,
-      "middle": 0,
-      "heading": {
-       "text": "Alles für deinen Lernalltag.",
-       "size": 36,
-       "tag": "h2"
-      },
-      "left": 16,
-      "right": 23,
-      "textLeft": 16,
-      "textRight": 23,
+      "textRight": 17,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -2591,9 +3030,9 @@
      {
       "sel": "section#fragen.faq",
       "tag": "section",
-      "top": 7204,
-      "height": 910,
-      "words": 233,
+      "top": 9640,
+      "height": 1085,
+      "words": 129,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -2602,9 +3041,9 @@
        "tag": "h2"
       },
       "left": 16,
-      "right": 23,
+      "right": 25,
       "textLeft": 16,
-      "textRight": 23,
+      "textRight": 25,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -2614,20 +3053,16 @@
      {
       "sel": "section.cta",
       "tag": "section",
-      "top": 8114,
+      "top": 10725,
       "height": 409,
-      "words": 18,
+      "words": 0,
       "media": 0,
       "middle": 0,
-      "heading": {
-       "text": "Neu hier?",
-       "size": 36,
-       "tag": "h2"
-      },
-      "left": 16,
-      "right": 16,
-      "textLeft": 16,
-      "textRight": 32,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -2637,20 +3072,16 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 8523,
-      "height": 929,
-      "words": 42,
+      "top": 11134,
+      "height": 1055,
+      "words": 4,
       "media": 0,
-      "middle": 0,
-      "heading": {
-       "text": "Fang mit einer Sache an.",
-       "size": 36,
-       "tag": "h2"
-      },
+      "middle": 24,
+      "heading": null,
       "left": 16,
-      "right": 74,
+      "right": 216,
       "textLeft": 16,
-      "textRight": 74,
+      "textRight": 216,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -2660,13 +3091,13 @@
     ],
     "gaps": [
      {
-      "top": 3892,
-      "height": 304
+      "top": 10208,
+      "height": 1844
      }
     ],
     "h1s": [
      {
-      "text": "Eine Sache 00:18 nach der anderen.",
+      "text": "Eine Sache 00:04 nach der anderen.",
       "size": 41,
       "top": 241,
       "firstScreen": true
@@ -2676,14 +3107,20 @@
     "edges": [
      {
       "x": 16,
-      "n": 37
+      "n": 31
      }
     ],
-    "leftBlocks": 37,
+    "leftBlocks": 31,
     "bodySize": 17,
     "stage": false,
     "explains": false,
-    "slivers": [],
+    "slivers": [
+     {
+      "text": "Quidey",
+      "px": 23,
+      "side": "right"
+     }
+    ],
     "voidShare": 0,
     "voidBox": null
    },
@@ -2694,9 +3131,20 @@
  "findings": [
   {
    "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (section #f4f3ef).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
    "id": "size-count",
    "width": 1440,
-   "message": "14 different font sizes (13, 14, 15, 16, 17, 19, 21, 22, 23, 32, 66, 86, 144, 403).",
+   "message": "17 different font sizes (13, 14, 15, 16, 17, 18, 19, 21, 22, 23, 26, 32, 61, 66, 86, 144, 403).",
    "fix": "A page needs about five: display, heading, lead, body, small.",
    "alsoAt": [
     768,
@@ -2716,37 +3164,58 @@
    "width": 1440,
    "message": "No video anywhere on the page.",
    "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 768,
+   "message": "The margins differ: 18px on the left, 42px on the right, at 768px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
+  },
+  {
+   "level": "FAIL",
+   "id": "blank-gap",
+   "width": 390,
+   "message": "1 stretch(es) of the page hold nothing at all: 1844px at 10208px (the screen is 844px tall).",
+   "fix": "Close the gap: a section gap is 120–240px on desktop and 72–112px on a phone. Look for a min-height: 100vh on a short section, an empty grid row, a hidden element still holding its space, or a reveal that never fired. A deliberate rest is a placed picture or colour field, not nothing."
+  },
+  {
+   "level": "WARN",
+   "id": "one-sided-bleed",
+   "width": 390,
+   "message": "1 display line(s) start inside the margin but run off the right edge by a few pixels: \"Quidey\" (23px)",
+   "fix": "Fit the line to the content box by measurement (a small fit script, or SVG text with textLength), or bleed it on purpose by a clear amount from the margin. A name sliced by a few pixels on one side reads as a mistake."
   }
  ],
  "images": [
   {
    "viewport": "desktop",
    "width": 1440,
-   "fold": "C:\\Users\\eesge\\quidey_landing\\.taste-skill\\after\\desktop-fold.jpg",
+   "fold": "C:\\Users\\eesge\\quidey\\quidey_landing\\.taste-skill\\after\\desktop-fold.jpg",
    "pages": [
-    "C:\\Users\\eesge\\quidey_landing\\.taste-skill\\after\\desktop-page-01.jpg",
-    "C:\\Users\\eesge\\quidey_landing\\.taste-skill\\after\\desktop-page-02.jpg",
-    "C:\\Users\\eesge\\quidey_landing\\.taste-skill\\after\\desktop-page-03.jpg"
+    "C:\\Users\\eesge\\quidey\\quidey_landing\\.taste-skill\\after\\desktop-page-01.jpg",
+    "C:\\Users\\eesge\\quidey\\quidey_landing\\.taste-skill\\after\\desktop-page-02.jpg",
+    "C:\\Users\\eesge\\quidey\\quidey_landing\\.taste-skill\\after\\desktop-page-03.jpg"
    ],
    "film": []
   },
   {
    "viewport": "tablet",
    "width": 768,
-   "fold": "C:\\Users\\eesge\\quidey_landing\\.taste-skill\\after\\tablet-fold.jpg",
+   "fold": "C:\\Users\\eesge\\quidey\\quidey_landing\\.taste-skill\\after\\tablet-fold.jpg",
    "pages": [
-    "C:\\Users\\eesge\\quidey_landing\\.taste-skill\\after\\tablet-page-01.jpg",
-    "C:\\Users\\eesge\\quidey_landing\\.taste-skill\\after\\tablet-page-02.jpg"
+    "C:\\Users\\eesge\\quidey\\quidey_landing\\.taste-skill\\after\\tablet-page-01.jpg",
+    "C:\\Users\\eesge\\quidey\\quidey_landing\\.taste-skill\\after\\tablet-page-02.jpg"
    ],
    "film": []
   },
   {
    "viewport": "mobile",
    "width": 390,
-   "fold": "C:\\Users\\eesge\\quidey_landing\\.taste-skill\\after\\mobile-fold.jpg",
+   "fold": "C:\\Users\\eesge\\quidey\\quidey_landing\\.taste-skill\\after\\mobile-fold.jpg",
    "pages": [
-    "C:\\Users\\eesge\\quidey_landing\\.taste-skill\\after\\mobile-page-01.jpg",
-    "C:\\Users\\eesge\\quidey_landing\\.taste-skill\\after\\mobile-page-02.jpg"
+    "C:\\Users\\eesge\\quidey\\quidey_landing\\.taste-skill\\after\\mobile-page-01.jpg",
+    "C:\\Users\\eesge\\quidey\\quidey_landing\\.taste-skill\\after\\mobile-page-02.jpg"
    ],
    "film": []
   }

@@ -53,7 +53,7 @@ const de = {
         sub: 'Quidey ist der Lernplaner für Schule und Studium: Aufgaben, Fokus-Timer und Kalender in einer App, und Freunde, mit denen du live zusammen lernst.',
         cta: 'Beta-Platz sichern',
         note: 'Kostenlos in der Beta. Ohne Werbung.',
-        news: { label: 'Neu', text: 'Fokusraum, Pomodoro, Routinen und Untergruppen', href: '/updates/' },
+        news: { label: 'Neu', text: 'Ein ruhigerer Look und eigene Farben', href: '/updates/neuer-look-eigene-farben/' },
     },
     features: [
         {
@@ -141,7 +141,7 @@ const de = {
     },
     pro: {
         soon: 'Geplant für nach der Beta',
-        heading: 'Kostenlos lernen. Freiwillig unterstützen.',
+        heading: 'Kostenlos lernen.',
         lead: 'Während der Beta ist Quidey für alle Testerinnen und Tester komplett kostenlos, mit allem, was es gibt. Auch danach bleibt Quidey kostenlos nutzbar. Dazu soll es Quidey Pro geben: ein freiwilliges Abo, das genau einen Zweck hat – dass ich Quidey weiterentwickeln kann. Quidey entsteht in meiner Freizeit, ohne Werbung, ohne Investoren und ohne dass deine Daten verkauft werden.',
         kind: 'Wenn dir Quidey dann beim Lernen hilft und es für dich passt, freue ich mich riesig über deine Unterstützung. Und wenn nicht, ist das völlig in Ordnung – mit dem kostenlosen Plan bist du genauso willkommen.',
         freeName: 'Kostenlos',
@@ -155,7 +155,7 @@ const de = {
             'Statistiken der laufenden Woche, Level, Serien und Challenges',
         ],
         freeNote: 'So ist der kostenlose Plan nach der Beta geplant. Während der Beta gibt es keine Grenzen.',
-        planned: 'Quidey Pro – kommt nach der Beta',
+        planned: 'Quidey Pro: freiwillig, nach der Beta',
         yearly: 'Jährlich',
         monthly: 'Monatlich',
         yearlyPrice: '25 €',
@@ -247,7 +247,7 @@ const en = {
         sub: 'Quidey is the study planner for school and university: tasks, a focus timer and a calendar in one app, and friends to study with live.',
         cta: 'Get a beta spot',
         note: 'Free during the beta. No ads.',
-        news: { label: 'New', text: 'Focus room, Pomodoro, routines and sub-groups', href: '/updates/' },
+        news: { label: 'New', text: 'A calmer look and colours of your own', href: '/updates/' },
     },
     features: [
         {
@@ -335,7 +335,7 @@ const en = {
     },
     pro: {
         soon: 'Planned for after the beta',
-        heading: 'Study for free. Support if you like.',
+        heading: 'Study for free.',
         lead: 'During the beta, Quidey is completely free for every tester, with everything it has. It stays free to use afterwards too. On top of that there is to be Quidey Pro: a voluntary subscription with exactly one purpose – so I can keep developing Quidey. Quidey is made in my spare time, with no ads, no investors, and your data is never sold.',
         kind: 'If Quidey helps you study by then and it works for you, I would be so happy about your support. And if not, that is completely fine – you are just as welcome on the free plan.',
         freeName: 'Free',

@@ -68,9 +68,7 @@ const signIn = `${APP_URL}/signin`;
             <div class="heroFoot">
                 {/* the latest update, one line above what Quidey is */}
                 <a class="heroNews" href={c.hero.news.href}>
-                    <span class="heroNewsLabel">{c.hero.news.label}</span>
-                    <span>{c.hero.news.text}</span>
-                    <span aria-hidden="true">→</span>
+                    <strong>{c.hero.news.label}:</strong> {c.hero.news.text} <span aria-hidden="true">→</span>
                 </a>
                 <p class="heroSub">{c.hero.sub}</p>
                 <div class="heroActions">
@@ -266,13 +264,12 @@ const signIn = `${APP_URL}/signin`;
             with the year's saving big, what Pro gives, and the way into the beta */}
         <section id="preise" class="pro" data-tone="accent" aria-labelledby="pro-title">
             <div class="proIntro">
-                <p class="proSoon reveal" data-order="0">{c.pro.soon}</p>
                 <h2 id="pro-title" class="sectionTitle reveal" data-order="0">{c.pro.heading}</h2>
                 <p class="proLead reveal" data-order="1">{c.pro.lead}</p>
                 <p class="proKind reveal" data-order="1.5">{c.pro.kind}</p>
             </div>
             <div class="proPlan proFree reveal" data-order="1">
-                <span class="proPlanName">{c.pro.freeName}</span>
+                <h4 class="proPlanName">{c.pro.freeName}</h4>
                 <span class="proPrice">{c.pro.freePrice} <small>{c.pro.freePer}</small></span>
                 <ul class="proFreeList">
                     {c.pro.free.map((item) => <li>{item}</li>)}
@@ -282,13 +279,12 @@ const signIn = `${APP_URL}/signin`;
             <h3 class="proPlanned reveal" data-order="1.5">{c.pro.planned}</h3>
             <div class="proPlans">
                 <div class="proPlan proPlanYearly reveal" data-order="1.5">
-                    <span class="proBadge">{c.pro.badge}</span>
-                    <span class="proPlanName">{c.pro.yearly}</span>
+                    <h4 class="proPlanName">{c.pro.yearly} <span class="proSave">{c.pro.badge}</span></h4>
                     <span class="proPrice">{c.pro.yearlyPrice} <small>{c.pro.perYear}</small></span>
                     <span class="proPlanNote">{c.pro.yearlyNote}</span>
                 </div>
                 <div class="proPlan reveal" data-order="2">
-                    <span class="proPlanName">{c.pro.monthly}</span>
+                    <h4 class="proPlanName">{c.pro.monthly}</h4>
                     <span class="proPrice">{c.pro.monthlyPrice} <small>{c.pro.perMonth}</small></span>
                     <span class="proPlanNote">{c.pro.monthlyNote}</span>
                 </div>

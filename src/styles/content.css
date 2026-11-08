@@ -6,11 +6,10 @@
     background: var(--paper);
 }
 
+/* the bar on the reading pages: the paper itself, no glass and no line under it */
 .contentBar{
     color: var(--paper-ink);
-    background: color-mix(in srgb, var(--paper) 92%, transparent);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid color-mix(in srgb, var(--paper-ink) 8%, transparent);
+    background: var(--paper);
 }
 
 .contentBar .barLinks a[aria-current="page"]{
@@ -27,7 +26,7 @@
 
 .contentFooter{
     padding-top: clamp(64px, 7vw, 112px);
-    border-top: 1px solid color-mix(in srgb, var(--paper-ink) 10%, transparent);
+    background: color-mix(in srgb, var(--paper-ink) 4%, var(--paper));
 }
 
 .contentFooter .footerInvite{
@@ -86,21 +85,13 @@
     text-decoration: underline;
 }
 
-.kicker{
-    margin: 0 0 0.75rem;
-    font-size: 14px;
-    font-weight: 650;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #c2410c;
-}
-
 .pageTitle{
     margin: 0;
     max-width: 18ch;
+    font-family: var(--serif);
     font-size: clamp(40px, 6vw, 84px);
-    font-weight: 800;
-    letter-spacing: -0.045em;
+    font-weight: 400;
+    letter-spacing: -0.02em;
     line-height: 1;
 }
 
@@ -180,14 +171,13 @@
     box-sizing: border-box;
     padding: 1.25rem 1.35rem;
     text-decoration: none;
-    background: #fff;
-    border: 1px solid color-mix(in srgb, var(--paper-ink) 8%, transparent);
+    background: color-mix(in srgb, var(--paper-ink) 5%, var(--paper));
     border-radius: 16px;
-    transition: border-color 0.2s ease, transform 0.2s var(--ease);
+    transition: background-color 0.2s ease, transform 0.2s var(--ease);
 }
 
 .helpCard:hover{
-    border-color: color-mix(in srgb, var(--paper-ink) 30%, transparent);
+    background: color-mix(in srgb, var(--paper-ink) 9%, var(--paper));
     transform: translateY(-2px);
 }
 
@@ -415,7 +405,7 @@
 
 .prose hr{
     border: none;
-    border-top: 1px solid color-mix(in srgb, var(--paper-ink) 12%, transparent);
+    border-top: 1px solid color-mix(in srgb, var(--paper-ink) 12%, transparent); /* taste-skill-ignore: a Markdown --- the author wrote */
     margin: 2.5em 0;
 }
 
@@ -433,9 +423,7 @@
 }
 
 .related{
-    margin-top: clamp(56px, 6vw, 96px);
-    padding-top: 2rem;
-    border-top: 1px solid color-mix(in srgb, var(--paper-ink) 10%, transparent);
+    margin-top: clamp(72px, 8vw, 120px);
 }
 
 .related h2{

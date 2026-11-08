@@ -1,10 +1,11 @@
-/* The landing page. One face (Inter, the app's), three sizes doing the work: the sentence,
-   the statement, the text. Chapters are flat fields: night (the app's ground), paper (its light
+/* The landing page. The app's two faces: the headlines in Newsreader, everything else in
+   Instrument Sans; three sizes doing the work: the sentence, the statement, the text. Chapters are flat fields: night (the app's ground), paper (its light
    theme), and Abendrot (its accent). The pieces of the app take --ui-accent, which the colour
    picker on the page changes. */
 
 :root{
-    --sans: 'Inter Variable', system-ui, 'Segoe UI', Roboto, sans-serif;
+    --sans: 'Instrument Sans Variable', system-ui, 'Segoe UI', Roboto, sans-serif;
+    --serif: 'Newsreader Variable', Georgia, 'Times New Roman', serif;
     --primary: #fb923c;
     color-scheme: dark;
 }
@@ -23,7 +24,7 @@ html{
 body{
     margin: 0;
     font: 16px/1.5 var(--sans);
-    letter-spacing: -0.006em;
+    letter-spacing: 0;
     color: #f4f3f1;
     background: #0e0d0c;
     -webkit-font-smoothing: antialiased;
@@ -52,7 +53,7 @@ button{
     --night: #0e0d0c;
     --night-2: #181716;
     --night-3: #211f1e;
-    --paper: #f5f5f3;
+    --paper: #f4f3ef;
     --paper-2: #e9e8e5;
     --paper-ink: #151413;
     --paper-soft: #57524d;
@@ -1007,17 +1008,6 @@ button{
 }
 
 /* "Geplant für nach der Beta": a stamp above the heading */
-.proSoon{
-    display: inline-block;
-    margin: 0 0 1.25rem;
-    padding: 0.35em 0.8em;
-    font-size: 14px;
-    font-weight: 750;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    border: 2px solid currentColor;
-}
-
 /* the free plan: what everybody keeps */
 .proFreeList{
     margin: 0.6rem 0 0.4rem;
@@ -1058,7 +1048,7 @@ button{
     max-width: 34rem;
     margin: 1.5rem 0 0;
     font-size: var(--text);
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.55;
 }
 
@@ -1091,25 +1081,26 @@ button{
     outline-offset: -4px;
 }
 
-/* "Spare 30 %": as big as a heading can get on a card, impossible to miss */
-.proBadge{
-    position: absolute;
-    top: -0.9em;
-    right: 1rem;
-    padding: 0.35em 0.8em;
-    font-size: clamp(18px, 1.6vw, 24px);
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    color: var(--sun);
-    background: var(--sun-ink);
+/* the plan's name: a small heading in sentence case; the yearly saving beside it */
+.proPlanName{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: inherit;
 }
 
-.proPlanName{
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--paper-soft);
+.proSave{
+    font-weight: 400;
+}
+
+/* the price leads the card, the plan's name says under it which one */
+.proPlan .proPrice{
+    order: -1;
+}
+
+.proSave::before{
+    content: '· ';
 }
 
 .proPrice{
@@ -1322,12 +1313,17 @@ button{
     gap: 0.2em;
 }
 
+/* the field and the button: the same height, the words in the middle of it. Newsreader sits
+   low in its line box (tall ascenders, short descenders), so the text box is trimmed to the
+   letters where the browser can, and nudged up a little where it can't */
 .ctaLine input{
     flex: 1 1 8em;
     min-width: 0;
     max-width: 11em;
     height: 1.15em;
-    padding: 0 0.25em;
+    box-sizing: border-box;
+    padding: 0.27em 0.25em 0;
+    line-height: 1;
     font: inherit;
     letter-spacing: -0.03em;
     color: var(--sun-ink);
@@ -1346,8 +1342,13 @@ button{
 }
 
 .ctaLine button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     height: 1.15em;
-    padding: 0 0.35em;
+    box-sizing: border-box;
+    padding: 0.27em 0.35em 0;
+    line-height: 1;
     font: inherit;
     letter-spacing: -0.04em;
     color: var(--sun);
@@ -1738,32 +1739,27 @@ button{
 
 /* ---------- the latest update, above the hero's sentence about Quidey ---------- */
 
+/* the newest update, a plain line above what Quidey is */
 .heroNews{
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
+    display: block;
     width: fit-content;
+    max-width: 100%;
     margin-bottom: 1.25rem;
-    padding: 0.35rem 0.9rem 0.35rem 0.35rem;
-    font-size: 15px;
-    font-weight: 550;
-    text-decoration: none;
-    border: 1px solid color-mix(in srgb, currentColor 28%, transparent);
-    border-radius: 999px;
-    transition: background-color 0.2s ease;
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+    transition: text-decoration-color 0.2s ease;
+}
+
+.heroNews strong{
+    font-weight: 650;
 }
 
 .heroNews:hover{
-    background: color-mix(in srgb, currentColor 8%, transparent);
-}
-
-.heroNewsLabel{
-    padding: 0.15rem 0.6rem;
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--sun);
-    background: var(--sun-ink);
-    border-radius: 999px;
+    text-decoration-color: currentColor;
 }
 
 /* the links to the other pages sit after the page's sections, a little apart; where the bar
@@ -1787,4 +1783,21 @@ button{
         font-size: 13px;
         margin-bottom: 0.9rem;
     }
+}
+
+/* ---------- the headlines in the serif (the app's page titles are Newsreader too) ----------
+   One rule at the end instead of a change in each block: the sentence, the chapter titles, the
+   questions' title, the closing call and the footer's invitation. Regular weight, the serif's own
+   contrast does the emphasis; the wordmark stays the logo's sans. */
+.headline,
+.featureTitle,
+.sectionTitle,
+.faqTitle,
+.ctaTitle,
+.ctaSentence,
+.footerInvite{
+    font-family: var(--serif);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    font-optical-sizing: auto;
 }

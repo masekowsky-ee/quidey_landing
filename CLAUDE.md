@@ -5,7 +5,10 @@ separate repo, `C:\Users\eesge\quidey_react-main` → **app.quidey.com**; this p
 Kept apart on purpose: it changes rarely and differently from the app.
 
 - Static Astro 7 (`astro.config.mjs`: `inlineStylesheets: 'never'`, `assetsInlineLimit: 0`), no
-  framework components. Plain `.astro` + three small scripts in `src/scripts/`.
+  framework components. Type as in the app: Instrument Sans for the text, Newsreader (serif, opsz) for
+  the headlines (`--sans` / `--serif` in `styles/landing.css`, imported in `layouts/Base.astro`).
+  House rules from the app repo's taste skill: no eyebrow labels above headings, no pill badges, no
+  hairline dividers or glass bars (`node <app>/.claude/skills/design-taste-frontend/scripts/lint.mjs src`). Plain `.astro` + three small scripts in `src/scripts/`.
 - All copy in `src/copy.js` (de/en side by side). `APP_URL` from `PUBLIC_APP_URL`, default
   `https://app.quidey.com`.
 - Deploy: Cloudflare Workers static assets, `wrangler.jsonc` (worker `quidey-landing`, custom

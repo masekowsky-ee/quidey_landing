@@ -3,10 +3,10 @@ title: "Wo liegen meine Daten und wer kann sie sehen?"
 description: "Datenschutz bei Quidey: Server in Deutschland, keine Werbung, keine Cookies. Was Freund:innen sehen und wie du dein Konto mit allen Daten löschst."
 category: konto
 order: 1
-updated: "2026-11-06"
+updated: "2026-11-08"
 ---
 
-Kurz gesagt: Deine Daten liegen auf einem Server bei **STRATO in Deutschland**. Es gibt **keine Werbung und keine Cookies**. Externe Dienste kommen nur zum Einsatz, wenn du sie auslöst (zum Beispiel die optionalen KI-Schätzungen für Lernziele über Anthropic). Mit deinem Ja zählt Quidey anonym mit, wann und welche Bereiche genutzt werden, nur als Summen.
+Kurz gesagt: Deine Daten liegen auf einem Server bei **STRATO in Deutschland**. Es gibt **keine Werbung und keine Cookies**. Externe Dienste kommen nur zum Einsatz, wenn du sie auslöst (zum Beispiel die optionalen KI-Schätzungen für Lernziele über Anthropic). Mit deinem Ja zählt Quidey mit, wann und welche Bereiche genutzt werden, nur als Summen ohne dein Konto.
 
 ## Was nur du siehst
 

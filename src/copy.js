@@ -42,7 +42,7 @@ const de = {
             'Als App auf Handy und Rechner installierbar',
         ],
     },
-    nav: { focus: 'Fokus', plan: 'Planen', together: 'Zusammen', more: 'Funktionen', pro: 'Preise', faq: 'Fragen', label: 'Bereiche der Seite', signIn: 'Anmelden', cta: 'Beta-Platz sichern', language: 'English', languageCode: 'en', languagePath: '/en/',
+    nav: { focus: 'Fokus', plan: 'Planen', together: 'Zusammen', more: 'Funktionen', pro: 'Preise', faq: 'Fragen', label: 'Bereiche der Seite', signIn: 'Anmelden', cta: 'Registrieren', language: 'English', languageCode: 'en', languagePath: '/en/',
         pages: [['/hilfe/', 'Hilfe'], ['/updates/', 'Updates']], pagesLabel: 'Mehr auf quidey.com' },
     hero: {
         before: 'Eine Sache',
@@ -51,7 +51,7 @@ const de = {
         pause: 'Animation anhalten',
         play: 'Animation abspielen',
         sub: 'Quidey ist der Lernplaner für Schule und Studium: Aufgaben, Fokus-Timer und Kalender in einer App, und Freunde, mit denen du live zusammen lernst.',
-        cta: 'Beta-Platz sichern',
+        cta: 'Registrieren',
         note: 'Kostenlos in der Beta. Ohne Werbung.',
         news: { label: 'Neu', text: 'Ein ruhigerer Look und eigene Farben', href: '/updates/neuer-look-eigene-farben/' },
     },
@@ -171,7 +171,7 @@ const de = {
             'Jeder Euro fließt in die Weiterentwicklung von Quidey',
             'Das gute Gefühl, Quidey möglich zu machen',
         ],
-        button: 'Kostenlos in die Beta',
+        button: 'Kostenlos registrieren',
         note: 'Geplante Preise, noch nicht buchbar: Quidey Pro gibt es erst nach der Beta, bis dahin können sich Preise und Umfang noch ändern. Endpreise, gemäß § 19 UStG ohne Umsatzsteuer.',
     },
     faq: {
@@ -198,7 +198,7 @@ const de = {
     },
     footer: {
         invitation: 'Fang mit einer Sache an.',
-        button: 'Beta-Platz sichern',
+        button: 'Registrieren',
         about: 'Quidey ist ein Lernplaner für Schule, Studium und Alltag, mit Pomodoro-Timer, Kalender, Notizen, Routinen und gemeinsamen Lernsessions. Server in Deutschland.',
         pagesLabel: 'Auf dieser Seite',
         legalLabel: 'Rechtliches',
@@ -236,7 +236,7 @@ const en = {
             'Installable as an app on phone and computer',
         ],
     },
-    nav: { focus: 'Focus', plan: 'Plan', together: 'Together', more: 'Features', pro: 'Pricing', faq: 'Questions', label: 'Sections of the page', signIn: 'Sign in', cta: 'Get a beta spot', language: 'Deutsch', languageCode: 'de', languagePath: '/',
+    nav: { focus: 'Focus', plan: 'Plan', together: 'Together', more: 'Features', pro: 'Pricing', faq: 'Questions', label: 'Sections of the page', signIn: 'Sign in', cta: 'Sign up', language: 'Deutsch', languageCode: 'de', languagePath: '/',
         pages: [['/hilfe/', 'Help (German)'], ['/updates/', 'Updates (German)']], pagesLabel: 'More on quidey.com' },
     hero: {
         before: 'One thing',
@@ -245,7 +245,7 @@ const en = {
         pause: 'Pause animation',
         play: 'Play animation',
         sub: 'Quidey is the study planner for school and university: tasks, a focus timer and a calendar in one app, and friends to study with live.',
-        cta: 'Get a beta spot',
+        cta: 'Sign up',
         note: 'Free during the beta. No ads.',
         news: { label: 'New', text: 'A calmer look and colours of your own', href: '/updates/' },
     },
@@ -365,7 +365,7 @@ const en = {
             'Every euro goes into developing Quidey further',
             'The good feeling of making Quidey possible',
         ],
-        button: 'Join the beta for free',
+        button: 'Sign up for free',
         note: 'Planned prices, not available yet: Quidey Pro only comes after the beta, and prices and scope may still change until then. Final prices, no VAT charged (small business, § 19 UStG).',
     },
     faq: {
@@ -392,7 +392,7 @@ const en = {
     },
     footer: {
         invitation: 'Start with one thing.',
-        button: 'Get a beta spot',
+        button: 'Sign up',
         about: 'Quidey is a study planner for school, university and everyday life, with a Pomodoro timer, a calendar, notes, routines and shared study sessions. Servers in Germany.',
         pagesLabel: 'On this page',
         legalLabel: 'Legal',

@@ -1,6 +1,6 @@
 ---
 title: "Fokusraum, Pomodoro und Routinen"
-description: "Der Timer läuft jetzt weiter, auch wenn dein Handy aus ist. Dazu kommen ein eigener Fokusraum mit Pomodoro und Notizbuch, geführte Routinen und eine Startseite, die dir deinen Tag auf einen Blick zeigt."
+description: "Der Timer läuft weiter, auch wenn dein Handy aus ist. Neu: ein Fokusraum mit Pomodoro und Notizbuch, geführte Routinen und eine Startseite für deinen Tag."
 date: "2026-10-28"
 image: "/updates/2026-10-28/fokusraum.webp"
 imageAlt: "Der Fokusraum in Quidey: ein großer Pomodoro-Timer, das Ziel der Sitzung und das Notizbuch daneben"

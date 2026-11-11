@@ -5,6 +5,10 @@
 import '@fontsource-variable/instrument-sans/wght.css';
 import '@fontsource-variable/newsreader/opsz.css';
 import '../styles/landing.css';
+// the two Latin font files, fetched with the page instead of after the stylesheet (the hero's text
+// is drawn with them; same hashed files the @font-face rules point to)
+import sansLatin from '@fontsource-variable/instrument-sans/files/instrument-sans-latin-wght-normal.woff2?url';
+import serifLatin from '@fontsource-variable/newsreader/files/newsreader-latin-opsz-normal.woff2?url';
 import { COPY } from '../copy.js';
 
 // page: 'landing' (the two language versions, with their hreflang pair and the app's data) or
@@ -97,6 +101,8 @@ const structured = JSON.stringify({
         {/* the landing page in the device's language (public/lang.js), before anything is drawn */}
         {page === 'landing' && !noindex && <script is:inline src="/lang.js"></script>}
         <title>{title}</title>
+        <link rel="preload" href={sansLatin} as="font" type="font/woff2" crossorigin />
+        <link rel="preload" href={serifLatin} as="font" type="font/woff2" crossorigin />
         <meta name="description" content={description} />
         {noindex
             ? <meta name="robots" content="noindex" />

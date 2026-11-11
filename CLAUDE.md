@@ -24,7 +24,10 @@ Kept apart on purpose: it changes rarely and differently from the app.
   (`max-image-preview:large`), Open Graph / Twitter (`summary_large_image`) and JSON-LD
   (`WebSite` for the site name, `Organization` with logo, `WebPage`, `SoftwareApplication` with
   `featureList` from `copy.js` `meta.featureList`, `FAQPage` from `faq.items`, word for word as on
-  the page); the 404 page is `noindex`. Search words (Lernplaner, Fokus-Timer, Kalender, zusammen
+  the page); the 404 page is `noindex`. `src/pages/llms.txt.js` builds `/llms.txt` (a Markdown map for AI
+  assistants) from the same copy and posts. Posts may set `seoTitle` (a shorter `<title>`; the page
+  title gets " – Quidey"). The `quidey-image-sizes` step in `astro.config.mjs` adds width/height to
+  Markdown pictures after the build. The two Latin font files are preloaded in `Base.astro`. Search words (Lernplaner, Fokus-Timer, Kalender, zusammen
   lernen / study planner, …) live in the description, h2s and questions (the title is the plain
   line "Quidey – dein Planer für Lernen, Alltag und Studium"); headings must stay
   ≤ 2 lines (≈16 characters per line in the feature text column at desktop size).

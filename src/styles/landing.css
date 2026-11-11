@@ -1462,25 +1462,9 @@ button{
     scroll-margin-top: 64px;
 }
 
-/* ---------- coming in: the hero on load, everything else as it scrolls into view ---------- */
-
-@keyframes rise{
-    from{ opacity: 0; transform: translateY(36px); }
-}
-
-@media (prefers-reduced-motion: no-preference){
-    .headline{
-        animation: rise 0.68s var(--ease) both;
-    }
-
-    .heroSub{
-        animation: rise 0.68s var(--ease) 0.15s both;
-    }
-
-    .heroActions{
-        animation: rise 0.68s var(--ease) 0.24s both;
-    }
-}
+/* ---------- coming in: everything below the hero as it scrolls into view ---------- */
+/* the hero itself stands still on load: its text is the page's largest paint, and an entrance
+   animation would only hold it back */
 
 /* scripts/landing.js marks what is still below the screen as waiting, then shown */
 .reveal.waiting{

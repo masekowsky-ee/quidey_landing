@@ -40,7 +40,7 @@ const graph = [
     },
 ];
 ---
-<Content title={`${post.title} – Quidey Hilfe`} description={post.description} graph={graph} ogType="article" current="hilfe">
+<Content title={`${post.seoTitle ?? post.title} – Quidey`} description={post.description} graph={graph} ogType="article" current="hilfe">
     <article class="article">
         <header class="articleHead">
             <ol class="crumbs">

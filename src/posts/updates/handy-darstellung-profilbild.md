@@ -1,6 +1,7 @@
 ---
 title: "Aufgeräumt fürs Handy: Events, Profilbild und hell oder dunkel wie dein Gerät"
-description: "Auf dem Handy passt das Event-Formular wieder in sein Fenster, Profilbilder sind rund und sitzen im Rahmen, und Quidey startet hell oder dunkel, je nachdem, wie dein Gerät eingestellt ist."
+seoTitle: "Handy-Update: Events, Profilbild, hell oder dunkel"
+description: "Auf dem Handy passt das Event-Formular wieder ins Fenster, Profilbilder sind rund, und Quidey startet hell oder dunkel wie dein Gerät."
 date: "2026-10-28"
 time: "20:30"
 tags: ["Handy", "Events", "Profil", "Darstellung"]

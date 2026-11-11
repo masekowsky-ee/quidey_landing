@@ -1,5 +1,6 @@
 ---
 title: "Wie nutze ich das Notizbuch mit Checklisten, Links und Bildern?"
+seoTitle: "Notizbuch mit Checklisten, Links und Bildern"
 description: "Notizen im Fokusraum: Checklisten zum Abhaken, Überschriften, Links und Fotos anhängen und eine Zeile direkt als Aufgabe in den Kalender planen."
 category: fokus
 order: 4

@@ -1,5 +1,6 @@
 ---
 title: "Untergruppen für alle, Profilbilder im Test und sicherere Uploads"
+seoTitle: "Untergruppen, Profilbilder und sicherere Uploads"
 description: "Sitzungen und Families lassen sich jetzt von allen in Untergruppen sortieren. Tester können ein Profilbild hochladen, und Bilder in Notizen werden strenger geprüft."
 date: "2026-10-28"
 time: "18:30"

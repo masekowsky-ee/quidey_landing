@@ -1,6 +1,7 @@
 ---
 title: "Ein ruhigerer Look, eigene Farben und Formen für deine Lernziele"
-description: "Die Startseite ist neu aufgebaut, die Navigation steht oben, Seitentitel sind in einer Serifenschrift gesetzt. Farben suchst du dir jetzt auch auf einem Farbkreis aus, und jedes Ziel in Lernen bekommt eine eigene Form."
+seoTitle: "Neuer Look, eigene Farben und Formen für Lernziele"
+description: "Neue Startseite, Navigation oben, Seitentitel in Serifenschrift. Farben wählst du jetzt auf einem Farbkreis, und jedes Lernziel bekommt eine eigene Form."
 date: "2026-11-07"
 time: "16:00"
 image: "/updates/2026-11-07/start.webp"

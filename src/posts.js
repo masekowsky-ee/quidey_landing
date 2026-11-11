@@ -2,6 +2,7 @@
 //
 //   src/posts/hilfe/<slug>.md     Hilfe & Fragen: one common question per page (the forum of answers)
 //       title, description, category (one of HELP_CATEGORIES), order (smaller first), updated
+//       (both kinds: seoTitle, optional: a shorter <title> for search results when the title is long)
 //   src/posts/updates/<slug>.md   Updates: release notes and stories, newest first, with pictures
 //       title, description, date ("YYYY-MM-DD"), time ("HH:MM", orders posts of one day), image (a
 //       picture under public/, for the list and social cards), imageAlt, tags
